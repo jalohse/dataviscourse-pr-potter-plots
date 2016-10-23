@@ -1,0 +1,12 @@
+"Confundo": 1,
+"Expecto Patronum": 24,
+"Expelliarmus": 4,
+"Ferula": 1,
+"Impervius": 1,
+"Incarcerous": 1,
+"Lumos": 4,
+"Mobiliarbus": 1,
+"Mobilicorups": 1,
+"Nox": 1,
+"Pack": 1,
+"Riddikulus": 11

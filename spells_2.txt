@@ -1,0 +1,11 @@
+"Aparecium": 1,
+"Capacious Extremis": 1,
+"Engorgio": 1,
+"Expelliarmus": 3,
+"Finite Incantatem": 1,
+"Flagrate": 1,
+"Lumos": 2,
+"Obliviate": 1,
+"Rictusempra": 1,
+"Serpensortia": 1,
+"Tarantallegra": 1

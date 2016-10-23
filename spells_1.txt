@@ -1,0 +1,5 @@
+"Alohomora" : 2,
+"Incendio": 1,
+"Locomotor Mortis": 1,
+"Petrificus Totalus": 1,
+"Wingardium Leviosa": 3
