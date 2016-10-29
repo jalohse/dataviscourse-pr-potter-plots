@@ -2,6 +2,8 @@
 	"book": "Harry Potter and the Sorcerer's Stone",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 974,
+	"book_copies" : 107,
 	"spells": {
 		"Alohomora": 2,
 		"Incendio": 1,
@@ -20,6 +22,8 @@
 	"book": "Harry Potter and the Chamber of Secrets",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 878,
+	"book_copies" : 60,
 	"spells": {
 		"Aparecium": 1,
 		"Capacious Extremis": 1,
@@ -44,6 +48,8 @@
 	"book": "Harry Potter and the Prisoner of Azkaban",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 796,
+	"book_copies" : 55,
 	"spells": {
 		"Confundo": 1,
 		"Expecto Patronum": 24,
@@ -69,6 +75,8 @@
 	"book": "Harry Potter and the Goblet of Fire",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 896,
+	"book_copies" : 55,
 	"spells": {
 		"Accio": 8,
 		"Aguamenti": 1,
@@ -113,6 +121,8 @@
 	"book": "Harry Potter and the Order of the Phoenix",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 939,
+	"book_copies" : 55,
 	"spells": {
 		"Accio": 10,
 		"Avada Kedavra": 3,
@@ -154,6 +164,8 @@
 	"book": "Harry Potter and the Half Blood Prince",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 934,
+	"book_copies" : 65,
 	"spells": {
 		"Accio": 3,
 		"Aguamenti": 7,
@@ -197,6 +209,8 @@
 	"book": "Harry Potter and the Deathly Hallows",
 	"deaths": [],
 	"locations": [],
+	"movie_gross": 2281,
+	"book_copies" : 50,
 	"spells": {
 		"Accio": 12,
 		"Avada Kedavra": 7,
