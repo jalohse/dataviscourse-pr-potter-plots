@@ -1,269 +1,552 @@
 [{
-	"book": "Harry Potter and the Sorcerer's Stone",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 974,
-	"book_gross" : 1819,
-	"spells": {
-		"Alohomora": 2,
-		"Incendio": 1,
-		"Locomotor Mortis": 1,
-		"Petrificus Totalus": 1,
-		"Wingardium Leviosa": 3
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Sorcerer's Stone",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 974,
+  "book_gross": 1819,
+  "spells": {
+    "Alohomora": 2,
+    "Incendio": 1,
+    "Locomotor Mortis": 1,
+    "Petrificus Totalus": 1,
+    "Wingardium Leviosa": 3
+  },
+  "chapters": [{
+    "name": "The Boy Who Lived",
+    "interactions": [{
+      "duration": 5,
+      "start": 0,
+      "characters": [0, 1, 2],
+      "id": 0
+    }, {
+      "duration": 2,
+      "start": 5,
+      "characters": [0, 3],
+      "id": 1
+    }, {
+      "duration": 5,
+      "start": 7,
+      "characters": [0],
+      "id": 2
+    }, {
+      "duration": 1,
+      "start": 12,
+      "characters": [0, 3],
+      "id": 3
+    }, {
+      "duration": 1,
+      "start": 13,
+      "characters": [0, 1, 2],
+      "id": 4
+    }, {
+      "duration": 5,
+      "start": 14,
+      "characters": [0, 1],
+      "id": 5
+    }, {
+      "duration": 15,
+      "start": 19,
+      "characters": [3, 4],
+      "id": 6
+    }, {
+      "duration": 15,
+      "start": 34,
+      "characters": [3, 4, 5, 6],
+      "id": 7
+    }],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }, {
+    "name": "The Vanishing Glass",
+    "interactions": [{
+      "duration": 3,
+      "start": 0,
+      "characters": [1, 6],
+      "id": 0
+    }, {
+      "duration": 5,
+      "start": 3,
+      "characters": [0, 1, 2, 6],
+      "id": 1
+    }, {
+      "duration": 10,
+      "start": 8,
+      "characters": [0, 1, 2, 6, 7],
+      "id": 2
+    }, {
+      "duration": 5,
+      "start": 18,
+      "characters": [0, 1, 2, 6, 7, 8],
+      "id": 3
+    }, {
+      "duration": 1,
+      "start": 23,
+      "characters": [0, 1, 2, 6, 7],
+      "id": 4
+    }, {
+      "duration": 3,
+      "start": 24,
+      "characters": [6],
+      "id": 5
+    }],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }, {
+    "name": "The Letters from No One",
+    "interactions": [{
+      "duration": 3,
+      "start": 0,
+      "characters": [6, 2],
+      "id": 0
+    }, {
+      "duration": 1,
+      "start": 3,
+      "characters": [6, 9],
+      "id": 1
+    }, {
+      "duration": 30,
+      "start": 4,
+      "characters": [6, 2, 0, 1],
+      "id": 2
+    }],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }, {
+    "name": "The Keeper of the Keys",
+    "interactions": [{
+      "duration": 30,
+      "start": 0,
+      "characters": [6, 2, 0, 1, 5],
+      "id": 0
+    }],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }, {
+    "name": "Diagon Alley",
+    "interactions": [{
+      "duration": 20,
+      "start": 0,
+      "characters": [6, 5],
+      "id": 0
+    }, {
+      "duration": 5,
+      "start": 20,
+      "characters": [6, 5, 10, 11, 12, 13],
+      "id": 1
+    }, {
+      "duration": 5,
+      "start": 25,
+      "characters": [6, 5],
+      "id": 2
+    }, {
+      "duration": 5,
+      "start": 30,
+      "characters": [6, 5, 14],
+      "id": 3
+    }, {
+      "duration": 5,
+      "start": 35,
+      "characters": [6, 15, 16],
+      "id": 4
+    }, {
+      "duration": 5,
+      "start": 40,
+      "characters": [6, 5],
+      "id": 5
+    }, {
+      "duration": 1,
+      "start": 45,
+      "characters": [6, 5, 17],
+      "id": 6
+    }, {
+      "duration": 10,
+      "start": 46,
+      "characters": [6, 5, 17, 18],
+      "id": 7
+    }, {
+      "duration": 3,
+      "start": 56,
+      "characters": [6, 5, 17],
+      "id": 8
+    }],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }, {
+    "name": "The Journey from Platform Nine and Three-Quarters",
+    "interactions": [
+			{
+	      "duration": 10,
+	      "start": 0,
+	      "characters": [0,1,2,6,17],
+	      "id": 0
+	    },{
+	      "duration": 3,
+	      "start": 10,
+	      "characters": [6, 17],
+	      "id": 1
+	    },{
+	      "duration": 5,
+	      "start": 13,
+	      "characters": [6, 17, 19, 20, 21, 22, 23, 24],
+	      "id": 2
+	    },{
+	      "duration": 1,
+	      "start": 18,
+	      "characters": [6, 17, 25, 26],
+	      "id": 3
+	    },{
+	      "duration": 2,
+	      "start": 19,
+	      "characters": [6, 17, 23, 22],
+	      "id": 4
+	    },{
+	      "duration": 5,
+	      "start": 20,
+	      "characters": [6, 17, 19,20,21,22,23,24],
+	      "id": 5
+	    },{
+	      "duration": 2,
+	      "start": 25,
+	      "characters": [6, 24, 22, 23],
+	      "id": 6
+	    },{
+	      "duration": 10,
+	      "start": 27,
+	      "characters": [6, 17, 24, 27],
+	      "id": 7
+	    },{
+	      "duration": 1,
+	      "start": 37,
+	      "characters": [6, 17, 24, 27, 25],
+	      "id": 8
+	    },{
+	      "duration": 5,
+	      "start": 38,
+	      "characters": [6, 17, 24, 27, 28, 25],
+	      "id": 9
+	    },{
+	      "duration": 4,
+	      "start": 43,
+	      "characters": [6, 17, 24, 27],
+	      "id": 10
+	    },{
+	      "duration": 4,
+	      "start": 47,
+	      "characters": [6, 17, 24, 27, 16, 29, 30],
+	      "id": 11
+	    },{
+	      "duration": 3,
+	      "start": 51,
+	      "characters": [6, 17, 24, 27, 28],
+	      "id": 12
+	    },{
+	      "duration": 3,
+	      "start": 54,
+	      "characters": [6, 17, 24, 27],
+	      "id": 13
+	    },{
+	      "duration": 5,
+	      "start": 57,
+	      "characters": [6, 17, 24, 27, 5, 25, 28],
+	      "id": 14
+	    }
+		],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }, {
+    "name": "The Sorting Hat",
+    "interactions": [{
+			"duration": 15,
+			"start": 0,
+			"characters": [6, 24, 3, 25],
+			"id": 0
+		}, {
+			"duration": 2,
+			"start": 15,
+			"characters": [6, 24, 25,31, 32],
+			"id": 1
+		}, {
+			"duration": 2,
+			"start": 17,
+			"characters": [6, 24, 3, 28],
+			"id": 2
+		}, {
+			"duration": 15,
+			"start": 19,
+			"characters": [6, 24, 3, 28, 33, 25, 16, 29,30, 5,4,13],
+			"id": 3
+		}, {
+			"duration": 15,
+			"start": 34,
+			"characters": [6, 24, 4, 21,32,34, 36,25, 28,5,3,4,13,36],
+			"id": 4
+		}, {
+			"duration": 1,
+			"start": 49,
+			"characters": [6, 24, 21,37, 25, 39],
+			"id": 5
+		}, {
+			"duration": 3,
+			"start": 50,
+			"characters": [6, 24, 21, 27],
+			"id": 6
+		}],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }, {
-	"book": "Harry Potter and the Chamber of Secrets",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 878,
-	"book_gross" : 60,
-	"spells": {
-		"Aparecium": 1,
-		"Capacious Extremis": 1,
-		"Engorgio": 1,
-		"Expelliarmus": 3,
-		"Finite Incantatem": 1,
-		"Flagrate": 1,
-		"Lumos": 2,
-		"Obliviate": 1,
-		"Rictusempra": 1,
-		"Serpensortia": 1,
-		"Tarantallegra": 1
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Chamber of Secrets",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 878,
+  "book_gross": 60,
+  "spells": {
+    "Aparecium": 1,
+    "Capacious Extremis": 1,
+    "Engorgio": 1,
+    "Expelliarmus": 3,
+    "Finite Incantatem": 1,
+    "Flagrate": 1,
+    "Lumos": 2,
+    "Obliviate": 1,
+    "Rictusempra": 1,
+    "Serpensortia": 1,
+    "Tarantallegra": 1
+  },
+  "chapters": [{
+    "name": "",
+    "interactions": [],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }, {
-	"book": "Harry Potter and the Prisoner of Azkaban",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 796,
-	"book_gross" : 935,
-	"spells": {
-		"Confundo": 1,
-		"Expecto Patronum": 24,
-		"Expelliarmus": 4,
-		"Ferula": 1,
-		"Impervius": 1,
-		"Incarcerous": 1,
-		"Lumos": 4,
-		"Mobiliarbus": 1,
-		"Mobilicorups": 1,
-		"Nox": 1,
-		"Pack": 1,
-		"Riddikulus": 11
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Prisoner of Azkaban",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 796,
+  "book_gross": 935,
+  "spells": {
+    "Confundo": 1,
+    "Expecto Patronum": 24,
+    "Expelliarmus": 4,
+    "Ferula": 1,
+    "Impervius": 1,
+    "Incarcerous": 1,
+    "Lumos": 4,
+    "Mobiliarbus": 1,
+    "Mobilicorups": 1,
+    "Nox": 1,
+    "Pack": 1,
+    "Riddikulus": 11
+  },
+  "chapters": [{
+    "name": "",
+    "interactions": [],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }, {
-	"book": "Harry Potter and the Goblet of Fire",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 896,
-	"book_gross" : 935,
-	"spells": {
-		"Accio": 8,
-		"Aguamenti": 1,
-		"Avada Kedavra": 8,
-		"Avis": 1,
-		"Confundo": 1,
-		"Crucio": 5,
-		"Deletrius": 1,
-		"Densaugeo": 1,
-		"Diffindo": 1,
-		"Engorgio": 3,
-		"Episkey": 1,
-		"Expecto Patronum": 1,
-		"Expelliarmus": 3,
-		"Furnunculus": 1,
-		"Impedimenta": 9,
-		"Imperio": 1,
-		"Incarcerous": 1,
-		"Lumos": 4,
-		"Morsmordre": 1,
-		"Obliviate": 1,
-		"Orchideous": 1,
-		"Point me": 2,
-		"Prior Incantato": 1,
-		"Protego": 2,
-		"Quietus": 1,
-		"Reducio": 2,
-		"Reducto": 3,
-		"Rennervate": 1,
-		"Riddikulus": 1,
-		"Sonorus": 3,
-		"Stupefy": 10
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Goblet of Fire",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 896,
+  "book_gross": 935,
+  "spells": {
+    "Accio": 8,
+    "Aguamenti": 1,
+    "Avada Kedavra": 8,
+    "Avis": 1,
+    "Confundo": 1,
+    "Crucio": 5,
+    "Deletrius": 1,
+    "Densaugeo": 1,
+    "Diffindo": 1,
+    "Engorgio": 3,
+    "Episkey": 1,
+    "Expecto Patronum": 1,
+    "Expelliarmus": 3,
+    "Furnunculus": 1,
+    "Impedimenta": 9,
+    "Imperio": 1,
+    "Incarcerous": 1,
+    "Lumos": 4,
+    "Morsmordre": 1,
+    "Obliviate": 1,
+    "Orchideous": 1,
+    "Point me": 2,
+    "Prior Incantato": 1,
+    "Protego": 2,
+    "Quietus": 1,
+    "Reducio": 2,
+    "Reducto": 3,
+    "Rennervate": 1,
+    "Riddikulus": 1,
+    "Sonorus": 3,
+    "Stupefy": 10
+  },
+  "chapters": [{
+    "name": "",
+    "interactions": [],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }, {
-	"book": "Harry Potter and the Order of the Phoenix",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 939,
-	"book_gross" : 935,
-	"spells": {
-		"Accio": 10,
-		"Avada Kedavra": 3,
-		"Colloportus": 3,
-		"Crucio": 4,
-		"Evanesco": 2,
-		"Expecto Patronum": 4,
-		"Expelliarmus": 7,
-		"Flagrate": 1,
-		"Impedimenta": 5,
-		"Impervius": 3,
-		"Incarcerous": 1,
-		"Legilimens": 7,
-		"Levicorpus": 1,
-		"Locomotor": 4,
-		"Lumos": 1,
-		"Pack": 1,
-		"Petrificus Totalus": 3,
-		"Portus": 2,
-		"Protego": 4,
-		"Reducto": 3,
-		"Riddikulus": 6,
-		"Scourgify": 3,
-		"Sectumsempra": 1,
-		"Serpensortia": 1,
-		"Silencio": 8,
-		"Stupefy": 7,
-		"Tarantallegra": 1,
-		"Wingardium Leviosa": 1
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Order of the Phoenix",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 939,
+  "book_gross": 935,
+  "spells": {
+    "Accio": 10,
+    "Avada Kedavra": 3,
+    "Colloportus": 3,
+    "Crucio": 4,
+    "Evanesco": 2,
+    "Expecto Patronum": 4,
+    "Expelliarmus": 7,
+    "Flagrate": 1,
+    "Impedimenta": 5,
+    "Impervius": 3,
+    "Incarcerous": 1,
+    "Legilimens": 7,
+    "Levicorpus": 1,
+    "Locomotor": 4,
+    "Lumos": 1,
+    "Pack": 1,
+    "Petrificus Totalus": 3,
+    "Portus": 2,
+    "Protego": 4,
+    "Reducto": 3,
+    "Riddikulus": 6,
+    "Scourgify": 3,
+    "Sectumsempra": 1,
+    "Serpensortia": 1,
+    "Silencio": 8,
+    "Stupefy": 7,
+    "Tarantallegra": 1,
+    "Wingardium Leviosa": 1
+  },
+  "chapters": [{
+    "name": "",
+    "interactions": [],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }, {
-	"book": "Harry Potter and the Half Blood Prince",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 934,
-	"book_gross" : 1105,
-	"spells": {
-		"Accio": 3,
-		"Aguamenti": 7,
-		"Anapneo": 1,
-		"Avis": 1,
-		"Avada Kedavra": 1,
-		"Confundo": 1,
-		"Crucio": 2,
-		"Diffindo": 1,
-		"Episkey": 2,
-		"Expelliarmus": 2,
-		"Incarcerous": 1,
-		"Incendio": 2,
-		"Langlock": 1,
-		"Legilimens": 1,
-		"Levicorpus": 4,
-		"Liberacorpus": 1,
-		"Locomotor Mortis": 1,
-		"Lumos": 3,
-		"Morsmorde": 1,
-		"Muffliato": 6,
-		"Oppungno": 1,
-		"Petrificus Totalus": 5,
-		"Protego": 1,
-		"Reducto": 2,
-		"Relashio": 1,
-		"Rennervate": 2,
-		"Sectumsepra": 6,
-		"Specialis Revelio": 2,
-		"Stupefy": 1,
-		"Tergeo": 1
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Half Blood Prince",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 934,
+  "book_gross": 1105,
+  "spells": {
+    "Accio": 3,
+    "Aguamenti": 7,
+    "Anapneo": 1,
+    "Avis": 1,
+    "Avada Kedavra": 1,
+    "Confundo": 1,
+    "Crucio": 2,
+    "Diffindo": 1,
+    "Episkey": 2,
+    "Expelliarmus": 2,
+    "Incarcerous": 1,
+    "Incendio": 2,
+    "Langlock": 1,
+    "Legilimens": 1,
+    "Levicorpus": 4,
+    "Liberacorpus": 1,
+    "Locomotor Mortis": 1,
+    "Lumos": 3,
+    "Morsmorde": 1,
+    "Muffliato": 6,
+    "Oppungno": 1,
+    "Petrificus Totalus": 5,
+    "Protego": 1,
+    "Reducto": 2,
+    "Relashio": 1,
+    "Rennervate": 2,
+    "Sectumsepra": 6,
+    "Specialis Revelio": 2,
+    "Stupefy": 1,
+    "Tergeo": 1
+  },
+  "chapters": [{
+    "name": "",
+    "interactions": [],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }, {
-	"book": "Harry Potter and the Deathly Hallows",
-	"deaths": [],
-	"locations": [],
-	"movie_gross": 2281,
-	"book_gross" : 850,
-	"spells": {
-		"Accio": 12,
-		"Avada Kedavra": 7,
-		"Capacious Extremis": 1,
-		"Cave Inimicum": 2,
-		"Confringo": 2,
-		"Crucio": 4,
-		"Defodio": 1,
-		"Deprimo": 1,
-		"Descendo": 2,
-		"Duro": 1,
-		"Erecto": 1,
-		"Expecto Patronum": 6,
-		"Expelliarmus": 8,
-		"Expulso": 1,
-		"Finite Incantatem": 1,
-		"Geminio": 1,
-		"Glisseo": 1,
-		"Homenum Revelio": 2,
-		"Impedimenta": 1,
-		"Imperio": 6,
-		"Impervius": 2,
-		"Levicorpus": 1,
-		"Liberacorpus": 1,
-		"Lumos": 6,
-		"Meteolojinx Recanto": 1,
-		"Muffliato": 5,
-		"Nox": 1,
-		"Obliviate": 2,
-		"Obscuro": 1,
-		"Petrificus Totalus": 1,
-		"Piertotum Locomotor": 1,
-		"Prior Incantato": 1,
-		"Protego": 4,
-		"Protego Horribilis": 1,
-		"Protego Totalum": 2,
-		"Reducio": 1,
-		"Relashio": 3,
-		"Reparo": 3,
-		"Repello Muggletum": 1,
-		"Salvio Hexia": 2,
-		"Sectumsemmpra": 2,
-		"Silencio": 1,
-		"Sonorus": 1,
-		"Stupefy": 9,
-		"Tergeo": 2,
-		"Wingardium Leviosa": 1
-	},
-	"chapters": [{
-		"name": "",
-		"interactions": [],
-		"word_count": 100,
-		"battles": [],
-		"horcruxes": []
-	}]
+  "book": "Harry Potter and the Deathly Hallows",
+  "deaths": [],
+  "locations": [],
+  "movie_gross": 2281,
+  "book_gross": 850,
+  "spells": {
+    "Accio": 12,
+    "Avada Kedavra": 7,
+    "Capacious Extremis": 1,
+    "Cave Inimicum": 2,
+    "Confringo": 2,
+    "Crucio": 4,
+    "Defodio": 1,
+    "Deprimo": 1,
+    "Descendo": 2,
+    "Duro": 1,
+    "Erecto": 1,
+    "Expecto Patronum": 6,
+    "Expelliarmus": 8,
+    "Expulso": 1,
+    "Finite Incantatem": 1,
+    "Geminio": 1,
+    "Glisseo": 1,
+    "Homenum Revelio": 2,
+    "Impedimenta": 1,
+    "Imperio": 6,
+    "Impervius": 2,
+    "Levicorpus": 1,
+    "Liberacorpus": 1,
+    "Lumos": 6,
+    "Meteolojinx Recanto": 1,
+    "Muffliato": 5,
+    "Nox": 1,
+    "Obliviate": 2,
+    "Obscuro": 1,
+    "Petrificus Totalus": 1,
+    "Piertotum Locomotor": 1,
+    "Prior Incantato": 1,
+    "Protego": 4,
+    "Protego Horribilis": 1,
+    "Protego Totalum": 2,
+    "Reducio": 1,
+    "Relashio": 3,
+    "Reparo": 3,
+    "Repello Muggletum": 1,
+    "Salvio Hexia": 2,
+    "Sectumsemmpra": 2,
+    "Silencio": 1,
+    "Sonorus": 1,
+    "Stupefy": 9,
+    "Tergeo": 2,
+    "Wingardium Leviosa": 1
+  },
+  "chapters": [{
+    "name": "",
+    "interactions": [],
+    "word_count": 100,
+    "battles": [],
+    "horcruxes": []
+  }]
 }]
