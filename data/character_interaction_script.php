@@ -186,22 +186,28 @@ foreach ($files as $file) {
     for ($i = 1; $i < count($chapters); $i++) {
         echo $i . "<br>";
         $chapter_text = $chapters[$i];
+        $chapterChars = [];
         foreach ($characters as $name) {
             $splitName = explode(" ", $name);
             $firstName = $splitName[0] . " ";
             if (strpos($chapter_text, $name)) {
-                echo $name . "<br>";
-                array_push($inBook,$name);
+                if(!(in_array("Draco Malfoy", $chapterChars) && strcmp("Malfoy", $name) == 0)
+                && !(in_array("Malfoy", $chapterChars) && strcmp("Draco Malfoy", $name) == 0)){
+                    echo $name . "<br>";
+                    array_push($chapterChars, $name);
+                }
             } else if (strpos($chapter_text, $firstName)) {
                 $mr = strcmp("Mr.", substr($firstName, 0, 3));
                 $mrs = strcmp("Mrs.", substr($firstName, 0, 4));
                 $tom = strcmp("Tom ", $firstName);
                 if ($mr != 0 && $mrs != 0 && $tom != 0) {
                     echo $name . "<br>";
-                    array_push($inBook,$name);
+                    array_push($chapterChars,$name);
                 }
             }
         }
+        $chapterChars = array_unique($chapterChars);
+        array_push($inBook, $chapterChars);
     }
-    echo "<br>******" . count(array_unique($inBook));
+    echo "<br>******" . count($inBook);
 }
