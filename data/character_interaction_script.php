@@ -23,7 +23,7 @@ foreach ($files as $file) {
         "Helena Ravenclaw",
         "Rowena Ravenclaw",
         "Mary Riddle",
-        "Thomas Riddle",
+        "Tom Riddle",
         "Tom Riddle Sr.",
         "Voldemort",
         "Augustus Rookwood",
@@ -182,6 +182,7 @@ foreach ($files as $file) {
         "Parvati Patil",
         "Pettigrew"
     ];
+    $inBook = [];
     for ($i = 1; $i < count($chapters); $i++) {
         echo $i . "<br>";
         $chapter_text = $chapters[$i];
@@ -190,13 +191,17 @@ foreach ($files as $file) {
             $firstName = $splitName[0] . " ";
             if (strpos($chapter_text, $name)) {
                 echo $name . "<br>";
+                array_push($inBook,$name);
             } else if (strpos($chapter_text, $firstName)) {
                 $mr = strcmp("Mr.", substr($firstName, 0, 3));
                 $mrs = strcmp("Mrs.", substr($firstName, 0, 4));
-                if ($mr != 0 && $mrs != 0) {
+                $tom = strcmp("Tom ", $firstName);
+                if ($mr != 0 && $mrs != 0 && $tom != 0) {
                     echo $name . "<br>";
+                    array_push($inBook,$name);
                 }
             }
         }
     }
+    echo "<br>******" . count(array_unique($inBook));
 }
