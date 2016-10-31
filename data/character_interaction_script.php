@@ -21,20 +21,15 @@ foreach ($files as $file) {
         "Quirrell",
         "Millicent Bulstrode",
         "Helena Ravenclaw",
-        "Rowena Ravenclaw",
-        "Mary Riddle",
         "Tom Riddle",
-        "Tom Riddle Sr.",
         "Voldemort",
         "Augustus Rookwood",
-        "Newt Scamander",
         "Rufus Scrimgeour",
         "Kingsley Shacklebolt",
         "Charity Burbage",
         "Stan Shunpike",
         "Rita Skeeter",
         "Slughorn",
-        "Salazar Slytherin",
         "Hepzibah Smith",
         "Zacharias Smith",
         "Snape",
@@ -50,7 +45,6 @@ foreach ($files as $file) {
         "Trelawney",
         "Umbridge",
         "Romilda Vane",
-        "Septima Vector",
         "Arthur Weasley",
         "Alecto Carrow",
         "Bill Weasley",
@@ -74,8 +68,6 @@ foreach ($files as $file) {
         "Crookshanks",
         "Dobby",
         "Fang",
-        "Fat Friar",
-        "Fat Lady",
         "Reginald Cattermole",
         "Fawkes",
         "Firenze",
@@ -87,7 +79,7 @@ foreach ($files as $file) {
         "Moaning Myrtle",
         "Mrs. Norris",
         "Nagini",
-        "Mary Cattermole",
+        "Mrs. Cattermole",
         "Headless Nick",
         "Norbert",
         "Peeves",
@@ -104,8 +96,8 @@ foreach ($files as $file) {
         "Crabbe",
         "Colin Creevey",
         "Dirk Cresswell",
-        "Barty Crouch Sr.",
-        "Barty Crouch Jr.",
+        "Barty Crouch",
+        "Mr. Crouch",
         "Fleur Delacour",
         "Gabrielle Delacour",
         "Dedalus Diggle",
@@ -118,40 +110,37 @@ foreach ($files as $file) {
         "Albus Dumbledore",
         "Ariana Dumbledore",
         "Dudley Dursley",
-        "Cuthbert Binns",
+        "Binns",
         "Marge Dursley",
         "Petunia Dursley",
         "Vernon Dursley",
         "Marietta Edgecombe",
-        "Arabella Figg",
+        "Mrs. Figg",
         "Filch",
         "Justin Finch-Fletchley",
         "Seamus Finnigan",
         "Regulus Black",
         "Mundungus Fletcher",
         "Flitwick",
-        "Cornelius Fudge",
+        "Fudge",
         "Marvolo Gaunt",
         "Merope Gaunt",
         "Morfin Gaunt",
         "Anthony Goldstein",
-        "Goyle Sr",
-        "Gregory Goyle",
+        "Goyle",
         "Hermione Granger",
         "Sirius Black",
         "Gregorovitch",
         "Fenrir Greyback",
         "Gellert Grindelwald",
-        "Wilhelmina Grubbly-Plank",
-        "Godric Gryffindor",
+        "Grubbly-Plank",
         "Hagrid",
         "Hooch",
-        "Helga Hufflepuff",
         "Angelina Johnson",
         "Lee Jordan",
         "Amelia Bones",
-        "Igor Karkaroff",
-        "Viktor Krum",
+        "Karkaroff",
+        "Krum",
         "Bellatrix Lestrange",
         "Gilderoy Lockhart",
         "Alice Longbottom",
@@ -174,8 +163,6 @@ foreach ($files as $file) {
         "Cormac McLaggen",
         "Moody",
         "Theodore Nott",
-        "Bob Ogden",
-        "Tiberius Ogden",
         "Ollivander",
         "Pansy Parkinson",
         "Padma Patil",
@@ -195,6 +182,7 @@ foreach ($files as $file) {
                 && !(in_array("Malfoy", $chapterChars) && strcmp("Draco Malfoy", $name) == 0)){
                     echo $name . "<br>";
                     array_push($chapterChars, $name);
+                    array_push($inBook, $name);
                 }
             } else if (strpos($chapter_text, $firstName)) {
                 $mr = strcmp("Mr.", substr($firstName, 0, 3));
@@ -203,11 +191,10 @@ foreach ($files as $file) {
                 if ($mr != 0 && $mrs != 0 && $tom != 0) {
                     echo $name . "<br>";
                     array_push($chapterChars,$name);
+                    array_push($inBook, $name);
                 }
             }
         }
-        $chapterChars = array_unique($chapterChars);
-        array_push($inBook, $chapterChars);
     }
-    echo "<br>******" . count($inBook);
+    echo '******'. count(array_unique($inBook));
 }
