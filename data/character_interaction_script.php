@@ -203,13 +203,13 @@ foreach ($files as $file) {
         foreach($chapter as $character){
             foreach($chapter as $char2){
                 if(strcmp($character, $char2) != 0 ){
-                    if(!array_key_exists($character.$char2, $charCount) &&
-                        !array_key_exists($char2.$character, $charCount)){
-                        $charCount[$character.$char2] = 1;
-                    } else if (array_key_exists($character.$char2, $charCount)){
-                        $charCount[$character.$char2] += 1;
-                    } else if(array_key_exists($char2.$character, $charCount)) {
-                        $charCount[$char2 . $character] += 1;
+                    if(!array_key_exists($character. '*'. $char2, $charCount) &&
+                        !array_key_exists($char2. '*'.$character, $charCount)){
+                        $charCount[$character. '*'.$char2] = 1;
+                    } else if (array_key_exists($character. '*'.$char2, $charCount)){
+                        $charCount[$character. '*'.$char2] += 1;
+                    } else if(array_key_exists($char2. '*'.$character, $charCount)) {
+                        $charCount[$char2 . '*'. $character] += 1;
                     }
                 }
             }
