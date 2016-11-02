@@ -10,6 +10,7 @@
         d3.json('data/books.json', function(error, data) {
             bookData = data;
             console.log(bookData);
+            spellChart.update(bookData);
         })
     }
 
