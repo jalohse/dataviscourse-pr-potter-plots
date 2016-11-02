@@ -16,7 +16,7 @@ SpellChart.prototype.update = function (data) {
                 total += spells[spell];
             }
             var book = data[i].book.replace('Harry Potter and the ', '');
-            spellData.push({book : book, number: total});
+            spellData.push({book : book, number: total, color: data[i].color});
         }
     } else {
         //TODO handle individual book data
@@ -63,6 +63,8 @@ SpellChart.prototype.update = function (data) {
         }).attr("width", xScale.bandwidth())
         .attr("height", function(d){
             return 200 - yScale(d.number);
-        }).style("fill", "red");
+        }).style("fill", function(d){
+            return d.color;
+        });
     bars = newBars.merge(bars);
 };

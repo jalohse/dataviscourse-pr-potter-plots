@@ -1,5 +1,6 @@
 [{
   "book": "Harry Potter and the Sorcerer's Stone",
+  "color": "#3B1754",
   "deaths": [],
   "locations": [],
   "movie_gross": 974,
@@ -49,6 +50,7 @@
   }]
 }, {
   "book": "Harry Potter and the Chamber of Secrets",
+  "color": "#7C1F2E",
   "deaths": [],
   "locations": [],
   "movie_gross": 878,
@@ -75,6 +77,7 @@
   }]
 }, {
   "book": "Harry Potter and the Prisoner of Azkaban",
+  "color": "#294550",
   "deaths": [],
   "locations": [],
   "movie_gross": 796,
@@ -102,6 +105,7 @@
   }]
 }, {
   "book": "Harry Potter and the Goblet of Fire",
+  "color": "#523026",
   "deaths": [],
   "locations": [],
   "movie_gross": 896,
@@ -148,6 +152,7 @@
   }]
 }, {
   "book": "Harry Potter and the Order of the Phoenix",
+  "color": "#063769",
   "deaths": [],
   "locations": [],
   "movie_gross": 939,
@@ -191,6 +196,7 @@
   }]
 }, {
   "book": "Harry Potter and the Half Blood Prince",
+  "color": "#204D36",
   "deaths": [],
   "locations": [],
   "movie_gross": 934,
@@ -236,6 +242,7 @@
   }]
 }, {
   "book": "Harry Potter and the Deathly Hallows",
+  "color": "#B14B1A",
   "deaths": [],
   "locations": [],
   "movie_gross": 2281,
