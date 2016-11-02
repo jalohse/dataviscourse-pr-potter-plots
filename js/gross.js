@@ -9,7 +9,7 @@ function GrossChart(data) {
         .attr("width", width)
         .attr("height", height);
 
-    var properties = ["movie_gross", "book_gross"];
+    var properties = ["book_gross", "movie_gross"];
     data.forEach(function (d) {
         d.gross = properties.map(function (property) {
             var book = d.book.replace('Harry Potter and the ', '');
@@ -93,7 +93,11 @@ function GrossChart(data) {
         .attr("height", function (d) {
             return barHeight - yScale(d.number);
         }).style("fill", function (d) {
-        return d.color;
+        if(d.property == 'movie_gross'){
+            return 'red';
+        } else {
+            return d.color;
+        }
     });
 
 }
