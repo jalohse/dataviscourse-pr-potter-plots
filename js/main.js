@@ -24,10 +24,22 @@
                 .attr("x", function (d, i) {
                     return i * tabWidth;
                 });
-            d3.select("#nav").append("rect").attr("width", tabWidth)
+            d3.select("#nav").append("rect")
+                .attr("id", "all")
+                .attr("width", tabWidth)
                 .attr("height", 50)
                 .attr("x", tabWidth * bookData.length)
                 .style("fill", 'black');
+
+            d3.selectAll("#nav rect").on("click", function(d){
+                if(this.getAttribute("id") == "all"){
+                    console.log("change to all");
+                    spellChart.update(bookData);
+                } else {
+                    console.log("change to: " + d.book);
+                    spellChart.update([d])
+                }
+            });
 
             var text = d3.select("#nav g").selectAll("text").data(bookData);
             text.enter().append("text")

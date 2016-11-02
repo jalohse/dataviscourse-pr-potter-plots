@@ -8,7 +8,8 @@ var barHeight = 200;
 var leftOffset = 40;
 
 SpellChart.prototype.update = function (data) {
-    var spellChart = d3.select("#spells").append("svg")
+
+    var spellChart = d3.select("#spells")
         .attr("width", width)
         .attr("height", height);
     var spellData = [];
@@ -23,7 +24,10 @@ SpellChart.prototype.update = function (data) {
             spellData.push({name : data[i].book, number: total, color: data[i].color});
         }
     } else {
-        //TODO handle individual book data
+        var spells = data[0].spells;
+        for(spell in spells){
+            spellData.push({name: spell, number: spells[spell], color: data[0].color});
+        }
     }
 
     var maxSpellsCast = d3.max(spellData, function (d) {
@@ -40,7 +44,7 @@ SpellChart.prototype.update = function (data) {
 
     var xAxis = d3.axisBottom();
     xAxis.scale(xScale);
-    spellChart.append("g")
+    spellChart.select("#xAxis")
         .call(xAxis)
         .attr("transform", "translate(" + 0 + "," + barHeight + ")")
         .selectAll("text").style("text-anchor", "end")
@@ -51,14 +55,13 @@ SpellChart.prototype.update = function (data) {
         });
     var yAxis = d3.axisLeft();
     yAxis.scale(yScale);
-    spellChart.append('g')
+    spellChart.select("#yAxis")
         .attr("transform", "translate(" + leftOffset + ", 0)")
         .call(yAxis);
 
-    var bars = spellChart.append('g')
-        .selectAll('rect');
-    var barData = bars.data(spellData);
-    var newBars = barData
+    var bars = spellChart.select("#bars")
+        .selectAll('rect').data(spellData);
+    var newBars = bars
         .enter().append('rect')
         .attr('x', function(d){
             return xScale(d.name);
@@ -71,7 +74,7 @@ SpellChart.prototype.update = function (data) {
             return d.color;
         });
     bars.exit().remove();
-    bars = newBars.merge(bars);
+    bars = bars.merge(newBars);
     bars.attr('x', function(d){
         return xScale(d.name);
     }).attr("y", function(d){
