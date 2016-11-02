@@ -11,6 +11,7 @@
             bookData = data;
             console.log(bookData);
             spellChart.update(bookData);
+            new GrossChart(data);
         })
     }
 
