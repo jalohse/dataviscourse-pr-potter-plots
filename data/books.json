@@ -1,5 +1,5 @@
 [{
-  "book": "Harry Potter and the Sorcerer's Stone",
+  "book": " Sorcerer's Stone",
   "color": "#3B1754",
   "deaths": [],
   "locations": [],
@@ -49,7 +49,7 @@
     "horcruxes": []
   }]
 }, {
-  "book": "Harry Potter and the Chamber of Secrets",
+  "book": " Chamber of Secrets",
   "color": "#7C1F2E",
   "deaths": [],
   "locations": [],
@@ -76,7 +76,7 @@
     "horcruxes": []
   }]
 }, {
-  "book": "Harry Potter and the Prisoner of Azkaban",
+  "book": " Prisoner of Azkaban",
   "color": "#294550",
   "deaths": [],
   "locations": [],
@@ -104,7 +104,7 @@
     "horcruxes": []
   }]
 }, {
-  "book": "Harry Potter and the Goblet of Fire",
+  "book": " Goblet of Fire",
   "color": "#523026",
   "deaths": [],
   "locations": [],
@@ -151,7 +151,7 @@
     "horcruxes": []
   }]
 }, {
-  "book": "Harry Potter and the Order of the Phoenix",
+  "book": " Order of the Phoenix",
   "color": "#063769",
   "deaths": [],
   "locations": [],
@@ -195,7 +195,7 @@
     "horcruxes": []
   }]
 }, {
-  "book": "Harry Potter and the Half Blood Prince",
+  "book": " Half Blood Prince",
   "color": "#204D36",
   "deaths": [],
   "locations": [],
@@ -241,7 +241,7 @@
     "horcruxes": []
   }]
 }, {
-  "book": "Harry Potter and the Deathly Hallows",
+  "book": " Deathly Hallows",
   "color": "#B14B1A",
   "deaths": [],
   "locations": [],

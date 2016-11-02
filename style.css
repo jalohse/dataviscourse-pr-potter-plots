@@ -8,3 +8,8 @@ h1 {
     font-family: "Parry Hotter";
     font-size: 5em;
 }
+
+#nav text {
+    stroke-width: 0.1px;
+    fill: white;
+}

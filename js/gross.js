@@ -12,8 +12,7 @@ function GrossChart(data) {
     var properties = ["book_gross", "movie_gross"];
     data.forEach(function (d) {
         d.gross = properties.map(function (property) {
-            var book = d.book.replace('Harry Potter and the ', '');
-            return {name: book, property: property, number: d[property], color: d.color};
+            return {name: d.book, property: property, number: d[property], color: d.color};
         });
     });
 
@@ -62,8 +61,7 @@ function GrossChart(data) {
     var bookMovie = grossChart.selectAll(".group")
         .data(data).enter().append("g")
         .attr("transform", function(d){
-            var book = d.book.replace('Harry Potter and the ', '');
-            return "translate (" + xScale(book) + ",0)";
+            return "translate (" + xScale(d.book) + ",0)";
         });
 
     var bars = bookMovie.append('g')

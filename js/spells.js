@@ -20,8 +20,7 @@ SpellChart.prototype.update = function (data) {
             for(spell in spells){
                 total += spells[spell];
             }
-            var book = data[i].book.replace('Harry Potter and the ', '');
-            spellData.push({name : book, number: total, color: data[i].color});
+            spellData.push({name : data[i].book, number: total, color: data[i].color});
         }
     } else {
         //TODO handle individual book data
