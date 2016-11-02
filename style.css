@@ -9,6 +9,11 @@ h1 {
     font-size: 5em;
 }
 
+#nav {
+    display: block;
+    margin: auto;
+}
+
 #nav text {
     stroke-width: 0.1px;
     fill: white;
