@@ -1,10 +1,13 @@
-var width = 300;
-var height = 400;
-var barHeight = 200;
-var leftOffset = 40;
+
 
 function GrossChart(data) {
 
+    var width = 900;
+    var height = 400;
+    var barHeight = 300;
+    var leftOffset = 40;
+
+    console.log(width);
     var grossChart = d3.select("#gross").append("svg")
         .attr("width", width)
         .attr("height", height);
@@ -62,12 +65,9 @@ function GrossChart(data) {
     grossChart.append("g")
         .call(xAxis)
         .attr("transform", "translate(" + 0 + "," + barHeight + ")")
-        .selectAll("text").style("text-anchor", "end")
+        .selectAll("text").style("text-anchor", "middle")
         .attr("dx", "-.8em")
-        .attr("dy", "-.2em")
-        .attr("transform", function () {
-            return "rotate(-90)"
-        });
+        .attr("dy", ".5em");
     var yAxis = d3.axisLeft();
     yAxis.scale(yScale);
     grossChart.append('g')

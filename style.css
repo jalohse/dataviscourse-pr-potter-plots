@@ -17,6 +17,7 @@ h1 {
 #nav text {
     stroke-width: 0.1px;
     fill: white;
+    font-size: 20px ;
 }
 
 .hidden {
@@ -25,4 +26,8 @@ h1 {
 
 svg {
     padding-top: 10px;
+}
+
+text {
+    font-size: 12px;
 }

@@ -2,12 +2,13 @@ function SpellChart() {
 
 }
 
-var width = 300;
-var height = 400;
-var barHeight = 200;
-var leftOffset = 40;
 
 SpellChart.prototype.update = function (data) {
+
+    var width = 300;
+    var height = 400;
+    var barHeight = 200;
+    var leftOffset = 40;
 
     var spellChart = d3.select("#spells")
         .attr("width", width)
