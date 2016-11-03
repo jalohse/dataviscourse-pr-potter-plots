@@ -41,6 +41,22 @@ function GrossChart(data) {
         .domain([0, maxGross])
         .range([barHeight, 0]);
 
+    var defs = grossChart.append("defs");
+    defs.selectAll("pattern")
+        .data(bookData).enter().append("pattern")
+        .attr('id',function (d) {
+            return "pattern_" + d.color;
+        })
+        .attr("width", 80)
+        .attr("height", 10)
+        .attr('patternUnits',"userSpaceOnUse")
+        .append('rect')
+        .attr("width", 80)
+        .attr("height", 5)
+        .attr("fill", function (d) {
+           return d.color;
+        });
+
     var xAxis = d3.axisBottom();
     xAxis.scale(xScale);
     grossChart.append("g")
@@ -78,9 +94,8 @@ function GrossChart(data) {
         }).attr("width", x2Scale.bandwidth())
         .attr("height", function (d) {
             return barHeight - yScale(d.number);
-        }).style("fill", function (d) {
-            return d.color;
-        });
+        }).style("fill", "red");
+
     bars.exit().remove();
     bars = newBars.merge(bars);
     bars.attr('x', function (d) {
@@ -90,10 +105,14 @@ function GrossChart(data) {
     }).attr("width", x2Scale.bandwidth())
         .attr("height", function (d) {
             return barHeight - yScale(d.number);
-        }).style("fill", function (d) {
+        }).style("fill", function (d,i) {
         if(d.property == 'movie_gross'){
-            return 'red';
+            return "url(#pattern_"+ d.color + ")";
         } else {
+            return d.color;
+        }
+    }).attr("stroke", function(d){
+        if(d.property == 'movie_gross'){
             return d.color;
         }
     });
