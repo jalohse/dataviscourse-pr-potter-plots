@@ -33,9 +33,17 @@
 
             d3.selectAll("#nav rect").on("click", function(d){
                 if(this.getAttribute("id") == "all"){
+                    d3.select("#gross_head").classed("hidden", false);
+                    d3.select("#gross").classed("hidden", false);
+                    d3.select("#story_head").classed("hidden", true);
+                    d3.select("#story_head").classed("hidden", true);
                     console.log("change to all");
                     spellChart.update(bookData);
                 } else {
+                    d3.select("#gross_head").attr("class", "hidden");
+                    d3.select("#gross").attr("class", "hidden");
+                    d3.select("#story_head").classed("hidden", false);
+                    d3.select("#story_head").classed("hidden", false);
                     console.log("change to: " + d.book);
                     spellChart.update([d])
                 }
