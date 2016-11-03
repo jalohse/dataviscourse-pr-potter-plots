@@ -40,17 +40,17 @@ function GrossChart(data) {
                 return i.name;
             });
         })).range([leftOffset, width - 60])
-        .padding(.05);
+        .padding(.1);
 
     var x2Scale = d3.scaleBand()
         .domain(properties)
         .rangeRound([0, xScale.bandwidth()])
-        .padding(.05);
+        .padding(.07);
 
     var x3Scale = d3.scaleBand()
         .domain(twoMovieProperties)
         .rangeRound([0, xScale.bandwidth() * 1.5])
-        .padding(.05);
+        .padding(.1);
 
     var yScale = d3.scaleLinear()
         .domain([0, maxGross])
@@ -140,8 +140,8 @@ function GrossChart(data) {
     d3.select("g path").attr("d", "M40.5,6V0.5H890.5V6");
     var ticks = d3.selectAll("g.tick")._groups[0];
     for(i = 0; i < ticks.length; i++){
-        if(ticks[i].getAttribute("transform") == "translate(780.4255319148937,0)"){
-            var newVal = 780.4255319148937 + xScale.bandwidth()/4 ;
+        if(ticks[i].getAttribute("transform") == "translate(778.0281690140844,0)"){
+            var newVal = 778.0281690140844 + xScale.bandwidth()/4 ;
             ticks[i].setAttribute("transform", "translate(" + newVal + ", 0)");
         }
     }
