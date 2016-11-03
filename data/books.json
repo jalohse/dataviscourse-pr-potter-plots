@@ -245,7 +245,8 @@
   "color": "#B14B1A",
   "deaths": [],
   "locations": [],
-  "movie_gross": 2281,
+  "movie1_gross": 960,
+  "movie2_gross": 1341,
   "book_gross": 850,
   "spells": {
     "Accio": 12,

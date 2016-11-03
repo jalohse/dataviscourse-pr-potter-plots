@@ -14,9 +14,16 @@ function GrossChart(data) {
 
     var properties = ["book_gross", "movie_gross"];
     data.forEach(function (d) {
-        d.gross = properties.map(function (property) {
-            return {name: d.book, property: property, number: d[property], color: d.color};
-        });
+        if(d.book != " Deathly Hallows") {
+            d.gross = properties.map(function (property) {
+                return {name: d.book, property: property, number: d[property], color: d.color};
+            });
+        }
+    });
+    var twoMovieProperties = ["book_gross", "movie1_gross", "movie2_gross"];
+    var dh = data[data.length -1];
+    dh.gross = twoMovieProperties.map(function (property) {
+        return {name: dh.book, property: property, number: dh[property], color: dh.color};
     });
 
 
@@ -32,12 +39,17 @@ function GrossChart(data) {
             return d3.max(d.gross, function(i){
                 return i.name;
             });
-        })).range([leftOffset, width])
-        .padding(.1);
+        })).range([leftOffset, width - 60])
+        .padding(.05);
 
     var x2Scale = d3.scaleBand()
         .domain(properties)
         .rangeRound([0, xScale.bandwidth()])
+        .padding(.05);
+
+    var x3Scale = d3.scaleBand()
+        .domain(twoMovieProperties)
+        .rangeRound([0, xScale.bandwidth() * 1.5])
         .padding(.05);
 
     var yScale = d3.scaleLinear()
@@ -99,23 +111,40 @@ function GrossChart(data) {
     bars.exit().remove();
     bars = newBars.merge(bars);
     bars.attr('x', function (d) {
+        if(d.name == " Deathly Hallows"){
+            return x3Scale(d.property);
+        }
         return x2Scale(d.property);
     }).attr("y", function (d) {
         return yScale(d.number);
-    }).attr("width", x2Scale.bandwidth())
+    }).attr("width", function(d){
+        if(d.name == " Deathly Hallows"){
+            return x3Scale.bandwidth();
+        }
+        return x2Scale.bandwidth()
+    })
         .attr("height", function (d) {
             return barHeight - yScale(d.number);
-        }).style("fill", function (d,i) {
-        if(d.property == 'movie_gross'){
+        }).style("fill", function (d) {
+        if(d.property.includes("movie")){
             return "url(#pattern_"+ d.color + ")";
         } else {
             return d.color;
         }
     }).attr("stroke", function(d){
-        if(d.property == 'movie_gross'){
+        if(d.property.includes("movie")){
             return d.color;
         }
     });
+
+    d3.select("g path").attr("d", "M40.5,6V0.5H890.5V6");
+    var ticks = d3.selectAll("g.tick")._groups[0];
+    for(i = 0; i < ticks.length; i++){
+        if(ticks[i].getAttribute("transform") == "translate(780.4255319148937,0)"){
+            var newVal = 780.4255319148937 + xScale.bandwidth()/4 ;
+            ticks[i].setAttribute("transform", "translate(" + newVal + ", 0)");
+        }
+    }
 
 }
 
