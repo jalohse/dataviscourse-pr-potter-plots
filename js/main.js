@@ -2,6 +2,20 @@
     var instance = null;
     var tabWidth = 200;
 
+    function switchColors(current, i){
+        var style = current.getAttribute("style");
+        console.log(style);
+        style = style.replace("fill: ", "");
+        style = style.replace(";", "");
+        var text = d3.selectAll("#nav text")._groups[0][i];
+        var textFill = text.getAttribute("style");
+        textFill = textFill.replace("fill: ", "").replace(";", "");
+        current.setAttribute("style", "fill: " + textFill);
+        text.setAttribute("style", "fill: " + style);
+        current.setAttribute("stroke", style);
+    }
+
+
     function init() {
         var spellChart = new SpellChart();
 
@@ -15,7 +29,7 @@
                 .attr("height", 50)
                 .attr("x", function (d, i) {
                     return i * tabWidth;
-                }).style("fill", function(d){
+                }).style("fill", function (d) {
                     return d.color;
                 });
             tabs = newTabs.merge(tabs);
@@ -23,29 +37,53 @@
                 .attr("height", 50)
                 .attr("x", function (d, i) {
                     return i * tabWidth;
-                });
+                }).attr("stroke", function (d) {
+                    return d.color;
+            });
             d3.select("#nav").append("rect")
                 .attr("id", "all")
                 .attr("width", tabWidth)
                 .attr("height", 50)
                 .attr("x", tabWidth * bookData.length)
-                .style("fill", 'black');
+                .style("fill", 'white')
+                .attr("stroke", "black")
+                .attr("class", "selected");
 
-            d3.selectAll("#nav rect").on("click", function(d){
-                if(this.getAttribute("id") == "all"){
-                    d3.select("#gross_head").classed("hidden", false);
-                    d3.select("#gross").classed("hidden", false);
-                    d3.select("#story_head").classed("hidden", true);
-                    d3.select("#story_head").classed("hidden", true);
-                    console.log("change to all");
-                    spellChart.update(bookData);
-                } else {
-                    d3.select("#gross_head").attr("class", "hidden");
-                    d3.select("#gross").attr("class", "hidden");
-                    d3.select("#story_head").classed("hidden", false);
-                    d3.select("#story_head").classed("hidden", false);
-                    console.log("change to: " + d.book);
-                    spellChart.update([d])
+            d3.selectAll("#nav rect").on("click", function (d, i) {
+                if(this.getAttribute("class") != "selected") {
+                    var alreadySelected = d3.select(".selected")._groups[0][0];
+                    if(alreadySelected) {
+                        var selectedFill = alreadySelected.getAttribute("stroke");
+                        alreadySelected.setAttribute("style", "fill: " + selectedFill);
+                        text = d3.selectAll("#nav text")._groups[0];
+                        for (j = 0; j < text.length; j++) {
+                            if (text[j].getAttribute("style") == "fill: " + selectedFill
+                            || text[j].getAttribute("style") == "fill: " + selectedFill +";") {
+                                text[j].setAttribute("style", "fill: " + "white");
+                            }
+                        }
+                        alreadySelected.removeAttribute("class");
+                    }
+                    switchColors(this, i);
+                    this.setAttribute("class", "selected");
+
+
+
+                    if (this.getAttribute("id") == "all") {
+                        d3.select("#gross_head").classed("hidden", false);
+                        d3.select("#gross").classed("hidden", false);
+                        d3.select("#story_head").classed("hidden", true);
+                        d3.select("#story_head").classed("hidden", true);
+                        console.log("change to all");
+                        spellChart.update(bookData);
+                    } else {
+                        d3.select("#gross_head").attr("class", "hidden");
+                        d3.select("#gross").attr("class", "hidden");
+                        d3.select("#story_head").classed("hidden", false);
+                        d3.select("#story_head").classed("hidden", false);
+                        console.log("change to: " + d.book);
+                        spellChart.update([d])
+                    }
                 }
             });
 
@@ -54,13 +92,15 @@
                 .text(function (d) {
                     return d.book;
                 }).attr("x", function (d, i) {
-                return i * tabWidth + tabWidth/2;
-                }).attr("y", 25)
-                .attr("text-anchor", "middle");
+                return i * tabWidth + tabWidth / 2;
+            }).attr("y", 25)
+                .attr("text-anchor", "middle")
+                .style("fill", "white");
             d3.select("#nav").append("text").text("All")
-                .attr("x", tabWidth * bookData.length + tabWidth/2)
+                .attr("x", tabWidth * bookData.length + tabWidth / 2)
                 .attr("y", 25)
-                .attr("text-anchor", "middle");
+                .attr("text-anchor", "middle")
+                .style("fill", "black");
 
             spellChart.update(bookData);
             new GrossChart(data);
