@@ -4,7 +4,6 @@
 
     function switchColors(current, i){
         var style = current.getAttribute("style");
-        console.log(style);
         style = style.replace("fill: ", "");
         style = style.replace(";", "");
         var text = d3.selectAll("#nav text")._groups[0][i];

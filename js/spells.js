@@ -5,14 +5,10 @@ function SpellChart() {
 
 SpellChart.prototype.update = function (data) {
 
-    var width = 300;
     var height = 400;
     var barHeight = 200;
     var leftOffset = 40;
 
-    var spellChart = d3.select("#spells")
-        .attr("width", width)
-        .attr("height", height);
     var spellData = [];
 
     if(data.length != 1){
@@ -30,6 +26,17 @@ SpellChart.prototype.update = function (data) {
             spellData.push({name: spell, number: spells[spell], color: data[0].color});
         }
     }
+
+    var numSpells = spellData.length;
+
+    var width = numSpells * 100;
+    if(numSpells > 12){
+        width = numSpells * 40;
+    }
+    var spellChart = d3.select("#spells")
+        .attr("width", width)
+        .attr("height", height);
+
 
     var maxSpellsCast = d3.max(spellData, function (d) {
         return d.number;
@@ -56,6 +63,9 @@ SpellChart.prototype.update = function (data) {
         });
     var yAxis = d3.axisLeft();
     yAxis.scale(yScale);
+    if(maxSpellsCast < 10){
+        yAxis.ticks(maxSpellsCast);
+    }
     spellChart.select("#yAxis")
         .attr("transform", "translate(" + leftOffset + ", 0)")
         .call(yAxis);
