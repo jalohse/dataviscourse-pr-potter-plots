@@ -40,3 +40,20 @@ svg {
 text {
     font-size: 12px;
 }
+
+#spells text {
+    font-size: 18px;
+}
+
+.d3-tip {
+    /*line-height: 5;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 400px;
+    border-style: groove;
+    /*padding: 12px;*/
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    pointer-events: none;
+}
