@@ -14,10 +14,15 @@ h1 {
     margin: auto;
 }
 
+.selected_text {
+    font-size: 25px !important;
+}
+
 #nav text {
     stroke-width: 0.1px;
     fill: white;
     font-size: 20px ;
+    pointer-events: none;
 }
 
 #nav rect {

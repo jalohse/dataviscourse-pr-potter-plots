@@ -1,6 +1,6 @@
 (function () {
     var instance = null;
-    var tabWidth = 200;
+    var tabWidth = 250;
 
     function switchColors(current, i){
         var style = current.getAttribute("style");
@@ -12,6 +12,7 @@
         current.setAttribute("style", "fill: " + textFill);
         text.setAttribute("style", "fill: " + style);
         current.setAttribute("stroke", style);
+        text.setAttribute("class", "selected_text");
     }
 
 
@@ -59,6 +60,7 @@
                             if (text[j].getAttribute("style") == "fill: " + selectedFill
                             || text[j].getAttribute("style") == "fill: " + selectedFill +";") {
                                 text[j].setAttribute("style", "fill: " + "white");
+                                text[j].removeAttribute("class");
                             }
                         }
                         alreadySelected.removeAttribute("class");
@@ -92,14 +94,15 @@
                     return d.book;
                 }).attr("x", function (d, i) {
                 return i * tabWidth + tabWidth / 2;
-            }).attr("y", 25)
+            }).attr("y", 32)
                 .attr("text-anchor", "middle")
                 .style("fill", "white");
             d3.select("#nav").append("text").text("All")
                 .attr("x", tabWidth * bookData.length + tabWidth / 2)
-                .attr("y", 25)
+                .attr("y", 32)
                 .attr("text-anchor", "middle")
-                .style("fill", "black");
+                .style("fill", "black")
+                .attr("class", "selected_text");
 
             spellChart.update(bookData);
             new GrossChart(data);
