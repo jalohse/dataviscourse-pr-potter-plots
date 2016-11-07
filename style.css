@@ -34,7 +34,7 @@ h1 {
 }
 
 svg {
-    padding-top: 10px;
+    padding: 10px;
 }
 
 text {
@@ -43,6 +43,11 @@ text {
 
 #spells text {
     font-size: 18px;
+}
+
+#word_count rect {
+    stroke: black;
+    stroke-width: 0.5em;
 }
 
 .d3-tip {

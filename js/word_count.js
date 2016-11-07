@@ -7,6 +7,7 @@ WordChart.prototype.update = function (data) {
 
     var width = 1500;
     var height = 200;
+    var color = "";
 
     var word_counts = [];
     if (data.length == 7) {
@@ -22,6 +23,7 @@ WordChart.prototype.update = function (data) {
             var chapter = data[0].chapters[i];
             word_counts.push({name: chapter.name, number: chapter.word_count, color: data[0].color});
         }
+        color = data[0].color;
     }
 
     var wordChart = d3.select("#word_count")
@@ -32,12 +34,19 @@ WordChart.prototype.update = function (data) {
         return d.number;
     });
 
+    var maxPercent = d3.max(word_counts, function(d){
+        return d.number / totalWords;
+    });
 
     var widthScale = d3.scaleLinear()
         .domain([0, 1])
         .range([0, width]);
 
-    var rects = wordChart.append("g").selectAll("rect").data(word_counts);
+    //Global colorScale to be used consistently by all the charts
+    var colorScale = d3.scaleLinear()
+        .domain([0,maxPercent]).range(["#FFFFFF", color]);
+
+    var rects = wordChart.select("g").selectAll("rect").data(word_counts);
     var newRects = rects.enter().append("rect");
     rects.exit().remove();
     rects = rects.merge(newRects);
@@ -52,6 +61,9 @@ WordChart.prototype.update = function (data) {
             var percent = (d.number / totalWords);
             return percent * 100 + "%";
         }).style("fill", function (d) {
+            if(data.length != 7){
+                return colorScale(d.number / totalWords);
+            }
             return d.color;
         });
 
