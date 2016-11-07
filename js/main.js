@@ -18,6 +18,7 @@
 
     function init() {
         var spellChart = new SpellChart();
+        var wordChart = new WordChart();
 
 
         d3.json('data/books.json', function (error, data) {
@@ -77,13 +78,15 @@
                         d3.select("#story_head").classed("hidden", true);
                         console.log("change to all");
                         spellChart.update(bookData);
+                        wordChart.update(bookData);
                     } else {
                         d3.select("#gross_head").attr("class", "hidden");
                         d3.select("#gross").attr("class", "hidden");
                         d3.select("#story_head").classed("hidden", false);
                         d3.select("#story_head").classed("hidden", false);
                         console.log("change to: " + d.book);
-                        spellChart.update([d])
+                        spellChart.update([d]);
+                        wordChart.update([d]);
                     }
                 }
             });
@@ -105,6 +108,7 @@
                 .attr("class", "selected_text");
 
             spellChart.update(bookData);
+            wordChart.update(bookData);
             new GrossChart(data);
         })
     }
