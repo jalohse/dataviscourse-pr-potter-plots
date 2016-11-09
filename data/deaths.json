@@ -1,0 +1,272 @@
+{
+  "Sorcerer's Stone": [
+    {
+      "name": "Sir Nicholas de Mimsy-Porpington",
+      "killed_by": "Muggles",
+      "cause": "wound"
+    },
+    {
+      "name": "Cuthbert Binns",
+      "killed_by": "",
+      "cause": "natural causes"
+    },
+    {
+      "name": "James Potter",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Lily Potter",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Quirinus Quirrell",
+      "killed_by": "Harry Potter",
+      "cause": "burning"
+    }
+  ],
+  "Chamber of Secrets": [
+    {
+      "name": "Serpent of Slytherin",
+      "killed_by": "Harry Potter",
+      "cause": "wound"
+    },
+    {
+      "name": "Moaning Myrtle",
+      "killed_by": "Serpent of Slytherin",
+      "cause": "other"
+    }
+  ],
+  "Goblet of Fire": [
+    {
+      "name": "Tom Riddle Sr.",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Thomas Riddle",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Mrs. Crouch",
+      "killed_by": "",
+      "cause": "unknown"
+    },
+    {
+      "name": "Mary Riddle",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Evan Rosier",
+      "killed_by": "Alastor Moody",
+      "cause": "unknown"
+    },
+    {
+      "name": "Wilkes",
+      "killed_by": "Aurors",
+      "cause": "unknown"
+    },
+    {
+      "name": "Bertha Jorkins",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Frank Bryce",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Barty Crouch Sr.",
+      "killed_by": "Barty Crouch Jr.",
+      "cause": "killing curse"
+    }, {
+      "name": "Cedric Diggory",
+      "killed_by": "Petter Pettigrew",
+      "cause": "killing curse"
+    }
+  ],
+  "Order of the Phoenix": [
+    {
+      "name": "Sirius Black",
+      "killed_by": "Bellatrix Lestrange",
+      "cause": "other"
+    }
+  ],
+  "Half Blood Prince": [
+    {
+      "name": "Marvolo Gaunt",
+      "killed_by": "",
+      "cause": "other"
+    },
+    {
+      "name": "Merope Gaunt",
+      "killed_by": "",
+      "cause": "natural causes"
+    },
+    {
+      "name": "Hepzibah Smith",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Florean Fortescue",
+      "killed_by": "Death Eaters",
+      "cause": "unknown"
+    },
+    {
+      "name": "Igor Kararoff",
+      "killed_by": "Death Eaters",
+      "cause": "unknown"
+    },{
+      "name": "Aragog",
+      "killed_by": "",
+      "cause": "natural causes"
+    },
+    {
+      "name": "Albus Dumbledore",
+      "killed_by": "Severus Snape",
+      "cause": "killing curse"
+    }
+  ],
+  "Deathly Hallows": [
+    {
+      "name": "Helena Ravenclaw",
+      "killed_by": "Bloody Baron",
+      "cause": "wound"
+    },
+    {
+      "name": "Bloody Baron",
+      "killed_by": "Bloody Baron",
+      "cause": "wound"
+    },
+    {
+      "name": "Antioch Peverell",
+      "killed_by": "",
+      "cause": "wound"
+    },
+    {
+      "name": "Cadmus Peverell",
+      "killed_by": "Cadmus Peverell",
+      "cause": "wound"
+    },
+    {
+      "name": "Ignotus Peverell",
+      "killed_by": "",
+      "cause": "natural causes"
+    },
+    {
+      "name": "Ariana Dumbledore",
+      "killed_by": "Unknown",
+      "cause": "curse"
+    },
+    {
+      "name": "Regulus Black",
+      "killed_by": "Inferi",
+      "cause": "other"
+    },
+    {
+      "name": "Charity Burbage",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Hedwig",
+      "killed_by": "Death Eater",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Alastor Moody",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Rufus Scrimgeor",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Gregorovitch",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Bathilda Bagshot",
+      "killed_by": "Nagini",
+      "cause": "wound"
+    },
+    {
+      "name": "Gellert Grindelwald",
+      "killed_by": "Lord Voldemort",
+      "cause": "killing curse"
+    },
+    {
+      "name": "Peter Pettigrew",
+      "killed_by": "Peter Pettigrew",
+      "cause": "other"
+    },
+    {
+      "name": "Dobby",
+      "killed_by": "Bellatrix Lestrange",
+      "cause": "wound"
+    },
+    {
+      "name": "Bogrod",
+      "killed_by": "Dragon",
+      "cause": "burning"
+    },
+    {
+      "name": "Vincent Crabbe",
+      "killed_by": "Vincent Crabbe",
+      "cause": "burning"
+    },
+    {
+      "name": "Fred Weasley",
+      "killed_by": "Unknown",
+      "cause": "wound"
+    },
+    {
+      "name": "Remus Lupin",
+      "killed_by": "Antonin Dolohov",
+      "cause": "unknown"
+    },
+    {
+      "name": "Nymphadora Tonks",
+      "killed_by": "Bellatrix Lestrange",
+      "cause": "unknown"
+    },
+    {
+      "name": "Lavender Brown",
+      "killed_by": "Fenrir Greyback",
+      "cause": "unknown"
+    },
+    {
+      "name": "Colin Creevy",
+      "killed_by": "Unknown",
+      "cause": "unknown"
+    },
+    {
+      "name": "Severus Snape",
+      "killed_by": "Nagini",
+      "cause": "wound"
+    },
+    {
+      "name": "Nagini",
+      "killed_by": "Neville Longbottom",
+      "cause": "wound"
+    },
+    {
+      "name": "Bellatrix Lestrange",
+      "killed_by": "Molly Weasley",
+      "cause": "curse"
+    },
+    {
+      "name": "Lord Voldemort",
+      "killed_by": "Harry Potter",
+      "cause": "curse"
+    }
+  ]
+}
