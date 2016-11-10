@@ -134,14 +134,14 @@ function GrossChart(data) {
     bars.exit().remove();
     bars = newBars.merge(bars);
     bars.attr('x', function (d) {
-        if (d.name == " Deathly Hallows") {
+        if (d.name == "Deathly Hallows") {
             return x3Scale(d.property);
         }
         return x2Scale(d.property);
     }).attr("y", function (d) {
         return yScale(d.number);
     }).attr("width", function (d) {
-        if (d.name == " Deathly Hallows") {
+        if (d.name == "Deathly Hallows") {
             return x3Scale.bandwidth();
         }
         return x2Scale.bandwidth()
@@ -164,6 +164,7 @@ function GrossChart(data) {
     d3.select("g path").attr("d", "M40.5,6V0.5H890.5V6");
     var ticks = d3.selectAll("g.tick")._groups[0];
     for (i = 0; i < ticks.length; i++) {
+        console.log(ticks[i].attributes);
         if (ticks[i].getAttribute("transform") == "translate(778.0281690140844,0)") {
             var newVal = 778.0281690140844 + xScale.bandwidth() / 4;
             ticks[i].setAttribute("transform", "translate(" + newVal + ", 0)");
