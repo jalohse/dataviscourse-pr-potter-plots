@@ -38,6 +38,13 @@
       "cause": "other"
     }
   ],
+  "Prisoner of Azkaban": [
+    {
+      "name": "Muggles",
+      "killed_by": "Peter Pettigrew",
+      "cause": "curse"
+    }
+  ],
   "Goblet of Fire": [
     {
       "name": "Tom Riddle Sr.",
