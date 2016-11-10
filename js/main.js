@@ -16,10 +16,11 @@
     }
 
 
+
     function init() {
         var spellChart = new SpellChart();
         var wordChart = new WordChart();
-
+        var deathChart = new DeathChart();
 
         d3.json('data/books.json', function (error, data) {
             bookData = data;
@@ -79,6 +80,7 @@
                         console.log("change to all");
                         spellChart.update(bookData);
                         wordChart.update(bookData);
+                        deathChart.update(bookData);
                     } else {
                         d3.select("#gross_head").attr("class", "hidden");
                         d3.select("#gross").attr("class", "hidden");
@@ -87,6 +89,7 @@
                         console.log("change to: " + d.book);
                         spellChart.update([d]);
                         wordChart.update([d]);
+                        deathChart.update([d]);
                     }
                 }
             });
@@ -109,6 +112,7 @@
 
             spellChart.update(bookData);
             wordChart.update(bookData);
+            deathChart.update(bookData);
             new GrossChart(data);
         })
     }
