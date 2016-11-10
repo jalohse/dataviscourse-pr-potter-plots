@@ -70,9 +70,8 @@ DeathChart.prototype.update = function(data){
     var partition = d3.partition().padding(0);
     root = d3.hierarchy(root[0]);
     root.sum(function(d) {
-        return !!d.children ? d.children.length : 1;
+        return d.children ? 0 : 1;
     });
-    console.log('heirarchy', root);
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -87,7 +86,6 @@ DeathChart.prototype.update = function(data){
         })
         .append("title")
             .text(function(d) {
-                console.log('TEXT', d);
                 return d.data.name;
             });
         // .style("fill-rule", "evenodd");
