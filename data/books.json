@@ -2392,7 +2392,7 @@
       {"spell": "Imperio",
         "caster": "McGonagall",
         "number":1
-      },
+      }
     ],
     "deaths": []
   }

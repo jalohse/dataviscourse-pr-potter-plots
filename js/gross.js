@@ -5,7 +5,6 @@ function GrossChart(data) {
     var barHeight = 300;
     var leftOffset = 40;
 
-    console.log(width);
     var grossChart = d3.select("#gross").append("svg")
         .attr("width", width)
         .attr("height", height);
@@ -164,7 +163,6 @@ function GrossChart(data) {
     d3.select("g path").attr("d", "M40.5,6V0.5H890.5V6");
     var ticks = d3.selectAll("g.tick")._groups[0];
     for (i = 0; i < ticks.length; i++) {
-        console.log(ticks[i].attributes);
         if (ticks[i].getAttribute("transform") == "translate(778.0281690140844,0)") {
             var newVal = 778.0281690140844 + xScale.bandwidth() / 4;
             ticks[i].setAttribute("transform", "translate(" + newVal + ", 0)");
