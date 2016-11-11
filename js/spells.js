@@ -10,12 +10,15 @@ SpellChart.prototype.update = function (data) {
     var leftOffset = 40;
 
     var spellData = [];
-    var max = 0;
+    var max;
+    var minNum = 0;
 
+    var spells, casters;
     if (data.length != 1) {
         for (i = 0; i < data.length; i++) {
-            var spells = data[i].spells;
-            var casters = [];
+            spells = data[i].spells;
+            casters = [];
+            max = 0;
             spells.forEach(function (element) {
                 if (element.caster in casters) {
                     casters[element.caster] = casters[element.caster] + element.number;
@@ -29,11 +32,22 @@ SpellChart.prototype.update = function (data) {
             for (var key in casters) {
                 spellData.push({book: data[i].book, name: key, number: casters[key], color: data[i].color});
             }
+            minNum = 3;
         }
     } else {
-        var spells = data[0].spells;
-        for (spell in spells) {
-            spellData.push({name: spell, number: spells[spell], color: data[0].color});
+        spells = data[0].spells;
+        casters = [];
+        max = 0;
+        spells.forEach(function (element) {
+            if(element.number > max){
+                max = element.number;
+            }
+            spellData.push({book: element.spell, name: element.caster, number: element.number, color: data[0].color});
+        });
+        if(data[0].book == "Sorcerer's Stone"){
+            minNum = 0;
+        } else {
+            minNum = 1;
         }
     }
 
@@ -45,7 +59,7 @@ SpellChart.prototype.update = function (data) {
             var allForPerson = spellData.filter(function (d) {
                 return d.name == element.name;
             });
-            if (allForPerson.length > 3) {
+            if (allForPerson.length > minNum) {
                 allData.push(allForPerson);
             }
             used.push(element.name);
@@ -68,7 +82,7 @@ SpellChart.prototype.update = function (data) {
             return d.book;
         })).range([leftOffset, width]);
 
-    var yScale = d3.scaleLinear().domain([0, max]).range([barHeight, 0]);
+    var yScale = d3.scaleLinear().domain([0, max]).range([height, 0]);
 
     var color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -85,7 +99,7 @@ SpellChart.prototype.update = function (data) {
     xAxis.scale(xScale);
     spellChart.select("#xAxis")
         .call(xAxis)
-        .attr("transform", "translate(" + 0 + "," + barHeight + ")")
+        .attr("transform", "translate(" + 0 + "," + height + ")")
         .selectAll("text").style("text-anchor", "end")
         .attr("dx", "-.8em")
         .attr("dy", "-.2em")
@@ -113,8 +127,11 @@ SpellChart.prototype.update = function (data) {
         })
         .style("fill", "none");
 
-    d3.selectAll("#circles circle").exit().remove();
+    // d3.selectAll("circle").exit().remove();
     var circles = spellChart.select("#circles")
+        .selectAll("circle");
+    circles.remove();
+    circles = spellChart.select("#circles")
         .selectAll("circle");
     for (i = 0; i < allData.length; i++) {
         var lineData = allData[i];
@@ -126,7 +143,7 @@ SpellChart.prototype.update = function (data) {
             .attr("cy", function (d) {
                 return yScale(d.number)
             })
-            .attr("r", 3.5)
+            .attr("r", 5)
             .style("fill", "white")
             .style("stroke", function (d) {
                 return color(d.name);
