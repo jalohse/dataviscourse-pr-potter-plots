@@ -891,7 +891,7 @@
       },
       {"spell": "Densaugeo",
         "caster": "Draco Malfoy",
-        "number":1
+        "number":2
       },
       {"spell": "Impedimenta",
         "caster": "Harry",
@@ -939,10 +939,6 @@
       },
       {"spell": "Avis",
         "caster": "Ollivander",
-        "number":1
-      },
-      {"spell": "Densaugeo",
-        "caster": "Draco Malfoy",
         "number":1
       },
       {"spell": "Stupefy",
@@ -1425,7 +1421,7 @@
       },
       {"spell": "Stupefy",
         "caster": "Umbridge",
-        "number":1
+        "number":2
       },
       {"spell": "Stupefy",
         "caster": "Hermione",
@@ -1443,13 +1439,9 @@
         "caster": "Neville",
         "number":1
       },
-      {"spell": "Stupefy",
-        "caster": "Umbridge",
-        "number":1
-      },
       {"spell": "Scourgify",
         "caster": "Tonks",
-        "number":1
+        "number":2
       },
       {"spell": "Scourgify",
         "caster": "Ginny",
@@ -1461,10 +1453,6 @@
       },
       {"spell": "Incarcerous",
         "caster": "Umbridge",
-        "number":1
-      },
-      {"spell": "Scourgify",
-        "caster": "Tonks",
         "number":1
       },
       {"spell": "Portus",
