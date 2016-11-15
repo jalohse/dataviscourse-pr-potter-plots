@@ -7,7 +7,7 @@ function DeathChart() {
 DeathChart.prototype.update = function (data) {
 
     var width = 960,
-        height = 700,
+        height = 800,
         radius = (Math.min(width, height) / 2);
     var current = [];
 
@@ -69,14 +69,105 @@ DeathChart.prototype.update = function (data) {
         })
         .style("stroke", "#fff")
         .style("fill", function (d) {
+            if(d.data.name == "root"){
+                return "none";
+            }
             return color((d.children ? d : d.parent).data.name);
-        })
-        .append("title")
-        .text(function (d) {
-            return d.data.name;
-        });
+        }).on('mouseover', changeInsideText)
+        .on('mouseout', clearText);
 
 };
+
+function changeInsideText(d){
+    var text = d3.select("#deaths g #short");
+    if(d.depth == 3){
+        var string = "";
+        var name = "";
+        if(isObject(d.data.name)){
+            name += "A " + d.data.name;
+        } else {
+            name += d.data.name;
+        }
+        if(isNaturalCauses(d.data.parent)){
+            string += name + " died of natural causes";
+        } else {
+            string += name + " was killed by ";
+            var longText ="";
+            if(isObject(d.data.parent)){
+                longText += "a " + d.data.parent;
+            } else {
+                longText +=  d.data.parent;
+            }
+            d3.select("#long").text(longText);
+        }
+        text.text(string);
+    } else {
+        totalKilled = 0;
+        d.children.forEach(function (child) {
+            if(child.children){
+                child.children.forEach(function(){
+                    totalKilled += 1;
+                });
+            } else {
+                totalKilled += 1;
+            }
+        });
+        string = "";
+        var killString = "";
+        if(totalKilled == 1){
+            killString = totalKilled + " person";
+        } else {
+            killString = totalKilled + " people";
+        }
+        if(d.data.name == "killing curse"){
+            string += "The killing curse killed " + killString;
+        } else if(d.data.name == "curse" || d.data.name == "wound"){
+            string += "A " + d.data.name + " killed " + killString;
+        } else if (d.data.name == "unknown" || d.data.name == "other") {
+            string += killString + " died of " + d.data.name + " causes.";
+        } else if(isNaturalCauses(d)){
+            string += killString + " died of natural causes";
+        } else {
+            string = d.data.name + " killed " + killString;
+        }
+        text.text(string);
+        longText = "";
+        if(d.children && d.data.parent != "root"
+            && !isNaturalCauses(d.data.name)
+        && d.data.parent != "other"
+        && d.data.parent != "unknown"){
+            longText += " by ";
+            if(d.data.parent == "wound"){
+                longText += "inflicting a " + d.data.parent;
+            } else  if(d.data.parent == "curse"){
+                longText += "using a " + d.data.parent;
+            } else  if(d.data.parent == "killing curse"){
+                longText += "using the " + d.data.parent;
+            } else {
+                longText += d.data.parent;
+            }
+            d3.select("#long").text(longText);
+        } else {
+            d3.select("#long").text("");
+        }
+
+    }
+}
+
+function isObject(d){
+    return d == "Serpent of Slytherin" ||
+    d == "Death Eater" ||
+    d == "Dragon";
+}
+
+function isNaturalCauses(d){
+    return d == "" || d == "natural causes";
+}
+
+function clearText(){
+    d3.select("#deaths g #short").text("");
+    d3.select("#deaths g #long").text("");
+}
 
 function nest(current) {
     return d3.nest()

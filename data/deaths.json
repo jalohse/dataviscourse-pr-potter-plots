@@ -58,7 +58,7 @@
     },
     {
       "name": "Mrs. Crouch",
-      "killed_by": "",
+      "killed_by": "Unknown",
       "cause": "unknown"
     },
     {
@@ -107,7 +107,7 @@
     {
       "name": "Marvolo Gaunt",
       "killed_by": "",
-      "cause": "other"
+      "cause": "natural causes"
     },
     {
       "name": "Merope Gaunt",
@@ -152,7 +152,7 @@
     },
     {
       "name": "Antioch Peverell",
-      "killed_by": "",
+      "killed_by": "Unknown",
       "cause": "wound"
     },
     {
@@ -241,7 +241,7 @@
       "cause": "unknown"
     },
     {
-      "name": "Nymphadora Tonks",
+      "name": "Tonks",
       "killed_by": "Bellatrix Lestrange",
       "cause": "unknown"
     },

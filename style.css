@@ -62,6 +62,11 @@ text {
     stroke-width: 0.5em;
 }
 
+#deaths text {
+    text-anchor: middle;
+    font-size: 20px;
+}
+
 .d3-tip {
     /*line-height: 5;*/
     padding-left: 10px;
