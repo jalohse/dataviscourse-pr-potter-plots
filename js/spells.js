@@ -163,7 +163,7 @@ SpellChart.prototype.update = function (data) {
             .attr('class', 'd3-tip')
             .offset([0, 0])
             .html(function (d) {
-                return d.data.name + " " + d.data.book + " " + d.data.number;
+                return d.data.book + ": " + d.data.number;
             });
 
         var asterCharts = d3.select("#aster")
