@@ -126,13 +126,31 @@
     "book": "Sorcerer's Stone",
     "locations": [],
     "book_gross": 1819,
-    "spells": {
-      "Locomotor Mortis": 1,
-      "Alohomora": 2,
-      "Incendio": 1,
-      "Petrificus Totalus": 1,
-      "Wingardium Leviosa": 3
-    },
+    "spells": [
+      {"spell": "Locomotor Mortis",
+        "caster": "Hermione",
+        "number":1
+      },{"spell": "Alohomora",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Incendio",
+        "caster": "Hagrid",
+        "number":1
+      },
+      {"spell": "Pertificus Totalus",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Wingdarium Leviosa",
+        "caster": "Ron",
+        "number":2
+      },
+      {"spell": "Wingdarium Leviosa",
+        "caster": "Hermione",
+        "number":1
+      }
+    ],
     "deaths": []
   },
   {
@@ -269,19 +287,60 @@
     "book": "Chamber of Secrets",
     "locations": [],
     "book_gross": 1020,
-    "spells": {
-      "Obliviate": 1,
-      "Tarantallegra": 1,
-      "Capacious Extremis": 1,
-      "Serpensortia": 1,
-      "Aparecium": 1,
-      "Finite Incantatem": 1,
-      "Expelliarmus": 3,
-      "Flagrate": 1,
-      "Rictusempra": 1,
-      "Lumos": 2,
-      "Engorgio": 1
-    },
+    "spells": [
+      {"spell": "Obliviate",
+        "caster": "Gilderoy Lockhart",
+        "number":1
+      },
+      {"spell": "Tarantallegra",
+        "caster": "Draco Malfoy",
+        "number":1
+      },
+      {"spell": "Capacious Extremis",
+        "caster": "Mr. Weasley",
+        "number":1
+      },
+      {"spell": "Serpensortia",
+        "caster": "Draco Malfoy",
+        "number":1
+      },
+      {"spell": "Aparecium",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Finite Incantatem",
+        "caster": "Severus Snape",
+        "number":1
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Severus Snape",
+        "number":1
+      },
+      {"spell": "Flagrate",
+        "caster": "Tom Riddle",
+        "number":1
+      },
+      {"spell": "Rictumsempra",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Locomotor Mortis",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Engorgio",
+        "caster": "Hagrid",
+        "number":1
+      }
+    ],
     "deaths": []
   },
   {
@@ -446,20 +505,100 @@
     "book": "Prisoner of Azkaban",
     "locations": [],
     "book_gross": 935,
-    "spells": {
-      "Mobiliarbus": 1,
-      "Confundo": 1,
-      "Expecto Patronum": 24,
-      "Incarcerous": 1,
-      "Expelliarmus": 4,
-      "Nox": 1,
-      "Pack": 1,
-      "Lumos": 4,
-      "Mobilicorups": 1,
-      "Riddikulus": 11,
-      "Impervius": 1,
-      "Ferula": 1
-    },
+    "spells": [
+      {"spell": "Mobiliarbus",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Locomotor Mortis",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Lupin",
+        "number":1
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Harry",
+        "number":21
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Incarcerous",
+        "caster": "Lupin",
+        "number":1
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Sirius Black",
+        "number":1
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Lupin",
+        "number":1
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Nox",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Nox",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Pack",
+        "caster": "Lupin",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Lumos",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Mobilicorpus",
+        "caster": "Lupin",
+        "number":1
+      },
+      {"spell": "Riddikulus",
+        "caster": "Lupin",
+        "number":4
+      },
+      {"spell": "Riddikulus",
+        "caster": "Neville",
+        "number":2
+      },
+      {"spell": "Riddikulus",
+        "caster": "Parvarti",
+        "number":1
+      },
+      {"spell": "Riddikulus",
+        "caster": "Dean Thomas",
+        "number":1
+      },
+      {"spell": "Riddikulus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Riddikulus",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Impervius",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Ferula",
+        "caster": "Lupin",
+        "number":1
+      }
+    ],
     "deaths": []
   },
   {
@@ -729,39 +868,160 @@
     "book": "Goblet of Fire",
     "locations": [],
     "book_gross": 935,
-    "spells": {
-      "Obliviate": 1,
-      "Accio": 8,
-      "Quietus": 1,
-      "Densaugeo": 1,
-      "Impedimenta": 9,
-      "Morsmordre": 1,
-      "Diffindo": 1,
-      "Crucio": 5,
-      "Orchideous": 1,
-      "Rennervate": 1,
-      "Avada Kedavra": 8,
-      "Aguamenti": 1,
-      "Avis": 1,
-      "Episkey": 1,
-      "Stupefy": 10,
-      "Sonorus": 3,
-      "Confundo": 1,
-      "Incarcerous": 1,
-      "Point me": 2,
-      "Prior Incantato": 1,
-      "Reducto": 3,
-      "Protego": 2,
-      "Lumos": 4,
-      "Riddikulus": 1,
-      "Expecto Patronum": 1,
-      "Reducio": 2,
-      "Expelliarmus": 3,
-      "Furnunculus": 1,
-      "Deletrius": 1,
-      "Imperio": 1,
-      "Engorgio": 3
-    },
+    "spells": [
+      {"spell": "Obliviate",
+        "caster": "Wizard",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Accio",
+        "caster": "Snape",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Mrs. Weasley",
+        "number":4
+      },
+      {"spell": "Quietus",
+        "caster": "Ludo Bagman",
+        "number":1
+      },
+      {"spell": "Densaugeo",
+        "caster": "Draco Malfoy",
+        "number":1
+      },
+      {"spell": "Impedimenta",
+        "caster": "Harry",
+        "number":4
+      },
+      {"spell": "Morsmordre",
+        "caster": "Barty Crouch Jr.",
+        "number":1
+      },
+      {"spell": "Diffindo",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Lord Voldemort",
+        "number":3
+      },
+      {"spell": "Crucio",
+        "caster": "Victor Krum",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Alastor Moody",
+        "number":1
+      },
+      {"spell": "Orchideous",
+        "caster": "Ollivander",
+        "number":1
+      },
+      {"spell": "Rennervate",
+        "caster": "Amos Diggory",
+        "number":1
+      },
+      {"spell": "Avada Kedavra",
+        "caster": "Lord Voldemort",
+        "number":2
+      },
+      {"spell": "Avada Kedavra",
+        "caster": "Moody",
+        "number":1
+      },
+      {"spell": "Aguamenti",
+        "caster": "Fleur Delacour",
+        "number":1
+      },
+      {"spell": "Avis",
+        "caster": "Ollivander",
+        "number":1
+      },
+      {"spell": "Densaugeo",
+        "caster": "Draco Malfoy",
+        "number":1
+      },
+      {"spell": "Stupefy",
+        "caster": "Harry",
+        "number":7
+      },
+      {"spell": "Stupefy",
+        "caster": "Cedric",
+        "number":1
+      },
+      {"spell": "Stupefy",
+        "caster": "Dumbledore",
+        "number":1
+      },
+      {"spell": "Sonorus",
+        "caster": "Ludo Bagman",
+        "number":3
+      },
+      {"spell": "Incarcerous",
+        "caster": "Peter Pettigrew",
+        "number":1
+      },
+      {"spell": "Point Me",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Prior Incantato",
+        "caster": "Amos Diggory",
+        "number":1
+      },
+      {"spell": "Reducio",
+        "caster": "Moody",
+        "number":1
+      },
+      {"spell": "Reducio",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Lumos",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Dumbledore",
+        "number":1
+      },
+      {"spell": "Riddikulus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Furnunculus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Deletrius",
+        "caster": "Amos Diggory",
+        "number":1
+      },
+      {"spell": "Imperio",
+        "caster": "Moody",
+        "number":1
+      },
+      {"spell": "Engorgio",
+        "caster": "Moody",
+        "number":1
+      }
+    ],
     "deaths": []
   },
   {
@@ -1038,36 +1298,220 @@
     "book": "Order of the Phoenix",
     "locations": [],
     "book_gross": 935,
-    "spells": {
-      "Serpensortia": 1,
-      "Accio": 10,
-      "Impedimenta": 5,
-      "Evanesco": 2,
-      "Wingardium Leviosa": 1,
-      "Legilimens": 7,
-      "Crucio": 4,
-      "Levicorpus": 1,
-      "Colloportus": 3,
-      "Petrificus Totalus": 3,
-      "Avada Kedavra": 3,
-      "Locomotor": 4,
-      "Pack": 1,
-      "Impervius": 3,
-      "Stupefy": 7,
-      "Tarantallegra": 1,
-      "Scourgify": 3,
-      "Incarcerous": 1,
-      "Portus": 2,
-      "Reducto": 3,
-      "Protego": 4,
-      "Lumos": 1,
-      "Riddikulus": 6,
-      "Sectumsempra": 1,
-      "Silencio": 8,
-      "Expecto Patronum": 4,
-      "Expelliarmus": 7,
-      "Flagrate": 1
-    },
+    "spells": [
+      {"spell": "Serpensortia",
+        "caster": "Lord Voldemort",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Sirius Black",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Flitwick",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Weasley twins",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Death Eater",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Bellatrix Lestrange",
+        "number":2
+      },
+      {"spell": "Accio",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Impedimenta",
+        "caster": "Sirius Black",
+        "number":1
+      },
+      {"spell": "Impedimenta",
+        "caster": "Neville",
+        "number":1
+      },
+      {"spell": "Impedimenta",
+        "caster": "Death Eater",
+        "number":1
+      },
+      {"spell": "Impedimenta",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Evanesco",
+        "caster": "Bill Weasley",
+        "number":1
+      },
+      {"spell": "Evanesco",
+        "caster": "Severus Sanpe",
+        "number":1
+      },
+      {"spell": "Wingardium Leviosa",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Legilimens",
+        "caster": "Severus Snape",
+        "number":4
+      },
+      {"spell": "Legilimens",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Lord Voldemort",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Bellatrix Lestrange",
+        "number":2
+      },
+      {"spell": "Crucio",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Levicorpus",
+        "caster": "James Potter",
+        "number":1
+      },
+      {"spell": "Colloportus",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Colloportus",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Petrificus Totalus",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Avada Kedavra",
+        "caster": "Lord Voldemort",
+        "number":1
+      },
+      {"spell": "Locomotor",
+        "caster": "Tonks",
+        "number":1
+      },
+      {"spell": "Locomotor",
+        "caster": "Flitwick",
+        "number":1
+      },
+      {"spell": "Locomotor",
+        "caster": "Sirius",
+        "number":1
+      },
+      {"spell": "Pack",
+        "caster": "Tonks",
+        "number":1
+      },
+      {"spell": "Impervius",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Stupefy",
+        "caster": "Umbridge",
+        "number":1
+      },
+      {"spell": "Stupefy",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Stupefy",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Stupefy",
+        "caster": "Neville",
+        "number":1
+      },
+      {"spell": "Tarantallegra",
+        "caster": "Neville",
+        "number":1
+      },
+      {"spell": "Stupefy",
+        "caster": "Umbridge",
+        "number":1
+      },
+      {"spell": "Scourgify",
+        "caster": "Tonks",
+        "number":1
+      },
+      {"spell": "Scourgify",
+        "caster": "Ginny",
+        "number":1
+      },
+      {"spell": "Scourgify",
+        "caster": "James Potter",
+        "number":1
+      },
+      {"spell": "Incarcerous",
+        "caster": "Umbridge",
+        "number":1
+      },
+      {"spell": "Scourgify",
+        "caster": "Tonks",
+        "number":1
+      },
+      {"spell": "Portus",
+        "caster": "Dumbledore",
+        "number":2
+      },
+      {"spell": "Reducto",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Protego",
+        "caster": "Harry",
+        "number":4
+      },
+      {"spell": "Lumos",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Riddikulus",
+        "caster": "Mrs. Weasley",
+        "number":5
+      },
+      {"spell": "Riddikulus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Silencio",
+        "caster": "Hermione",
+        "number":3
+      },
+      {"spell": "Silencio",
+        "caster": "Ron",
+        "number":2
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Harry",
+        "number":4
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Neville",
+        "number":2
+      },
+      {"spell": "Flagrate",
+        "caster": "Hermione",
+        "number":1
+      }
+    ],
     "deaths": []
   },
   {
@@ -1288,38 +1732,140 @@
     "book": "Half Blood Prince",
     "locations": [],
     "book_gross": 1105,
-    "spells": {
-      "Morsmorde": 1,
-      "Locomotor Mortis": 1,
-      "Accio": 3,
-      "Diffindo": 1,
-      "Relashio": 1,
-      "Legilimens": 1,
-      "Langlock": 1,
-      "Crucio": 2,
-      "Levicorpus": 4,
-      "Incendio": 2,
-      "Petrificus Totalus": 5,
-      "Rennervate": 2,
-      "Avada Kedavra": 1,
-      "Muffliato": 6,
-      "Aguamenti": 7,
-      "Avis": 1,
-      "Episkey": 2,
-      "Stupefy": 1,
-      "Confundo": 1,
-      "Incarcerous": 1,
-      "Anapneo": 1,
-      "Reducto": 2,
-      "Protego": 1,
-      "Tergeo": 1,
-      "Lumos": 3,
-      "Sectumsepra": 6,
-      "Expelliarmus": 2,
-      "Oppungno": 1,
-      "Liberacorpus": 1,
-      "Specialis Revelio": 2
-    },
+    "spells": [
+      {"spell": "Locomotor Mortis",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Accio",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Diffindo",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Langlock",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Amaycus Carrow",
+        "number":2
+      },
+      {"spell": "Levicorpus",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Incendio",
+        "caster": "Death eater",
+        "number":1
+      },
+      {"spell": "Incendio",
+        "caster": "Ginny",
+        "number":1
+      },
+      {"spell": "Petrificus Totalus",
+        "caster": "Draco Malfoy",
+        "number":1
+      },
+      {"spell": "Petrificus Totalus",
+        "caster": "Harry",
+        "number":4
+      },
+      {"spell": "Rennervate",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Avada Kedavra",
+        "caster": "Severus Snape",
+        "number":1
+      },
+      {"spell": "Muffliato",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Aguamenti",
+        "caster": "Harry",
+        "number":2
+      },
+      {"spell": "Aguamenti",
+        "caster": "Hagrid",
+        "number":1
+      },
+      {"spell": "Avis",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Episkey",
+        "caster": "Tonks",
+        "number":1
+      },
+      {"spell": "Episkey",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Stupefy",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Confundo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Incarcerous",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Anapneo",
+        "caster": "Slughorn",
+        "number":1
+      },
+      {"spell": "Protego",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Tergeo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Dumbledore",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Ginny",
+        "number":1
+      },
+      {"spell": "Sectumsempra",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Dumbledore",
+        "number":1
+      },
+      {"spell": "Oppungo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Liberacorpus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Specialis Revelio",
+        "caster": "Ernie Macmillan",
+        "number":1
+      },
+      {"spell": "Specialis Revelio",
+        "caster": "Hermione",
+        "number":1
+      }
+    ],
     "deaths": []
   },
   {
@@ -1590,54 +2136,264 @@
     "locations": [],
     "book_gross": 850,
     "movie1_gross": 960,
-    "spells": {
-      "Obliviate": 2,
-      "Protego Totalum": 2,
-      "Confringo": 2,
-      "Expulso": 1,
-      "Accio": 12,
-      "Obscuro": 1,
-      "Impedimenta": 1,
-      "Wingardium Leviosa": 1,
-      "Piertotum Locomotor": 1,
-      "Duro": 1,
-      "Relashio": 3,
-      "Crucio": 4,
-      "Erecto": 1,
-      "Levicorpus": 1,
-      "Petrificus Totalus": 1,
-      "Protego Horribilis": 1,
-      "Repello Muggletum": 1,
-      "Avada Kedavra": 7,
-      "Muffliato": 5,
-      "Impervius": 2,
-      "Meteolojinx Recanto": 1,
-      "Geminio": 1,
-      "Descendo": 2,
-      "Stupefy": 9,
-      "Sonorus": 1,
-      "Cave Inimicum": 2,
-      "Salvio Hexia": 2,
-      "Deprimo": 1,
-      "Prior Incantato": 1,
-      "Protego": 4,
-      "Tergeo": 2,
-      "Glisseo": 1,
-      "Lumos": 6,
-      "Reparo": 3,
-      "Defodio": 1,
-      "Homenum Revelio": 2,
-      "Capacious Extremis": 1,
-      "Silencio": 1,
-      "Expecto Patronum": 6,
-      "Finite Incantatem": 1,
-      "Reducio": 1,
-      "Expelliarmus": 8,
-      "Nox": 1,
-      "Sectumsemmpra": 2,
-      "Liberacorpus": 1,
-      "Imperio": 6
-    },
+    "spells": [
+      {"spell": "Obliviate",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Protego Totalum",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Confringo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Confringo",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Expulso",
+        "caster": "Death Eater",
+        "number":2
+      },
+      {"spell": "Accio",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Accio",
+        "caster": "Harry",
+        "number":6
+      },
+      {"spell": "Accio",
+        "caster": "Death Eater",
+        "number":1
+      },
+      {"spell": "Obscuro",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Impedimenta",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Wingardium Leviosa",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Piertotum Locomotr",
+        "caster": "McGonagall",
+        "number":1
+      },
+      {"spell": "Duro",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Relashio",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Relashio",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Relashio",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Vincent Crabbe",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Lord Voldemort",
+        "number":1
+      },
+      {"spell": "Crucio",
+        "caster": "Bellatrix Lestrange",
+        "number":1
+      },
+      {"spell": "Erecto",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Levicorpus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Petrificus Totalus",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Protego Horribilis",
+        "caster": "Flitwick",
+        "number":1
+      },
+      {"spell": "Repello Muggletum",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Avada Kedavra",
+        "caster": "Lord Voldemort",
+        "number":4
+      },
+      {"spell": "Avada Kedavra",
+        "caster": "Vincent Crabbe",
+        "number":2
+      },
+      {"spell": "Muffliato",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Impervius",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Meteolojinx Recanto",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Geminio",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Descendo",
+        "caster": "Vincent Crabbe",
+        "number":1
+      },
+      {"spell": "Descendo",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Stupefy",
+        "caster": "Harry",
+        "number":6
+      },
+      {"spell": "Stupefy",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Sonorus",
+        "caster": "Lord Voldemort",
+        "number":1
+      },
+      {"spell": "Cave Inimicum",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Salvio Hexia",
+        "caster": "Hermione",
+        "number":2
+      },
+      {"spell": "Deprimo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Protego",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Protego",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Protego",
+        "caster": "Lupin",
+        "number":1
+      },
+      {"spell": "Protego",
+        "caster": "Tonks",
+        "number":1
+      },
+      {"spell": "Tergeo",
+        "caster": "Ron",
+        "number":1
+      },
+      {"spell": "Tergeo",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Glisseo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Lumos",
+        "caster": "Harry",
+        "number":6
+      },
+      {"spell": "Reparo",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Reparo",
+        "caster": "Hagrid",
+        "number":1
+      },
+      {"spell": "Reparo",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Defodio",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Homenum Revelio",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Capacious Extremis",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Silencio",
+        "caster": "Lord Voldemort",
+        "number":1
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Harry",
+        "number":3
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Expecto Patronum",
+        "caster": "Severus Snape",
+        "number":1
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Harry",
+        "number":5
+      },
+      {"spell": "Expelliarmus",
+        "caster": "Hermione",
+        "number":1
+      },
+      {"spell": "Nox",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Sectumsempra",
+        "caster": "Severus Snape",
+        "number":1
+      },
+      {"spell": "Liberacorpus",
+        "caster": "Harry",
+        "number":1
+      },
+      {"spell": "Imperio",
+        "caster": "Harry",
+        "number":4
+      },
+      {"spell": "Imperio",
+        "caster": "McGonagall",
+        "number":1
+      }
+    ],
     "deaths": []
   }
 ]
