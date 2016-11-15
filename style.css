@@ -58,6 +58,10 @@ text {
     stroke-width: 0.5em;
 }
 
+#spells #aster path {
+    stroke-width: 0.5em;
+}
+
 .d3-tip {
     /*line-height: 5;*/
     padding-left: 10px;
