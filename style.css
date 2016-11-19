@@ -67,6 +67,10 @@ text {
     font-size: 20px;
 }
 
+.background {
+    fill: #eee;
+}
+
 .d3-tip {
     /*line-height: 5;*/
     padding-left: 10px;

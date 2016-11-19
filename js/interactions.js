@@ -7,13 +7,19 @@ function InteractionChart() {
 
 InteractionChart.prototype.update = function (data) {
 
-    var width = 720,
-        height = 720,
-        matrix = [];
+    var width = 1000,
+        height = 1000,
+        matrix = [],
+        margin = 100;
+
+    var color = data.color;
 
     var svg = d3.select("#story svg")
-        .attr("width", width)
-        .attr("height", height);
+        .attr("width", width + 2* margin)
+        .attr("height", height + 2 * margin)
+        .attr("transform", "translate(" + margin + "," + margin + ")");
+
+    var g = svg.select("g").attr("transform", "translate(" + margin + "," + margin + ")");
 
     var bookTitle = data.book.split(" ")[0];
     bookTitle = bookTitle.replace("'", "").toLowerCase();
@@ -61,6 +67,93 @@ InteractionChart.prototype.update = function (data) {
             }
         });
     });
+
+    var max = d3.max(matrix, function (d, i) {
+        return d3.max(d, function(k, j){
+            if(i != j) {
+                return k.z;
+            }
+        });
+    });
+
+    var orders = {
+        name: d3.range(characters.length).sort(function(a, b) {
+            return d3.ascending(characters[a].name, characters[b].name);
+        }),
+        count: d3.range(characters.length).sort(function(a, b) {
+            return characters[b].count - characters[a].count;
+        })
+    };
+
+    var xScale = d3.scaleBand().range([0, width]).domain(orders.name);
+
+    var opacityScale = d3.scaleLinear().domain([0,max]).range([.1, 1]).clamp(true);
+
+    g.select("rect")
+        .attr("width", width)
+        .attr("height", height);
+
+    g.selectAll(".row").remove();
+    g.selectAll(".column").remove();
+    g.selectAll("text").remove();
+
+    var row = g.selectAll('.row')
+        .data(matrix)
+        .enter().append("g")
+        .attr("class", "row")
+        .attr("transform", function (d, i) {
+            return "translate(0,"+ xScale(i) + ")";
+        }).each(function (row) {
+            d3.select(this).selectAll(".cell")
+                .data(row.filter(function (d) {
+                    return d.z;
+                })).enter().append("rect")
+                .attr("class", "cell")
+                .attr("x", function(d){
+                    return xScale(d.x);
+                }).attr("width", xScale.bandwidth())
+                .attr("height", xScale.bandwidth())
+                .style("fill-opacity", function (d) {
+                    return opacityScale(d.z);
+                }).style("fill", function (d) {
+                    if(d.z > 0){
+                        return color;
+                    } else {
+                        return null;
+                    }
+            });
+        });
+
+    row.append("line").attr("x2", width);
+
+    row.append("text")
+        .attr("x", -6)
+        .attr("y", xScale.bandwidth() /2)
+        .attr("dy", ".32em")
+        .attr("text-anchor", "end")
+        .text(function (d, i) {
+            return charCount[i].name;
+        });
+
+    var column = g.selectAll(".column")
+        .data(matrix)
+        .enter().append("g")
+        .attr("class", "column")
+        .attr("transform", function (d, i) {
+            return "translate (" + xScale(i) + ")rotate(-90)";
+        });
+    
+    column.append("line").attr("x1", -width);
+    
+    column.append("text")
+        .attr("x", 6)
+        .attr('y', xScale.bandwidth()/2)
+        .attr("dy", ".32em")
+        .attr("text-anchor", "start")
+        .text(function (d, i) {
+            return charCount[i].name;
+        });
+    
 
 
 };

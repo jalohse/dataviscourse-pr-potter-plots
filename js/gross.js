@@ -25,9 +25,9 @@ function GrossChart(data) {
 
 
     var maxGross = d3.max(data, function (d) {
-        return d3.max(d.gross, function (i) {
-            return i.number;
-        });
+            return d3.max(d.gross, function (i) {
+                return i.number;
+            });
 
     });
 
