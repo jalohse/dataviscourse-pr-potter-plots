@@ -164,7 +164,7 @@ $characters = [
 $files = glob('../books/*.{txt}', GLOB_BRACE);
 echo '{';
 foreach ($files as $file) {
-    echo '"' . $file . '" : {' ;
+    echo '"' . $file . '" : [' ;
     $text = file_get_contents($file);
     $text = preg_replace('/".*?"/m', '', $text);
     $chapters = explode("CHAPTER", $text);
@@ -180,9 +180,13 @@ foreach ($files as $file) {
             $splitName = explode(" ", $name);
             $firstName = $splitName[0] . " ";
             if (strpos($chapter_text, $name)) {
-                if(!(in_array("Draco Malfoy", $chapterChars) && strcmp("Malfoy", $name) == 0)
-                && !(in_array("Malfoy", $chapterChars) && strcmp("Draco Malfoy", $name) == 0)){
-//                    echo $name . "<br>";
+                if(strcmp("Malfoy", $name) == 0){
+                    array_push($chapterChars, "Draco Malfoy");
+                } elseif(strcmp("Mr. Weasley", $name) == 0){
+                    array_push($chapterChars, "Arthur Weasley");
+                }elseif(strcmp("Mrs. Weasley", $name) == 0){
+                    array_push($chapterChars, "Molly Weasley");
+                } else {
                     array_push($chapterChars, $name);
                 }
             } else if (strpos($chapter_text, $firstName)) {
@@ -217,14 +221,14 @@ foreach ($files as $file) {
     }
 //    echo '***** '.end(array_keys($charCount));
     foreach($charCount as $key => $count) {
-        echo '"' . $key . '" :' . $count;
+        echo '{"' . $key . '" :' . $count;
         if ($key != end(array_keys($charCount))) {
-            echo ',';
+            echo '},';
         }
     }
     if($file != end($files)){
-        echo "},";
+        echo "}],";
     } else {
-        echo "}}";
+        echo "}]}";
     }
 }
