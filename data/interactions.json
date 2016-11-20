@@ -2577,7 +2577,7 @@
   }, {
     "Harry Potter*Stan Shunpike": 2
   }, {
-    "Harry Potter*Tonks": 24
+    "Harry Potter*Nymphadora Tonks": 24
   }, {
     "Harry Potter*Fred Weasley": 22
   }, {
@@ -2595,7 +2595,7 @@
   }, {
     "Voldemort*Stan Shunpike": 2
   }, {
-    "Voldemort*Tonks": 24
+    "Voldemort*Nymphadora Tonks": 24
   }, {
     "Voldemort*Arthur Weasley": 26
   }, {
@@ -2619,7 +2619,7 @@
   }, {
     "Voldemort*Moody": 10
   }, {
-    "Stan Shunpike*Tonks": 2
+    "Stan Shunpike*Nymphadora Tonks": 2
   }, {
     "Stan Shunpike*Arthur Weasley": 2
   }, {
@@ -2649,33 +2649,33 @@
   }, {
     "Stan Shunpike*Moody": 2
   }, {
-    "Tonks*Arthur Weasley": 18
+    "Nymphadora Tonks*Arthur Weasley": 18
   }, {
-    "Tonks*Fred Weasley": 14
+    "Nymphadora Tonks*Fred Weasley": 14
   }, {
-    "Tonks*George Weasley": 12
+    "Nymphadora Tonks*George Weasley": 12
   }, {
-    "Tonks*Ron Weasley": 24
+    "Nymphadora Tonks*Ron Weasley": 24
   }, {
-    "Tonks*Hedwig": 4
+    "Nymphadora Tonks*Hedwig": 4
   }, {
-    "Tonks*Fleur Delacour": 10
+    "Nymphadora Tonks*Fleur Delacour": 10
   }, {
-    "Tonks*Dudley Dursley": 2
+    "Nymphadora Tonks*Dudley Dursley": 2
   }, {
-    "Tonks*Petunia Dursley": 4
+    "Nymphadora Tonks*Petunia Dursley": 4
   }, {
-    "Tonks*Vernon Dursley": 4
+    "Nymphadora Tonks*Vernon Dursley": 4
   }, {
-    "Tonks*Mundungus Fletcher": 8
+    "Nymphadora Tonks*Mundungus Fletcher": 8
   }, {
-    "Tonks*Hermione Granger": 24
+    "Nymphadora Tonks*Hermione Granger": 24
   }, {
-    "Tonks*Hagrid": 14
+    "Nymphadora Tonks*Hagrid": 14
   }, {
-    "Tonks*Lupin": 22
+    "Nymphadora Tonks*Lupin": 22
   }, {
-    "Tonks*Moody": 8
+    "Nymphadora Tonks*Moody": 8
   }, {
     "Arthur Weasley*Fred Weasley": 16
   }, {
@@ -2827,8 +2827,6 @@
   }, {
     "Harry Potter*Zacharias Smith": 4
   }, {
-    "Harry Potter*Ted Tonks": 4
-  }, {
     "Harry Potter*Bill Weasley": 20
   }, {
     "Harry Potter*Ginny Weasley": 26
@@ -2841,8 +2839,6 @@
   }, {
     "Voldemort*Zacharias Smith": 4
   }, {
-    "Voldemort*Ted Tonks": 4
-  }, {
     "Voldemort*Bill Weasley": 16
   }, {
     "Voldemort*Ginny Weasley": 24
@@ -2853,9 +2849,7 @@
   }, {
     "Kingsley Shacklebolt*Zacharias Smith": 4
   }, {
-    "Kingsley Shacklebolt*Tonks": 8
-  }, {
-    "Kingsley Shacklebolt*Ted Tonks": 2
+    "Kingsley Shacklebolt*Nymphadora Tonks": 8
   }, {
     "Kingsley Shacklebolt*Bill Weasley": 8
   }, {
@@ -2881,9 +2875,7 @@
   }, {
     "Kingsley Shacklebolt*Pettigrew": 2
   }, {
-    "Zacharias Smith*Tonks": 4
-  }, {
-    "Zacharias Smith*Ted Tonks": 2
+    "Zacharias Smith*Nymphadora Tonks": 4
   }, {
     "Zacharias Smith*Bill Weasley": 2
   }, {
@@ -2915,47 +2907,15 @@
   }, {
     "Zacharias Smith*Pettigrew": 2
   }, {
-    "Tonks*Ted Tonks": 4
+    "Nymphadora Tonks*Bill Weasley": 6
   }, {
-    "Tonks*Bill Weasley": 6
+    "Nymphadora Tonks*Ginny Weasley": 14
   }, {
-    "Tonks*Ginny Weasley": 14
+    "Nymphadora Tonks*Molly Weasley": 12
   }, {
-    "Tonks*Molly Weasley": 12
+    "Nymphadora Tonks*Bellatrix Lestrange": 6
   }, {
-    "Tonks*Bellatrix Lestrange": 6
-  }, {
-    "Tonks*Pettigrew": 4
-  }, {
-    "Ted Tonks*Bill Weasley": 2
-  }, {
-    "Ted Tonks*Arthur Weasley": 2
-  }, {
-    "Ted Tonks*Fred Weasley": 2
-  }, {
-    "Ted Tonks*George Weasley": 2
-  }, {
-    "Ted Tonks*Ginny Weasley": 2
-  }, {
-    "Ted Tonks*Molly Weasley": 2
-  }, {
-    "Ted Tonks*Ron Weasley": 4
-  }, {
-    "Ted Tonks*Fleur Delacour": 2
-  }, {
-    "Ted Tonks*Vernon Dursley": 2
-  }, {
-    "Ted Tonks*Mundungus Fletcher": 2
-  }, {
-    "Ted Tonks*Hermione Granger": 4
-  }, {
-    "Ted Tonks*Hagrid": 2
-  }, {
-    "Ted Tonks*Bellatrix Lestrange": 2
-  }, {
-    "Ted Tonks*Lupin": 2
-  }, {
-    "Ted Tonks*Pettigrew": 2
+    "Nymphadora Tonks*Pettigrew": 4
   }, {
     "Bill Weasley*Arthur Weasley": 12
   }, {
@@ -3195,7 +3155,7 @@
   }, {
     "Voldemort*Rufus Scrimgeour": 2
   }, {
-    "Rufus Scrimgeour*Tonks": 2
+    "Rufus Scrimgeour*Nymphadora Tonks": 2
   }, {
     "Rufus Scrimgeour*Bill Weasley": 2
   }, {
@@ -3225,11 +3185,11 @@
   }, {
     "Rufus Scrimgeour*Lupin": 2
   }, {
-    "Tonks*Charlie Weasley": 6
+    "Nymphadora Tonks*Charlie Weasley": 6
   }, {
-    "Tonks*Gabrielle Delacour": 2
+    "Nymphadora Tonks*Gabrielle Delacour": 2
   }, {
-    "Tonks*Albus Dumbledore": 8
+    "Nymphadora Tonks*Albus Dumbledore": 8
   }, {
     "Bill Weasley*Albus Dumbledore": 6
   }, {
@@ -3281,7 +3241,7 @@
   }, {
     "James Potter*Kingsley Shacklebolt": 4
   }, {
-    "James Potter*Tonks": 10
+    "James Potter*Nymphadora Tonks": 10
   }, {
     "James Potter*Bill Weasley": 2
   }, {
@@ -3333,7 +3293,7 @@
   }, {
     "Lily Potter*Kingsley Shacklebolt": 4
   }, {
-    "Lily Potter*Tonks": 6
+    "Lily Potter*Nymphadora Tonks": 6
   }, {
     "Lily Potter*Bill Weasley": 2
   }, {
@@ -3415,25 +3375,25 @@
   }, {
     "Kingsley Shacklebolt*Ollivander": 2
   }, {
-    "Tonks*Bathilda Bagshot": 6
+    "Nymphadora Tonks*Bathilda Bagshot": 6
   }, {
-    "Tonks*Elphias Doge": 2
+    "Nymphadora Tonks*Elphias Doge": 2
   }, {
-    "Tonks*Aberforth Dumbledore": 8
+    "Nymphadora Tonks*Aberforth Dumbledore": 8
   }, {
-    "Tonks*Ariana Dumbledore": 4
+    "Nymphadora Tonks*Ariana Dumbledore": 4
   }, {
-    "Tonks*Gregorovitch": 2
+    "Nymphadora Tonks*Gregorovitch": 2
   }, {
-    "Tonks*Lee Jordan": 8
+    "Nymphadora Tonks*Lee Jordan": 8
   }, {
-    "Tonks*Krum": 2
+    "Nymphadora Tonks*Krum": 2
   }, {
-    "Tonks*Luna Lovegood": 4
+    "Nymphadora Tonks*Luna Lovegood": 4
   }, {
-    "Tonks*Xenophilius Lovegood": 4
+    "Nymphadora Tonks*Xenophilius Lovegood": 4
   }, {
-    "Tonks*Ollivander": 2
+    "Nymphadora Tonks*Ollivander": 2
   }, {
     "Bill Weasley*Bathilda Bagshot": 2
   }, {
@@ -3729,7 +3689,7 @@
   }, {
     "Xenophilius Lovegood*Ollivander": 4
   }, {
-    "Snape*Tonks": 14
+    "Snape*Nymphadora Tonks": 14
   }, {
     "Snape*Ron Weasley": 32
   }, {
@@ -3739,7 +3699,7 @@
   }, {
     "Snape*Moody": 4
   }, {
-    "Tonks*Draco Malfoy": 18
+    "Nymphadora Tonks*Draco Malfoy": 18
   }, {
     "Ron Weasley*Draco Malfoy": 34
   }, {
@@ -3903,7 +3863,7 @@
   }, {
     "James Potter*Moody": 2
   }, {
-    "Rita Skeeter*Tonks": 2
+    "Rita Skeeter*Nymphadora Tonks": 2
   }, {
     "Rita Skeeter*Arthur Weasley": 2
   }, {
@@ -3919,9 +3879,9 @@
   }, {
     "Rita Skeeter*Moody": 2
   }, {
-    "Tonks*Kreacher": 4
+    "Nymphadora Tonks*Kreacher": 4
   }, {
-    "Tonks*Sirius Black": 8
+    "Nymphadora Tonks*Sirius Black": 8
   }, {
     "Arthur Weasley*Kreacher": 6
   }, {
@@ -4081,15 +4041,11 @@
   }, {
     "Snape*Dean Thomas": 10
   }, {
-    "Snape*Ted Tonks": 2
-  }, {
     "Snape*Griphook": 4
   }, {
     "Snape*Dirk Cresswell": 2
   }, {
-    "Dean Thomas*Tonks": 4
-  }, {
-    "Dean Thomas*Ted Tonks": 2
+    "Dean Thomas*Nymphadora Tonks": 4
   }, {
     "Dean Thomas*Umbridge": 2
   }, {
@@ -4103,19 +4059,11 @@
   }, {
     "Dean Thomas*Moody": 2
   }, {
-    "Tonks*Umbridge": 2
+    "Nymphadora Tonks*Umbridge": 2
   }, {
-    "Tonks*Griphook": 2
+    "Nymphadora Tonks*Griphook": 2
   }, {
-    "Tonks*Dirk Cresswell": 2
-  }, {
-    "Ted Tonks*Umbridge": 2
-  }, {
-    "Ted Tonks*Griphook": 2
-  }, {
-    "Ted Tonks*Dirk Cresswell": 2
-  }, {
-    "Ted Tonks*Moody": 2
+    "Nymphadora Tonks*Dirk Cresswell": 2
   }, {
     "Umbridge*Griphook": 2
   }, {
@@ -4335,7 +4283,7 @@
   }, {
     "Tom Riddle*Dean Thomas": 2
   }, {
-    "Tom Riddle*Tonks": 6
+    "Tom Riddle*Nymphadora Tonks": 6
   }, {
     "Tom Riddle*Bathilda Bagshot": 2
   }, {
@@ -4365,7 +4313,7 @@
   }, {
     "Dean Thomas*Lupin": 6
   }, {
-    "Tonks*Marvolo Gaunt": 4
+    "Nymphadora Tonks*Marvolo Gaunt": 4
   }, {
     "Ron Weasley*Marvolo Gaunt": 4
   }, {
@@ -4541,10 +4489,6 @@
   }, {
     "Fleur Delacour*Draco Malfoy": 10
   }, {
-    "Harry Potter*Teddy Lupin": 2
-  }, {
-    "Voldemort*Teddy Lupin": 2
-  }, {
     "Dean Thomas*Arthur Weasley": 4
   }, {
     "Dean Thomas*Molly Weasley": 4
@@ -4553,17 +4497,11 @@
   }, {
     "Dean Thomas*Sirius Black": 2
   }, {
-    "Dean Thomas*Teddy Lupin": 2
-  }, {
     "Bill Weasley*Sirius Black": 2
-  }, {
-    "Bill Weasley*Teddy Lupin": 2
   }, {
     "Arthur Weasley*Dobby": 2
   }, {
     "Arthur Weasley*Griphook": 2
-  }, {
-    "Arthur Weasley*Teddy Lupin": 2
   }, {
     "Molly Weasley*Dobby": 2
   }, {
@@ -4571,17 +4509,11 @@
   }, {
     "Molly Weasley*Sirius Black": 8
   }, {
-    "Molly Weasley*Teddy Lupin": 2
-  }, {
-    "Ron Weasley*Teddy Lupin": 2
-  }, {
     "Dobby*Gabrielle Delacour": 2
   }, {
     "Dobby*Sirius Black": 2
   }, {
     "Dobby*Lupin": 2
-  }, {
-    "Dobby*Teddy Lupin": 2
   }, {
     "Griphook*Gabrielle Delacour": 2
   }, {
@@ -4589,31 +4521,15 @@
   }, {
     "Griphook*Lupin": 2
   }, {
-    "Griphook*Teddy Lupin": 2
-  }, {
     "Fleur Delacour*Sirius Black": 4
-  }, {
-    "Fleur Delacour*Teddy Lupin": 2
   }, {
     "Gabrielle Delacour*Sirius Black": 2
   }, {
     "Gabrielle Delacour*Luna Lovegood": 2
   }, {
-    "Gabrielle Delacour*Teddy Lupin": 2
-  }, {
-    "Hermione Granger*Teddy Lupin": 2
-  }, {
     "Sirius Black*Luna Lovegood": 4
   }, {
-    "Sirius Black*Teddy Lupin": 2
-  }, {
     "Sirius Black*Ollivander": 2
-  }, {
-    "Luna Lovegood*Teddy Lupin": 2
-  }, {
-    "Lupin*Teddy Lupin": 2
-  }, {
-    "Teddy Lupin*Ollivander": 2
   }, {
     "Harry Potter*Hepzibah Smith": 2
   }, {
@@ -5565,7 +5481,7 @@
   }, {
     "Hannah Abbott*Sprout": 4
   }, {
-    "Hannah Abbott*Tonks": 4
+    "Hannah Abbott*Nymphadora Tonks": 4
   }, {
     "Hannah Abbott*Alecto Carrow": 2
   }, {
@@ -5633,7 +5549,7 @@
   }, {
     "Pomfrey*Sprout": 2
   }, {
-    "Pomfrey*Tonks": 4
+    "Pomfrey*Nymphadora Tonks": 4
   }, {
     "Pomfrey*Alecto Carrow": 2
   }, {
@@ -5713,7 +5629,7 @@
   }, {
     "Helena Ravenclaw*Sprout": 2
   }, {
-    "Helena Ravenclaw*Tonks": 2
+    "Helena Ravenclaw*Nymphadora Tonks": 2
   }, {
     "Helena Ravenclaw*Alecto Carrow": 2
   }, {
@@ -5897,7 +5813,7 @@
   }, {
     "Snape*Pansy Parkinson": 2
   }, {
-    "Sprout*Tonks": 4
+    "Sprout*Nymphadora Tonks": 4
   }, {
     "Sprout*Ron Weasley": 4
   }, {
@@ -5931,35 +5847,35 @@
   }, {
     "Sprout*Pansy Parkinson": 2
   }, {
-    "Tonks*Alecto Carrow": 2
+    "Nymphadora Tonks*Alecto Carrow": 2
   }, {
-    "Tonks*Percy Weasley": 4
+    "Nymphadora Tonks*Percy Weasley": 4
   }, {
-    "Tonks*Fang": 4
+    "Nymphadora Tonks*Fang": 4
   }, {
-    "Tonks*Firenze": 6
+    "Nymphadora Tonks*Firenze": 6
   }, {
-    "Tonks*Grawp": 6
+    "Nymphadora Tonks*Grawp": 6
   }, {
-    "Tonks*Mrs. Norris": 2
+    "Nymphadora Tonks*Mrs. Norris": 2
   }, {
-    "Tonks*Headless Nick": 2
+    "Nymphadora Tonks*Headless Nick": 2
   }, {
-    "Tonks*Crabbe": 4
+    "Nymphadora Tonks*Crabbe": 4
   }, {
-    "Tonks*Filch": 2
+    "Nymphadora Tonks*Filch": 2
   }, {
-    "Tonks*Flitwick": 4
+    "Nymphadora Tonks*Flitwick": 4
   }, {
-    "Tonks*Goyle": 4
+    "Nymphadora Tonks*Goyle": 4
   }, {
-    "Tonks*Neville Longbottom": 6
+    "Nymphadora Tonks*Neville Longbottom": 6
   }, {
-    "Tonks*Ernie Macmillan": 2
+    "Nymphadora Tonks*Ernie Macmillan": 2
   }, {
-    "Tonks*McGonagall": 6
+    "Nymphadora Tonks*McGonagall": 6
   }, {
-    "Tonks*Pansy Parkinson": 2
+    "Nymphadora Tonks*Pansy Parkinson": 2
   }, {
     "Alecto Carrow*Fang": 2
   }, {
@@ -6609,11 +6525,11 @@
   }, {
     "Snape*Gellert Grindelwald": 2
   }, {
-    "Tonks*Fawkes": 2
+    "Nymphadora Tonks*Fawkes": 2
   }, {
-    "Tonks*Gellert Grindelwald": 2
+    "Nymphadora Tonks*Gellert Grindelwald": 2
   }, {
-    "Tonks*Lucius Malfoy": 6
+    "Nymphadora Tonks*Lucius Malfoy": 6
   }, {
     "Arthur Weasley*Fawkes": 2
   }, {
@@ -6825,15 +6741,15 @@
   }, {
     "Snape*Colin Creevey": 4
   }, {
-    "Tonks*Oliver Wood": 2
+    "Nymphadora Tonks*Oliver Wood": 2
   }, {
-    "Tonks*Aragog": 2
+    "Nymphadora Tonks*Aragog": 2
   }, {
-    "Tonks*Nagini": 4
+    "Nymphadora Tonks*Nagini": 4
   }, {
-    "Tonks*Norbert": 2
+    "Nymphadora Tonks*Norbert": 2
   }, {
-    "Tonks*Colin Creevey": 4
+    "Nymphadora Tonks*Colin Creevey": 4
   }, {
     "Arthur Weasley*Aragog": 2
   }, {
@@ -7137,7 +7053,7 @@
   }, {
     "Kingsley Shacklebolt*Narcissa Malfoy": 2
   }, {
-    "Slughorn*Tonks": 2
+    "Slughorn*Nymphadora Tonks": 2
   }, {
     "Slughorn*Charlie Weasley": 2
   }, {
@@ -7215,19 +7131,19 @@
   }, {
     "Sprout*Narcissa Malfoy": 2
   }, {
-    "Tonks*Bane": 2
+    "Nymphadora Tonks*Bane": 2
   }, {
-    "Tonks*Buckbeak": 2
+    "Nymphadora Tonks*Buckbeak": 2
   }, {
-    "Tonks*Peeves": 2
+    "Nymphadora Tonks*Peeves": 2
   }, {
-    "Tonks*Seamus Finnigan": 2
+    "Nymphadora Tonks*Seamus Finnigan": 2
   }, {
-    "Tonks*Regulus Black": 2
+    "Nymphadora Tonks*Regulus Black": 2
   }, {
-    "Tonks*Fenrir Greyback": 2
+    "Nymphadora Tonks*Fenrir Greyback": 2
   }, {
-    "Tonks*Narcissa Malfoy": 2
+    "Nymphadora Tonks*Narcissa Malfoy": 2
   }, {
     "Arthur Weasley*Bane": 2
   }, {
@@ -11468,43 +11384,27 @@
   }, {
     "Ludo Bagman*Rosmerta": 2
   }, {
-    "Ludo Bagman*Vincent Crabbe, Sr.": 2
-  }, {
     "Ludo Bagman*Grubbly-Plank": 4
-  }, {
-    "Lavender Brown*Vincent Crabbe, Sr.": 2
   }, {
     "Lavender Brown*Albus Dumbledore": 2
   }, {
     "Lavender Brown*Grubbly-Plank": 4
   }, {
-    "Harry Potter*Vincent Crabbe, Sr.": 2
-  }, {
     "Harry Potter*Grubbly-Plank": 4
   }, {
     "Rita Skeeter*Crookshanks": 4
   }, {
-    "Rita Skeeter*Vincent Crabbe, Sr.": 2
-  }, {
     "Rita Skeeter*Grubbly-Plank": 2
-  }, {
-    "Fred Weasley*Vincent Crabbe, Sr.": 2
   }, {
     "Fred Weasley*Grubbly-Plank": 4
   }, {
-    "George Weasley*Vincent Crabbe, Sr.": 2
-  }, {
     "George Weasley*Grubbly-Plank": 4
-  }, {
-    "Ron Weasley*Vincent Crabbe, Sr.": 2
   }, {
     "Ron Weasley*Grubbly-Plank": 4
   }, {
     "Crookshanks*Fang": 4
   }, {
     "Crookshanks*Rosmerta": 2
-  }, {
-    "Crookshanks*Vincent Crabbe, Sr.": 2
   }, {
     "Crookshanks*Cedric Diggory": 6
   }, {
@@ -11514,13 +11414,9 @@
   }, {
     "Crookshanks*Maxime": 6
   }, {
-    "Fang*Vincent Crabbe, Sr.": 2
-  }, {
     "Fang*Albus Dumbledore": 2
   }, {
     "Fang*Grubbly-Plank": 2
-  }, {
-    "Rosmerta*Vincent Crabbe, Sr.": 2
   }, {
     "Rosmerta*Crabbe": 2
   }, {
@@ -11529,30 +11425,6 @@
     "Rosmerta*Grubbly-Plank": 2
   }, {
     "Rosmerta*Neville Longbottom": 2
-  }, {
-    "Vincent Crabbe, Sr.*Crabbe": 2
-  }, {
-    "Vincent Crabbe, Sr.*Cedric Diggory": 2
-  }, {
-    "Vincent Crabbe, Sr.*Albus Dumbledore": 2
-  }, {
-    "Vincent Crabbe, Sr.*Hermione Granger": 2
-  }, {
-    "Vincent Crabbe, Sr.*Grubbly-Plank": 2
-  }, {
-    "Vincent Crabbe, Sr.*Hagrid": 2
-  }, {
-    "Vincent Crabbe, Sr.*Krum": 2
-  }, {
-    "Vincent Crabbe, Sr.*Neville Longbottom": 2
-  }, {
-    "Vincent Crabbe, Sr.*Draco Malfoy": 4
-  }, {
-    "Vincent Crabbe, Sr.*Maxime": 2
-  }, {
-    "Vincent Crabbe, Sr.*Moody": 2
-  }, {
-    "Vincent Crabbe, Sr.*Parvati Patil": 2
   }, {
     "Crabbe*Grubbly-Plank": 2
   }, {
@@ -12451,7 +12323,7 @@
   }, {
     "Harry Potter*James Potter": 4
   }, {
-    "Harry Potter*Tonks": 18
+    "Harry Potter*Nymphadora Tonks": 18
   }, {
     "Harry Potter*Arthur Weasley": 20
   }, {
@@ -12471,7 +12343,7 @@
   }, {
     "James Potter*Slughorn": 4
   }, {
-    "James Potter*Tonks": 2
+    "James Potter*Nymphadora Tonks": 2
   }, {
     "James Potter*Arthur Weasley": 4
   }, {
@@ -12493,7 +12365,7 @@
   }, {
     "James Potter*Hermione Granger": 4
   }, {
-    "Voldemort*Tonks": 12
+    "Voldemort*Nymphadora Tonks": 12
   }, {
     "Voldemort*Arthur Weasley": 14
   }, {
@@ -12511,7 +12383,7 @@
   }, {
     "Voldemort*Hermione Granger": 30
   }, {
-    "Slughorn*Tonks": 16
+    "Slughorn*Nymphadora Tonks": 16
   }, {
     "Slughorn*Arthur Weasley": 18
   }, {
@@ -12529,25 +12401,25 @@
   }, {
     "Slughorn*Hermione Granger": 42
   }, {
-    "Tonks*Arthur Weasley": 8
+    "Nymphadora Tonks*Arthur Weasley": 8
   }, {
-    "Tonks*Fred Weasley": 6
+    "Nymphadora Tonks*Fred Weasley": 6
   }, {
-    "Tonks*Ginny Weasley": 14
+    "Nymphadora Tonks*Ginny Weasley": 14
   }, {
-    "Tonks*Molly Weasley": 8
+    "Nymphadora Tonks*Molly Weasley": 8
   }, {
-    "Tonks*Ron Weasley": 16
+    "Nymphadora Tonks*Ron Weasley": 16
   }, {
-    "Tonks*Crookshanks": 2
+    "Nymphadora Tonks*Crookshanks": 2
   }, {
-    "Tonks*Hedwig": 2
+    "Nymphadora Tonks*Hedwig": 2
   }, {
-    "Tonks*Fleur Delacour": 8
+    "Nymphadora Tonks*Fleur Delacour": 8
   }, {
-    "Tonks*Mundungus Fletcher": 4
+    "Nymphadora Tonks*Mundungus Fletcher": 4
   }, {
-    "Tonks*Hermione Granger": 16
+    "Nymphadora Tonks*Hermione Granger": 16
   }, {
     "Arthur Weasley*Fred Weasley": 16
   }, {
@@ -12849,8 +12721,6 @@
   }, {
     "Harry Potter*Cho Chang": 6
   }, {
-    "Harry Potter*Vincent Crabbe, Sr.": 2
-  }, {
     "Harry Potter*Crabbe": 16
   }, {
     "Harry Potter*Goyle": 14
@@ -12881,8 +12751,6 @@
   }, {
     "Lily Potter*Cho Chang": 2
   }, {
-    "Lily Potter*Vincent Crabbe, Sr.": 2
-  }, {
     "Lily Potter*Crabbe": 4
   }, {
     "Lily Potter*Fleur Delacour": 2
@@ -12907,8 +12775,6 @@
   }, {
     "Voldemort*Cho Chang": 4
   }, {
-    "Voldemort*Vincent Crabbe, Sr.": 2
-  }, {
     "Voldemort*Crabbe": 10
   }, {
     "Voldemort*Goyle": 10
@@ -12922,8 +12788,6 @@
     "Slughorn*Trevor": 2
   }, {
     "Slughorn*Cho Chang": 6
-  }, {
-    "Slughorn*Vincent Crabbe, Sr.": 2
   }, {
     "Slughorn*Crabbe": 16
   }, {
@@ -12945,8 +12809,6 @@
   }, {
     "Arthur Weasley*Cho Chang": 2
   }, {
-    "Arthur Weasley*Vincent Crabbe, Sr.": 2
-  }, {
     "Arthur Weasley*Crabbe": 2
   }, {
     "Arthur Weasley*Goyle": 2
@@ -12960,8 +12822,6 @@
     "Fred Weasley*Trevor": 2
   }, {
     "Fred Weasley*Cho Chang": 2
-  }, {
-    "Fred Weasley*Vincent Crabbe, Sr.": 2
   }, {
     "Fred Weasley*Crabbe": 4
   }, {
@@ -12977,8 +12837,6 @@
   }, {
     "Ginny Weasley*Cho Chang": 6
   }, {
-    "Ginny Weasley*Vincent Crabbe, Sr.": 2
-  }, {
     "Ginny Weasley*Crabbe": 10
   }, {
     "Ginny Weasley*Goyle": 8
@@ -12992,8 +12850,6 @@
     "Molly Weasley*Trevor": 2
   }, {
     "Molly Weasley*Cho Chang": 2
-  }, {
-    "Molly Weasley*Vincent Crabbe, Sr.": 2
   }, {
     "Molly Weasley*Crabbe": 4
   }, {
@@ -13009,8 +12865,6 @@
   }, {
     "Ron Weasley*Cho Chang": 6
   }, {
-    "Ron Weasley*Vincent Crabbe, Sr.": 2
-  }, {
     "Ron Weasley*Crabbe": 16
   }, {
     "Ron Weasley*Goyle": 14
@@ -13024,8 +12878,6 @@
     "Crookshanks*Trevor": 2
   }, {
     "Crookshanks*Cho Chang": 4
-  }, {
-    "Crookshanks*Vincent Crabbe, Sr.": 2
   }, {
     "Crookshanks*Crabbe": 4
   }, {
@@ -13047,8 +12899,6 @@
   }, {
     "Hedwig*Cho Chang": 2
   }, {
-    "Hedwig*Vincent Crabbe, Sr.": 2
-  }, {
     "Hedwig*Crabbe": 2
   }, {
     "Hedwig*Goyle": 2
@@ -13058,8 +12908,6 @@
     "Hedwig*Pansy Parkinson": 2
   }, {
     "Trevor*Cho Chang": 2
-  }, {
-    "Trevor*Vincent Crabbe, Sr.": 2
   }, {
     "Trevor*Crabbe": 2
   }, {
@@ -13081,8 +12929,6 @@
   }, {
     "Trevor*Pansy Parkinson": 2
   }, {
-    "Cho Chang*Vincent Crabbe, Sr.": 2
-  }, {
     "Cho Chang*Crabbe": 4
   }, {
     "Cho Chang*Fleur Delacour": 2
@@ -13102,26 +12948,6 @@
     "Cho Chang*Draco Malfoy": 10
   }, {
     "Cho Chang*Pansy Parkinson": 4
-  }, {
-    "Vincent Crabbe, Sr.*Crabbe": 2
-  }, {
-    "Vincent Crabbe, Sr.*Fleur Delacour": 2
-  }, {
-    "Vincent Crabbe, Sr.*Goyle": 2
-  }, {
-    "Vincent Crabbe, Sr.*Hermione Granger": 2
-  }, {
-    "Vincent Crabbe, Sr.*Hagrid": 2
-  }, {
-    "Vincent Crabbe, Sr.*Bellatrix Lestrange": 2
-  }, {
-    "Vincent Crabbe, Sr.*Neville Longbottom": 2
-  }, {
-    "Vincent Crabbe, Sr.*Luna Lovegood": 2
-  }, {
-    "Vincent Crabbe, Sr.*Draco Malfoy": 2
-  }, {
-    "Vincent Crabbe, Sr.*Pansy Parkinson": 2
   }, {
     "Crabbe*Fleur Delacour": 4
   }, {
@@ -13199,7 +13025,7 @@
   }, {
     "Pomfrey*Snape": 12
   }, {
-    "Pomfrey*Tonks": 6
+    "Pomfrey*Nymphadora Tonks": 6
   }, {
     "Pomfrey*Trelawney": 4
   }, {
@@ -13257,7 +13083,7 @@
   }, {
     "Slughorn*McGonagall": 24
   }, {
-    "Snape*Tonks": 14
+    "Snape*Nymphadora Tonks": 14
   }, {
     "Snape*Trelawney": 10
   }, {
@@ -13279,27 +13105,27 @@
   }, {
     "Snape*Pansy Parkinson": 6
   }, {
-    "Tonks*Trelawney": 2
+    "Nymphadora Tonks*Trelawney": 2
   }, {
-    "Tonks*Headless Nick": 2
+    "Nymphadora Tonks*Headless Nick": 2
   }, {
-    "Tonks*Crabbe": 8
+    "Nymphadora Tonks*Crabbe": 8
   }, {
-    "Tonks*Filch": 12
+    "Nymphadora Tonks*Filch": 12
   }, {
-    "Tonks*Seamus Finnigan": 12
+    "Nymphadora Tonks*Seamus Finnigan": 12
   }, {
-    "Tonks*Goyle": 6
+    "Nymphadora Tonks*Goyle": 6
   }, {
-    "Tonks*Sirius Black": 4
+    "Nymphadora Tonks*Sirius Black": 4
   }, {
-    "Tonks*Hagrid": 12
+    "Nymphadora Tonks*Hagrid": 12
   }, {
-    "Tonks*Draco Malfoy": 22
+    "Nymphadora Tonks*Draco Malfoy": 22
   }, {
-    "Tonks*McGonagall": 10
+    "Nymphadora Tonks*McGonagall": 10
   }, {
-    "Tonks*Pansy Parkinson": 4
+    "Nymphadora Tonks*Pansy Parkinson": 4
   }, {
     "Trelawney*Ron Weasley": 12
   }, {
@@ -14153,7 +13979,7 @@
   }, {
     "Snape*Mundungus Fletcher": 2
   }, {
-    "Dean Thomas*Tonks": 6
+    "Dean Thomas*Nymphadora Tonks": 6
   }, {
     "Dean Thomas*Ginny Weasley": 10
   }, {
@@ -14185,13 +14011,13 @@
   }, {
     "Dean Thomas*McGonagall": 10
   }, {
-    "Tonks*Rosmerta": 2
+    "Nymphadora Tonks*Rosmerta": 2
   }, {
-    "Tonks*Katie Bell": 2
+    "Nymphadora Tonks*Katie Bell": 2
   }, {
-    "Tonks*Neville Longbottom": 6
+    "Nymphadora Tonks*Neville Longbottom": 6
   }, {
-    "Tonks*Ernie Macmillan": 6
+    "Nymphadora Tonks*Ernie Macmillan": 6
   }, {
     "Ginny Weasley*Rosmerta": 4
   }, {
@@ -14737,7 +14563,7 @@
   }, {
     "Lavender Brown*Stan Shunpike": 2
   }, {
-    "Lavender Brown*Tonks": 6
+    "Lavender Brown*Nymphadora Tonks": 6
   }, {
     "Lavender Brown*Umbridge": 2
   }, {
@@ -14787,7 +14613,7 @@
   }, {
     "Rufus Scrimgeour*Stan Shunpike": 4
   }, {
-    "Rufus Scrimgeour*Tonks": 6
+    "Rufus Scrimgeour*Nymphadora Tonks": 6
   }, {
     "Rufus Scrimgeour*Umbridge": 4
   }, {
@@ -14815,7 +14641,7 @@
   }, {
     "Stan Shunpike*Snape": 4
   }, {
-    "Stan Shunpike*Tonks": 4
+    "Stan Shunpike*Nymphadora Tonks": 4
   }, {
     "Stan Shunpike*Umbridge": 4
   }, {
@@ -14887,23 +14713,23 @@
   }, {
     "Snape*Lupin": 12
   }, {
-    "Tonks*Umbridge": 4
+    "Nymphadora Tonks*Umbridge": 4
   }, {
-    "Tonks*Bill Weasley": 6
+    "Nymphadora Tonks*Bill Weasley": 6
   }, {
-    "Tonks*George Weasley": 2
+    "Nymphadora Tonks*George Weasley": 2
   }, {
-    "Tonks*Percy Weasley": 4
+    "Nymphadora Tonks*Percy Weasley": 4
   }, {
-    "Tonks*Kreacher": 4
+    "Nymphadora Tonks*Kreacher": 4
   }, {
-    "Tonks*Barty Crouch": 2
+    "Nymphadora Tonks*Barty Crouch": 2
   }, {
-    "Tonks*Fudge": 4
+    "Nymphadora Tonks*Fudge": 4
   }, {
-    "Tonks*Fenrir Greyback": 4
+    "Nymphadora Tonks*Fenrir Greyback": 4
   }, {
-    "Tonks*Lupin": 8
+    "Nymphadora Tonks*Lupin": 8
   }, {
     "Umbridge*Bill Weasley": 4
   }, {
@@ -15699,7 +15525,7 @@
   }, {
     "Lavender Brown*Pansy Parkinson": 4
   }, {
-    "Tonks*Dobby": 2
+    "Nymphadora Tonks*Dobby": 2
   }, {
     "Dobby*Crabbe": 2
   }, {
@@ -15721,7 +15547,7 @@
   }, {
     "Tom Riddle*Dean Thomas": 2
   }, {
-    "Tom Riddle*Tonks": 2
+    "Tom Riddle*Nymphadora Tonks": 2
   }, {
     "Tom Riddle*Aragog": 2
   }, {
@@ -15735,7 +15561,7 @@
   }, {
     "Voldemort*Fang": 6
   }, {
-    "Sprout*Tonks": 6
+    "Sprout*Nymphadora Tonks": 6
   }, {
     "Sprout*Aragog": 2
   }, {
@@ -15747,9 +15573,9 @@
   }, {
     "Dean Thomas*Fang": 4
   }, {
-    "Tonks*Aragog": 2
+    "Nymphadora Tonks*Aragog": 2
   }, {
-    "Tonks*Fang": 4
+    "Nymphadora Tonks*Fang": 4
   }, {
     "Aragog*Filch": 2
   }, {
@@ -16069,9 +15895,9 @@
   }, {
     "Snape*Amycus Carrow": 2
   }, {
-    "Tonks*Amycus Carrow": 2
+    "Nymphadora Tonks*Amycus Carrow": 2
   }, {
-    "Tonks*Buckbeak": 2
+    "Nymphadora Tonks*Buckbeak": 2
   }, {
     "Ginny Weasley*Amycus Carrow": 2
   }, {
@@ -16137,15 +15963,15 @@
   }, {
     "Dean Thomas*Fleur Delacour": 2
   }, {
-    "Tonks*Fawkes": 2
+    "Nymphadora Tonks*Fawkes": 2
   }, {
-    "Tonks*Mrs. Norris": 2
+    "Nymphadora Tonks*Mrs. Norris": 2
   }, {
-    "Tonks*Peeves": 2
+    "Nymphadora Tonks*Peeves": 2
   }, {
-    "Tonks*Flitwick": 2
+    "Nymphadora Tonks*Flitwick": 2
   }, {
-    "Tonks*Luna Lovegood": 2
+    "Nymphadora Tonks*Luna Lovegood": 2
   }, {
     "Bill Weasley*Fawkes": 2
   }, {
@@ -16187,7 +16013,7 @@
   }, {
     "Pince*Sprout": 2
   }, {
-    "Pince*Tonks": 2
+    "Pince*Nymphadora Tonks": 2
   }, {
     "Pince*Umbridge": 2
   }, {
@@ -16293,7 +16119,7 @@
   }, {
     "Kingsley Shacklebolt*Sprout": 2
   }, {
-    "Kingsley Shacklebolt*Tonks": 2
+    "Kingsley Shacklebolt*Nymphadora Tonks": 2
   }, {
     "Kingsley Shacklebolt*Umbridge": 2
   }, {
@@ -16383,7 +16209,7 @@
   }, {
     "Rita Skeeter*Sprout": 2
   }, {
-    "Rita Skeeter*Tonks": 2
+    "Rita Skeeter*Nymphadora Tonks": 2
   }, {
     "Rita Skeeter*Umbridge": 2
   }, {
@@ -16439,7 +16265,7 @@
   }, {
     "Slughorn*Moody": 2
   }, {
-    "Zacharias Smith*Tonks": 2
+    "Zacharias Smith*Nymphadora Tonks": 2
   }, {
     "Zacharias Smith*Umbridge": 2
   }, {
@@ -16495,15 +16321,15 @@
   }, {
     "Sprout*Moody": 2
   }, {
-    "Tonks*Firenze": 2
+    "Nymphadora Tonks*Firenze": 2
   }, {
-    "Tonks*Grawp": 2
+    "Nymphadora Tonks*Grawp": 2
   }, {
-    "Tonks*Lucius Malfoy": 2
+    "Nymphadora Tonks*Lucius Malfoy": 2
   }, {
-    "Tonks*Maxime": 2
+    "Nymphadora Tonks*Maxime": 2
   }, {
-    "Tonks*Moody": 2
+    "Nymphadora Tonks*Moody": 2
   }, {
     "Umbridge*Firenze": 2
   }, {
@@ -16898,7 +16724,7 @@
   }, {
     "Harry Potter*Kingsley Shacklebolt": 16
   }, {
-    "Harry Potter*Tonks": 28
+    "Harry Potter*Nymphadora Tonks": 30
   }, {
     "Harry Potter*Hedwig": 24
   }, {
@@ -16908,7 +16734,7 @@
   }, {
     "Harry Potter*Moody": 36
   }, {
-    "Kingsley Shacklebolt*Tonks": 14
+    "Kingsley Shacklebolt*Nymphadora Tonks": 14
   }, {
     "Kingsley Shacklebolt*Ron Weasley": 16
   }, {
@@ -16934,29 +16760,29 @@
   }, {
     "Kingsley Shacklebolt*Moody": 10
   }, {
-    "Tonks*Ron Weasley": 26
+    "Nymphadora Tonks*Ron Weasley": 26
   }, {
-    "Tonks*Hedwig": 14
+    "Nymphadora Tonks*Hedwig": 14
   }, {
-    "Tonks*Dedalus Diggle": 4
+    "Nymphadora Tonks*Dedalus Diggle": 4
   }, {
-    "Tonks*Dudley Dursley": 6
+    "Nymphadora Tonks*Dudley Dursley": 6
   }, {
-    "Tonks*Petunia Dursley": 4
+    "Nymphadora Tonks*Petunia Dursley": 4
   }, {
-    "Tonks*Vernon Dursley": 6
+    "Nymphadora Tonks*Vernon Dursley": 6
   }, {
-    "Tonks*Mrs. Figg": 2
+    "Nymphadora Tonks*Mrs. Figg": 2
   }, {
-    "Tonks*Mundungus Fletcher": 14
+    "Nymphadora Tonks*Mundungus Fletcher": 14
   }, {
-    "Tonks*Hermione Granger": 22
+    "Nymphadora Tonks*Hermione Granger": 24
   }, {
-    "Tonks*Sirius Black": 28
+    "Nymphadora Tonks*Sirius Black": 30
   }, {
-    "Tonks*Lupin": 26
+    "Nymphadora Tonks*Lupin": 28
   }, {
-    "Tonks*Moody": 22
+    "Nymphadora Tonks*Moody": 24
   }, {
     "Ron Weasley*Hedwig": 24
   }, {
@@ -17058,7 +16884,7 @@
   }, {
     "Voldemort*Snape": 30
   }, {
-    "Voldemort*Tonks": 22
+    "Voldemort*Nymphadora Tonks": 24
   }, {
     "Voldemort*Fred Weasley": 40
   }, {
@@ -17084,7 +16910,7 @@
   }, {
     "Rita Skeeter*Snape": 6
   }, {
-    "Rita Skeeter*Tonks": 2
+    "Rita Skeeter*Nymphadora Tonks": 2
   }, {
     "Rita Skeeter*Arthur Weasley": 2
   }, {
@@ -17118,7 +16944,7 @@
   }, {
     "Rita Skeeter*Moody": 4
   }, {
-    "Snape*Tonks": 14
+    "Snape*Nymphadora Tonks": 16
   }, {
     "Snape*Arthur Weasley": 18
   }, {
@@ -17152,23 +16978,23 @@
   }, {
     "Snape*Moody": 20
   }, {
-    "Tonks*Arthur Weasley": 30
+    "Nymphadora Tonks*Arthur Weasley": 34
   }, {
-    "Tonks*Fred Weasley": 18
+    "Nymphadora Tonks*Fred Weasley": 18
   }, {
-    "Tonks*George Weasley": 16
+    "Nymphadora Tonks*George Weasley": 16
   }, {
-    "Tonks*Ginny Weasley": 20
+    "Nymphadora Tonks*Ginny Weasley": 20
   }, {
-    "Tonks*Molly Weasley": 28
+    "Nymphadora Tonks*Molly Weasley": 28
   }, {
-    "Tonks*Percy Weasley": 6
+    "Nymphadora Tonks*Percy Weasley": 6
   }, {
-    "Tonks*Kreacher": 18
+    "Nymphadora Tonks*Kreacher": 20
   }, {
-    "Tonks*Mr. Crouch": 2
+    "Nymphadora Tonks*Mr. Crouch": 2
   }, {
-    "Tonks*Fudge": 12
+    "Nymphadora Tonks*Fudge": 12
   }, {
     "Arthur Weasley*Fred Weasley": 24
   }, {
@@ -17378,7 +17204,7 @@
   }, {
     "Millicent Bulstrode*Snape": 4
   }, {
-    "Millicent Bulstrode*Tonks": 2
+    "Millicent Bulstrode*Nymphadora Tonks": 2
   }, {
     "Millicent Bulstrode*Bill Weasley": 2
   }, {
@@ -17458,13 +17284,13 @@
   }, {
     "Snape*Dudley Dursley": 8
   }, {
-    "Tonks*Bill Weasley": 8
+    "Nymphadora Tonks*Bill Weasley": 8
   }, {
-    "Tonks*Charlie Weasley": 2
+    "Nymphadora Tonks*Charlie Weasley": 2
   }, {
-    "Tonks*Crookshanks": 10
+    "Nymphadora Tonks*Crookshanks": 10
   }, {
-    "Tonks*Wormtail": 4
+    "Nymphadora Tonks*Wormtail": 4
   }, {
     "Bill Weasley*Arthur Weasley": 8
   }, {
@@ -17594,10 +17420,6 @@
   }, {
     "Dudley Dursley*Fudge": 6
   }, {
-    "Harry Potter*Andromeda Tonks": 2
-  }, {
-    "Harry Potter*Ted Tonks": 2
-  }, {
     "Harry Potter*Buckbeak": 14
   }, {
     "Harry Potter*Regulus Black": 2
@@ -17615,10 +17437,6 @@
     "Harry Potter*Narcissa Malfoy": 4
   }, {
     "Harry Potter*McGonagall": 42
-  }, {
-    "Voldemort*Andromeda Tonks": 2
-  }, {
-    "Voldemort*Ted Tonks": 2
   }, {
     "Voldemort*Buckbeak": 12
   }, {
@@ -17638,10 +17456,6 @@
   }, {
     "Voldemort*McGonagall": 28
   }, {
-    "Snape*Andromeda Tonks": 2
-  }, {
-    "Snape*Ted Tonks": 2
-  }, {
     "Snape*Buckbeak": 6
   }, {
     "Snape*Regulus Black": 2
@@ -17660,125 +17474,23 @@
   }, {
     "Snape*McGonagall": 32
   }, {
-    "Andromeda Tonks*Tonks": 2
+    "Nymphadora Tonks*Buckbeak": 14
   }, {
-    "Andromeda Tonks*Ted Tonks": 2
+    "Nymphadora Tonks*Regulus Black": 2
   }, {
-    "Andromeda Tonks*Bill Weasley": 2
+    "Nymphadora Tonks*Hagrid": 10
   }, {
-    "Andromeda Tonks*Arthur Weasley": 2
+    "Nymphadora Tonks*Bellatrix Lestrange": 12
   }, {
-    "Andromeda Tonks*Fred Weasley": 2
+    "Nymphadora Tonks*Gilderoy Lockhart": 4
   }, {
-    "Andromeda Tonks*George Weasley": 2
+    "Nymphadora Tonks*Draco Malfoy": 20
   }, {
-    "Andromeda Tonks*Ginny Weasley": 2
+    "Nymphadora Tonks*Lucius Malfoy": 12
   }, {
-    "Andromeda Tonks*Molly Weasley": 4
+    "Nymphadora Tonks*Narcissa Malfoy": 6
   }, {
-    "Andromeda Tonks*Ron Weasley": 2
-  }, {
-    "Andromeda Tonks*Buckbeak": 2
-  }, {
-    "Andromeda Tonks*Crookshanks": 2
-  }, {
-    "Andromeda Tonks*Hedwig": 2
-  }, {
-    "Andromeda Tonks*Kreacher": 2
-  }, {
-    "Andromeda Tonks*Regulus Black": 2
-  }, {
-    "Andromeda Tonks*Mundungus Fletcher": 2
-  }, {
-    "Andromeda Tonks*Hermione Granger": 2
-  }, {
-    "Andromeda Tonks*Sirius Black": 2
-  }, {
-    "Andromeda Tonks*Hagrid": 2
-  }, {
-    "Andromeda Tonks*Bellatrix Lestrange": 2
-  }, {
-    "Andromeda Tonks*Gilderoy Lockhart": 2
-  }, {
-    "Andromeda Tonks*Lupin": 2
-  }, {
-    "Andromeda Tonks*Draco Malfoy": 2
-  }, {
-    "Andromeda Tonks*Lucius Malfoy": 2
-  }, {
-    "Andromeda Tonks*Narcissa Malfoy": 2
-  }, {
-    "Andromeda Tonks*McGonagall": 2
-  }, {
-    "Andromeda Tonks*Moody": 2
-  }, {
-    "Tonks*Ted Tonks": 2
-  }, {
-    "Tonks*Buckbeak": 12
-  }, {
-    "Tonks*Regulus Black": 2
-  }, {
-    "Tonks*Hagrid": 10
-  }, {
-    "Tonks*Bellatrix Lestrange": 10
-  }, {
-    "Tonks*Gilderoy Lockhart": 4
-  }, {
-    "Tonks*Draco Malfoy": 18
-  }, {
-    "Tonks*Lucius Malfoy": 10
-  }, {
-    "Tonks*Narcissa Malfoy": 4
-  }, {
-    "Tonks*McGonagall": 6
-  }, {
-    "Ted Tonks*Bill Weasley": 2
-  }, {
-    "Ted Tonks*Arthur Weasley": 2
-  }, {
-    "Ted Tonks*Fred Weasley": 2
-  }, {
-    "Ted Tonks*George Weasley": 2
-  }, {
-    "Ted Tonks*Ginny Weasley": 2
-  }, {
-    "Ted Tonks*Molly Weasley": 4
-  }, {
-    "Ted Tonks*Ron Weasley": 2
-  }, {
-    "Ted Tonks*Buckbeak": 2
-  }, {
-    "Ted Tonks*Crookshanks": 2
-  }, {
-    "Ted Tonks*Hedwig": 2
-  }, {
-    "Ted Tonks*Kreacher": 2
-  }, {
-    "Ted Tonks*Regulus Black": 2
-  }, {
-    "Ted Tonks*Mundungus Fletcher": 2
-  }, {
-    "Ted Tonks*Hermione Granger": 2
-  }, {
-    "Ted Tonks*Sirius Black": 2
-  }, {
-    "Ted Tonks*Hagrid": 2
-  }, {
-    "Ted Tonks*Bellatrix Lestrange": 2
-  }, {
-    "Ted Tonks*Gilderoy Lockhart": 2
-  }, {
-    "Ted Tonks*Lupin": 2
-  }, {
-    "Ted Tonks*Draco Malfoy": 2
-  }, {
-    "Ted Tonks*Lucius Malfoy": 2
-  }, {
-    "Ted Tonks*Narcissa Malfoy": 2
-  }, {
-    "Ted Tonks*McGonagall": 2
-  }, {
-    "Ted Tonks*Moody": 2
+    "Nymphadora Tonks*McGonagall": 6
   }, {
     "Bill Weasley*Buckbeak": 6
   }, {
@@ -18142,7 +17854,7 @@
   }, {
     "Snape*Amelia Bones": 2
   }, {
-    "Tonks*Amelia Bones": 4
+    "Nymphadora Tonks*Amelia Bones": 4
   }, {
     "Arthur Weasley*Amelia Bones": 6
   }, {
@@ -18238,7 +17950,7 @@
   }, {
     "Quirrell*Frank Bryce": 2
   }, {
-    "Quirrell*Tonks": 4
+    "Quirrell*Nymphadora Tonks": 4
   }, {
     "Quirrell*Bill Weasley": 4
   }, {
@@ -18318,7 +18030,7 @@
   }, {
     "Kingsley Shacklebolt*Lucius Malfoy": 4
   }, {
-    "Frank Bryce*Tonks": 2
+    "Frank Bryce*Nymphadora Tonks": 2
   }, {
     "Frank Bryce*Bill Weasley": 2
   }, {
@@ -18370,11 +18082,11 @@
   }, {
     "Frank Bryce*Moody": 2
   }, {
-    "Tonks*Elphias Doge": 2
+    "Nymphadora Tonks*Elphias Doge": 2
   }, {
-    "Tonks*Alice Longbottom": 4
+    "Nymphadora Tonks*Alice Longbottom": 4
   }, {
-    "Tonks*Frank Longbottom": 2
+    "Nymphadora Tonks*Frank Longbottom": 2
   }, {
     "Bill Weasley*Dedalus Diggle": 2
   }, {
@@ -18644,7 +18356,7 @@
   }, {
     "Kingsley Shacklebolt*Pansy Parkinson": 2
   }, {
-    "Sprout*Tonks": 2
+    "Sprout*Nymphadora Tonks": 2
   }, {
     "Sprout*Arthur Weasley": 4
   }, {
@@ -18694,21 +18406,21 @@
   }, {
     "Sprout*Pansy Parkinson": 10
   }, {
-    "Tonks*Trevor": 2
+    "Nymphadora Tonks*Trevor": 2
   }, {
-    "Tonks*Cho Chang": 8
+    "Nymphadora Tonks*Cho Chang": 8
   }, {
-    "Tonks*Crabbe": 6
+    "Nymphadora Tonks*Crabbe": 6
   }, {
-    "Tonks*Goyle": 4
+    "Nymphadora Tonks*Goyle": 4
   }, {
-    "Tonks*Grubbly-Plank": 2
+    "Nymphadora Tonks*Grubbly-Plank": 2
   }, {
-    "Tonks*Neville Longbottom": 12
+    "Nymphadora Tonks*Neville Longbottom": 14
   }, {
-    "Tonks*Luna Lovegood": 6
+    "Nymphadora Tonks*Luna Lovegood": 6
   }, {
-    "Tonks*Pansy Parkinson": 2
+    "Nymphadora Tonks*Pansy Parkinson": 2
   }, {
     "Arthur Weasley*Trevor": 4
   }, {
@@ -21996,7 +21708,7 @@
   }, {
     "Augustus Rookwood*Dean Thomas": 4
   }, {
-    "Augustus Rookwood*Tonks": 4
+    "Augustus Rookwood*Nymphadora Tonks": 4
   }, {
     "Augustus Rookwood*Trelawney": 4
   }, {
@@ -22024,15 +21736,15 @@
   }, {
     "Augustus Rookwood*Moody": 4
   }, {
-    "Dean Thomas*Tonks": 6
+    "Dean Thomas*Nymphadora Tonks": 6
   }, {
     "Dean Thomas*Fawkes": 4
   }, {
-    "Tonks*Trelawney": 4
+    "Nymphadora Tonks*Trelawney": 6
   }, {
-    "Tonks*Umbridge": 10
+    "Nymphadora Tonks*Umbridge": 12
   }, {
-    "Tonks*Fawkes": 6
+    "Nymphadora Tonks*Fawkes": 8
   }, {
     "Trelawney*Fawkes": 6
   }, {
@@ -22104,9 +21816,9 @@
   }, {
     "Dean Thomas*Gilderoy Lockhart": 2
   }, {
-    "Tonks*Dobby": 4
+    "Nymphadora Tonks*Dobby": 6
   }, {
-    "Tonks*Albus Dumbledore": 6
+    "Nymphadora Tonks*Albus Dumbledore": 6
   }, {
     "Umbridge*Mundungus Fletcher": 6
   }, {
@@ -22176,7 +21888,7 @@
   }, {
     "Pince*Dean Thomas": 2
   }, {
-    "Pince*Tonks": 2
+    "Pince*Nymphadora Tonks": 2
   }, {
     "Pince*Umbridge": 4
   }, {
@@ -22232,7 +21944,7 @@
   }, {
     "Stan Shunpike*Dean Thomas": 2
   }, {
-    "Stan Shunpike*Tonks": 2
+    "Stan Shunpike*Nymphadora Tonks": 2
   }, {
     "Stan Shunpike*Umbridge": 2
   }, {
@@ -22278,7 +21990,7 @@
   }, {
     "Stan Shunpike*Lucius Malfoy": 2
   }, {
-    "Zacharias Smith*Tonks": 2
+    "Zacharias Smith*Nymphadora Tonks": 2
   }, {
     "Zacharias Smith*Buckbeak": 2
   }, {
@@ -22302,11 +22014,11 @@
   }, {
     "Dean Thomas*Vernon Dursley": 2
   }, {
-    "Tonks*Headless Nick": 4
+    "Nymphadora Tonks*Headless Nick": 4
   }, {
-    "Tonks*Cedric Diggory": 4
+    "Nymphadora Tonks*Cedric Diggory": 6
   }, {
-    "Tonks*Seamus Finnigan": 2
+    "Nymphadora Tonks*Seamus Finnigan": 2
   }, {
     "Arthur Weasley*Headless Nick": 4
   }, {
@@ -23572,7 +23284,7 @@
   }, {
     "Kingsley Shacklebolt*Bellatrix Lestrange": 4
   }, {
-    "Tonks*Antonin Dolohov": 2
+    "Nymphadora Tonks*Antonin Dolohov": 2
   }, {
     "Buckbeak*Crabbe": 2
   }, {
@@ -23596,13 +23308,9 @@
   }, {
     "Fawkes*Lupin": 4
   }, {
-    "Harry Potter*Nymphadora Tonks": 2
-  }, {
     "James Potter*Voldemort": 4
   }, {
-    "James Potter*Nymphadora Tonks": 2
-  }, {
-    "James Potter*Tonks": 4
+    "James Potter*Nymphadora Tonks": 6
   }, {
     "James Potter*Arthur Weasley": 6
   }, {
@@ -23622,47 +23330,7 @@
   }, {
     "James Potter*Narcissa Malfoy": 2
   }, {
-    "Voldemort*Nymphadora Tonks": 2
-  }, {
-    "Snape*Nymphadora Tonks": 2
-  }, {
     "Snape*Fawkes": 2
-  }, {
-    "Nymphadora Tonks*Tonks": 2
-  }, {
-    "Nymphadora Tonks*Trelawney": 2
-  }, {
-    "Nymphadora Tonks*Umbridge": 2
-  }, {
-    "Nymphadora Tonks*Arthur Weasley": 4
-  }, {
-    "Nymphadora Tonks*Buckbeak": 2
-  }, {
-    "Nymphadora Tonks*Dobby": 2
-  }, {
-    "Nymphadora Tonks*Fawkes": 2
-  }, {
-    "Nymphadora Tonks*Kreacher": 2
-  }, {
-    "Nymphadora Tonks*Cedric Diggory": 2
-  }, {
-    "Nymphadora Tonks*Hermione Granger": 2
-  }, {
-    "Nymphadora Tonks*Sirius Black": 2
-  }, {
-    "Nymphadora Tonks*Bellatrix Lestrange": 2
-  }, {
-    "Nymphadora Tonks*Neville Longbottom": 2
-  }, {
-    "Nymphadora Tonks*Lupin": 2
-  }, {
-    "Nymphadora Tonks*Draco Malfoy": 2
-  }, {
-    "Nymphadora Tonks*Lucius Malfoy": 2
-  }, {
-    "Nymphadora Tonks*Narcissa Malfoy": 2
-  }, {
-    "Nymphadora Tonks*Moody": 2
   }, {
     "Trelawney*Buckbeak": 2
   }, {
@@ -23686,7 +23354,7 @@
   }, {
     "Neville Longbottom*Narcissa Malfoy": 2
   }, {
-    "Hannah Abbott*Tonks": 2
+    "Hannah Abbott*Nymphadora Tonks": 2
   }, {
     "Hannah Abbott*Arthur Weasley": 2
   }, {
@@ -23698,7 +23366,7 @@
   }, {
     "Hannah Abbott*Moody": 2
   }, {
-    "Pomfrey*Tonks": 2
+    "Pomfrey*Nymphadora Tonks": 2
   }, {
     "Pomfrey*Arthur Weasley": 2
   }, {
@@ -23734,23 +23402,23 @@
   }, {
     "Voldemort*Firenze": 2
   }, {
-    "Tonks*Fang": 2
+    "Nymphadora Tonks*Fang": 2
   }, {
-    "Tonks*Firenze": 2
+    "Nymphadora Tonks*Firenze": 2
   }, {
-    "Tonks*Grawp": 2
+    "Nymphadora Tonks*Grawp": 2
   }, {
-    "Tonks*Peeves": 2
+    "Nymphadora Tonks*Peeves": 2
   }, {
-    "Tonks*Marietta Edgecombe": 2
+    "Nymphadora Tonks*Marietta Edgecombe": 2
   }, {
-    "Tonks*Justin Finch-Fletchley": 2
+    "Nymphadora Tonks*Justin Finch-Fletchley": 2
   }, {
-    "Tonks*Anthony Goldstein": 2
+    "Nymphadora Tonks*Anthony Goldstein": 2
   }, {
-    "Tonks*Susan Bones": 2
+    "Nymphadora Tonks*Susan Bones": 2
   }, {
-    "Tonks*Ernie Macmillan": 2
+    "Nymphadora Tonks*Ernie Macmillan": 2
   }, {
     "Arthur Weasley*Fang": 2
   }, {

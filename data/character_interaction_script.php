@@ -29,10 +29,8 @@ $characters = [
     "Pius Thicknesse",
     "Frank Bryce",
     "Dean Thomas",
-    "Andromeda Tonks",
     "Nymphadora Tonks",
     "Tonks",
-    "Ted Tonks",
     "Trelawney",
     "Umbridge",
     "Romilda Vane",
@@ -83,7 +81,6 @@ $characters = [
     "Penelope Clearwater",
     "Bathilda Bagshot",
     "Michael Corner",
-    "Vincent Crabbe, Sr.",
     "Crabbe",
     "Colin Creevey",
     "Dirk Cresswell",
@@ -142,7 +139,6 @@ $characters = [
     "Luna Lovegood",
     "Xenophilius Lovegood",
     "Lupin",
-    "Teddy Lupin",
     "Draco Malfoy",
     "Malfoy",
     "Lucius Malfoy",
@@ -186,6 +182,8 @@ foreach ($files as $file) {
                     array_push($chapterChars, "Arthur Weasley");
                 }elseif(strcmp("Mrs. Weasley", $name) == 0){
                     array_push($chapterChars, "Molly Weasley");
+                } elseif(strcmp("Tonks", $name) == 0){
+                    array_push($chapterChars, "Nymphadora Tonks");
                 } else {
                     array_push($chapterChars, $name);
                 }
