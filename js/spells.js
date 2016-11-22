@@ -102,11 +102,16 @@ SpellChart.prototype.update = function (data) {
         if(bookSpellData[i].length == 1) {
             num = bookSpellData[i][0]["number"];
         } else {
-            bookSpellData.forEach(function (caster) {
+            bookSpellData[i].forEach(function (caster) {
                 num += caster.number;
             });
         }
-        allSpellData.push({book:bookSpellData[i][0]["name"], name: bookSpellData[i][0]["name"], number: bookSpellData[i][0]["number"]});
+        if(num > maxSpellsCast){
+            maxSpellsCast = num;
+        }
+        allSpellData.push({book:bookSpellData[i][0]["name"],
+            name: bookSpellData[i][0]["name"],
+            number: num});
     }
 
     var width = window.innerWidth;
@@ -115,7 +120,7 @@ SpellChart.prototype.update = function (data) {
         .attr("width", width)
         .attr("height", height);
 
-    var color = d3.scaleOrdinal(d3.schemeCategory10);
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 
     if (data.length != 1) {
@@ -295,7 +300,7 @@ SpellChart.prototype.update = function (data) {
                 .data(pie(character))
                 .enter().append("path")
                 .attr("fill", function (d) {
-                    return color(d.data.name);
+                    return color(d.data.book);
                 })
                 .attr("class", "solidArc")
                 .attr("stroke", "#fff")
