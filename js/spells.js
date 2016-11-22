@@ -106,7 +106,7 @@ SpellChart.prototype.update = function (data) {
                 num += caster.number;
             });
         }
-        allSpellData.push({name: bookSpellData[i][0]["name"], number: bookSpellData[i][0]["number"]});
+        allSpellData.push({book:bookSpellData[i][0]["name"], name: bookSpellData[i][0]["name"], number: bookSpellData[i][0]["number"]});
     }
 
     var width = window.innerWidth;
@@ -197,14 +197,6 @@ SpellChart.prototype.update = function (data) {
         d3.select("#line").classed("hidden", true);
         d3.selectAll("#aster g").remove();
 
-        totalHeight = height + 40;
-
-        if(allCasterData.length > 3){
-            spellChart.attr("height", totalHeight * 4);
-        } else {
-            spellChart.attr("height", totalHeight * allCasterData.length);
-        }
-
         var tip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([0, 0])
@@ -252,6 +244,8 @@ SpellChart.prototype.update = function (data) {
         if(allCasterData.length > 8){
             placementRadius = radius * 4;
         }
+
+        spellChart.attr("height", placementRadius * 3);
 
         var large = asterCharts.append("g")
             .attr("transform", "translate(0, " + placementRadius  +  ")");
