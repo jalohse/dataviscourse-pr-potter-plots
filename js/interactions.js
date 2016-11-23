@@ -9,7 +9,7 @@ InteractionChart.prototype.update = function (data) {
 
     var width = height = 1250,
         matrix = [],
-        margin = 100;
+        margin = 150;
 
     var color = data.color;
 
