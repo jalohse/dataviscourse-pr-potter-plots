@@ -56,7 +56,20 @@ DeathChart.prototype.update = function (data) {
         return d.children ? 0 : 1;
     });
 
+    var max = d3.max(data, function (d) {
+        var num  = 0;
+        for(i = 0; i < d.values.length; i++){
+            num += d.values[i].value.name.length;
+        }
+        return d.values.length + num;
+    });
+
     var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var luminance = d3.scaleSqrt()
+        .domain([0, max])
+        .clamp(true)
+        .range([90, 20]);
 
     var paths = svg.selectAll("path")
         .data(partition(root).descendants());
@@ -72,7 +85,15 @@ DeathChart.prototype.update = function (data) {
             if (d.data.name == "root") {
                 return "none";
             }
-            return color((d.children ? d : d.parent).data.name);
+            var p = d;
+            while (p.depth > 1) p = p.parent;
+            var c = d3.lab(color(p.data.name));
+            if(d.children) {
+                c.l = luminance(d.children.length);
+            } else {
+                c.l = luminance(0);
+            }
+            return c;
         }).on('mouseover', changeInsideText)
         .on('mouseout', clearText);
 
