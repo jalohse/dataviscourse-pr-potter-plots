@@ -128,7 +128,7 @@ function createLineChart(spellData, allCasterData){
 
 function createAllSpellsAster(allSpellData){
 
-    var largeRadius = Math.min(width, height),
+    var largeRadius = Math.min(width, height) / 1.5,
         largeInnerRadius = 0.3 * largeRadius;
 
     var largeArc = d3.arc()
@@ -228,7 +228,7 @@ SpellChart.prototype.update = function (data) {
     minNum = 0;
     maxSpellsCast = 0;
     maxSpellsForCaster = 0;
-    width = window.innerWidth;
+    width = Math.min(window.innerWidth, 2000);
     spellChart = d3.select("#spells")
         .attr("width", width)
         .attr("height", height);
@@ -281,7 +281,7 @@ SpellChart.prototype.update = function (data) {
         d3.select("#aster")
             .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
-        var radius = Math.min(width, height) / 2;
+        var radius = Math.min(width, height) / 3;
 
         pie = d3.pie().value(function (d) {
             return d.number;
