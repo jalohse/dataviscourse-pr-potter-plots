@@ -7,8 +7,7 @@ function InteractionChart() {
 
 InteractionChart.prototype.update = function (data) {
 
-    var width = 1000,
-        height = 1000,
+    var width = height = 1250,
         matrix = [],
         margin = 100;
 
@@ -131,6 +130,11 @@ InteractionChart.prototype.update = function (data) {
         .attr("y", xScale.bandwidth() /2)
         .attr("dy", ".32em")
         .attr("text-anchor", "end")
+        .attr("class", function(){
+            if(charCount.length < 70){
+                return "storyTextBig";
+            }
+        })
         .text(function (d, i) {
             return charCount[i].name;
         });
@@ -150,6 +154,11 @@ InteractionChart.prototype.update = function (data) {
         .attr('y', xScale.bandwidth()/2)
         .attr("dy", ".32em")
         .attr("text-anchor", "start")
+        .attr("class", function(){
+            if(charCount.length < 70){
+                return "storyTextBig";
+            }
+        })
         .text(function (d, i) {
             return charCount[i].name;
         });
