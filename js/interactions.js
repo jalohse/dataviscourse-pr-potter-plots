@@ -77,14 +77,14 @@ InteractionChart.prototype.update = function (data) {
 
     var orders = {
         name: d3.range(characters.length).sort(function(a, b) {
-            return d3.ascending(characters[a].name, characters[b].name);
+            return d3.ascending(charCount[a].name, charCount[b].name);
         }),
         count: d3.range(characters.length).sort(function(a, b) {
-            return characters[b].count - characters[a].count;
+            return charCount[b].count - charCount[a].count;
         })
     };
 
-    var xScale = d3.scaleBand().range([0, width]).domain(orders.name);
+    var xScale = d3.scaleBand().range([0, width]).domain(orders.count);
 
     var opacityScale = d3.scaleLinear().domain([0,max]).range([.1, 1]).clamp(true);
 
