@@ -183,14 +183,44 @@ function createSmallSpellCharts(character, radius, degree){
             maxCast = element.number;
         }
     });
+
+    var x = Math.round(Math.cos(degree * i) * placementRadius);
+    var y = Math.round(Math.sin(degree * i) * placementRadius + placementRadius);
+
     var current = d3.select("#aster").append("g")
-        .attr("transform", "translate(" +
-            Math.round(Math.cos(degree * i) * placementRadius) + "," +
-            Math.round(Math.sin(degree * i) * placementRadius + placementRadius) + ")");
+        .attr("transform", "translate(" + x + "," + y + ")");
+
+    var spacing = 15;
 
     current.append("text")
         .text(character[0].name)
-        .attr("text-anchor", "middle");
+        .attr("text-anchor", function () {
+            if(x == 0 || y == 0){
+                return "middle"
+            } else if(x > 0){
+                return "start";
+            } else {
+                return "end";
+            }
+        })
+        .attr("dy", function () {
+            if(x == 0){
+                if(y == 0){
+                    return (spacing + radius) * -1;
+                } else {
+                    return spacing + spacing + radius ;
+                }
+            }
+        })
+        .attr("dx", function () {
+            if(x > 0){
+                return spacing + radius;
+            } else if (x == 0){
+                return 0;
+            }else {
+                return (spacing + radius) * -1;
+            }
+        });
 
     current.selectAll(".solidArc")
         .data(pie(character))
@@ -247,6 +277,8 @@ SpellChart.prototype.update = function (data) {
     spellChart = d3.select("#spells")
         .attr("width", width)
         .attr("height", height);
+    color = d3.scaleOrdinal(d3.schemeCategory20);
+
 
     var spells;
     if (data.length != 1) {
