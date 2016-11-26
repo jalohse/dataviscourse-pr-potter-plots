@@ -114,7 +114,9 @@ InteractionChart.prototype.update = function (data) {
         })
     };
 
-    var xScale = d3.scaleBand().range([0, width]).domain(orders.name);
+    var val = document.getElementById("order").value;
+
+    var xScale = d3.scaleBand().range([0, width]).domain(orders[val]);
 
     var opacityScale = d3.scaleLinear().domain([0, max]).range([.1, 1]).clamp(true);
 
