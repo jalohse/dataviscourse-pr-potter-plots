@@ -170,13 +170,6 @@ function createSmallSpellCharts(character, radius, degree){
 
     var innerRadius = 0.3 * radius;
 
-    var smallArc = d3.arc()
-        .innerRadius(innerRadius)
-        .outerRadius(function (d) {
-            return (radius - innerRadius) * (d.data.number / maxCast) + innerRadius;
-        });
-
-
     var smallOutlineArc = d3.arc()
         .innerRadius(innerRadius)
         .outerRadius(radius);
@@ -204,18 +197,9 @@ function createSmallSpellCharts(character, radius, degree){
         })
         .attr("class", "solidArc")
         .attr("stroke", "#fff")
-        .attr("d", smallArc)
+        .attr("d", smallOutlineArc)
         .on('mouseover', tip.show)
         .on('mouseout', tip.hide);
-
-
-    current.selectAll(".outlineArc")
-        .data(pie(character))
-        .enter().append("path")
-        .attr("fill", "none")
-        .attr("stroke", "#fff")
-        .attr("class", "outlineArc")
-        .attr("d", smallOutlineArc);
 }
 
 
