@@ -1,8 +1,8 @@
 function GrossChart(data) {
 
-    var width = 900;
-    var height = 400;
-    var barHeight = 300;
+    var width = 1450;
+    var height = 1250;
+    var barHeight = 1000;
     var leftOffset = 40;
 
     var grossChart = d3.select("#gross").append("svg")
@@ -37,12 +37,13 @@ function GrossChart(data) {
                 return i.name;
             });
         })).range([leftOffset, width - 60])
-        .padding(.1);
+        .padding(.05);
+
 
     var x2Scale = d3.scaleBand()
         .domain(properties)
         .rangeRound([0, xScale.bandwidth()])
-        .padding(.07);
+        .padding(.02);
 
     var x3Scale = d3.scaleBand()
         .domain(twoMovieProperties)
@@ -143,7 +144,7 @@ function GrossChart(data) {
         if (d.name == "Deathly Hallows") {
             return x3Scale.bandwidth();
         }
-        return x2Scale.bandwidth()
+        return x2Scale.bandwidth();
     })
         .attr("height", function (d) {
             return barHeight - yScale(d.number);
@@ -160,11 +161,11 @@ function GrossChart(data) {
     }).on("mouseover", tip.show)
         .on("mouseout", tip.hide);
 
-    d3.select("g path").attr("d", "M40.5,6V0.5H890.5V6");
+    d3.select("g path").attr("d", "M40.5,6V0.5H" + (width + 10) + "V6");
     var ticks = d3.selectAll("g.tick")._groups[0];
     for (i = 0; i < ticks.length; i++) {
-        if (ticks[i].getAttribute("transform") == "translate(778.0281690140844,0)") {
-            var newVal = 778.0281690140844 + xScale.bandwidth() / 4;
+        if (ticks[i]["__data__"] == "Deathly Hallows") {
+            var newVal = ticks[i]["transform"]["baseVal"][0]["matrix"]["e"] + xScale.bandwidth() / 4;
             ticks[i].setAttribute("transform", "translate(" + newVal + ", 0)");
         }
     }
