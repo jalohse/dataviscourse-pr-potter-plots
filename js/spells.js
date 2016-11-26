@@ -52,8 +52,13 @@ function groupBy(key, spellData) {
 function createLineChart(spellData, allCasterData){
 
     var leftOffset = 40;
+    height =1000;
 
-    d3.select("#aster").classed("hidden", true);
+
+    d3.select("#line").attr("height", height)
+        .attr("y", 100);
+
+    d3.select("#spells").classed("hidden", true);
     d3.select("#line").classed("hidden", false);
 
     var xScale = d3.scalePoint()
@@ -195,7 +200,11 @@ function createSmallSpellCharts(character, radius, degree){
     current.append("text")
         .text(character[0].name)
         .attr("text-anchor", function () {
-            if(x == 0 || y == 0){
+            if(total > 8 && x == y && x != 0){
+                    return "end";
+            } else if(total > 8 && x == -y && x != 0){
+                return "start";
+            } else if(x == 0 || y == 0){
                 return "middle"
             } else if(x > 0){
                 return "start";
@@ -213,7 +222,11 @@ function createSmallSpellCharts(character, radius, degree){
             }
         })
         .attr("dx", function () {
-            if(x > 0){
+            if(total > 8 && x == y && x != 0){
+                return (spacing + radius) * -1;
+            } else if(total > 8 && x == -y && x != 0){
+                return spacing + radius;
+            } else if(x > 0){
                 return spacing + radius;
             } else if (x == 0){
                 return 0;
@@ -273,10 +286,8 @@ SpellChart.prototype.update = function (data) {
     minNum = 0;
     maxSpellsCast = 0;
     maxSpellsForCaster = 0;
-    width = Math.min(window.innerWidth, 2000);
-    spellChart = d3.select("#spells")
-        .attr("width", width)
-        .attr("height", height);
+    width = 1400;
+
     color = d3.scaleOrdinal(d3.schemeCategory20);
 
 
@@ -309,12 +320,18 @@ SpellChart.prototype.update = function (data) {
 
 
     var allCasterData = groupBy("name", spellData);
+    total = allCasterData.length;
 
     if (data.length != 1) {
+        spellChart = d3.select("#line")
+            .attr("width", width)
+            .attr("height", height);
         createLineChart(spellData, allCasterData);
     } else {
-
-        d3.select("#aster").classed("hidden", false);
+        spellChart = d3.select("#spells")
+            .attr("width", width)
+            .attr("height", height);
+        d3.select("#spells").classed("hidden", false);
         d3.select("#line").classed("hidden", true);
         d3.selectAll("#aster g").remove();
 
@@ -337,8 +354,8 @@ SpellChart.prototype.update = function (data) {
         spellChart.call(tip);
 
 
-        placementRadius = radius * (7 / 2);
-        if (allCasterData.length > 8) {
+        placementRadius = radius * (7/2);
+        if (total > 8) {
             placementRadius = radius * 4;
         }
 
