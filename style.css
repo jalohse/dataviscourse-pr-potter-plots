@@ -9,7 +9,18 @@ h1 {
     font-size: 5em;
 }
 
+h3 {
+    text-align: center;
+    font-family: "Parry Hotter";
+    font-size: 3em;
+}
+
 #nav {
+    display: block;
+    margin: auto;
+}
+
+svg {
     display: block;
     margin: auto;
 }
@@ -67,9 +78,8 @@ text {
     font-size: 20px;
 }
 
-#story svg {
-    display: block;
-    margin: auto;
+#story p {
+    text-align: center;
 }
 
 .storyTextBig {
