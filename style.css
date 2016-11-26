@@ -75,6 +75,14 @@ text {
     fill: #eee;
 }
 
+.active {
+    font-size: 20px !important;
+}
+
+.nonactive {
+    font-size: 10px !important;
+}
+
 .d3-tip {
     /*line-height: 5;*/
     padding-left: 10px;

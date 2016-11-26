@@ -4,6 +4,19 @@ function InteractionChart() {
     });
 }
 
+function highlightText(classType, index, cell){
+    d3.selectAll( classType + " text")
+        .classed("active",function (d, i) {
+            return i == cell[index];
+        }).classed("nonactive",function (d, i) {
+        return i != cell[index];
+    }).style("fill",function (d, i) {
+        if(i == cell[index]){
+            return color;
+        }
+    });
+}
+
 
 InteractionChart.prototype.update = function (data) {
 
@@ -11,10 +24,10 @@ InteractionChart.prototype.update = function (data) {
         matrix = [],
         margin = 150;
 
-    var color = data.color;
+    color = data.color;
 
     var svg = d3.select("#story svg")
-        .attr("width", width + 2* margin)
+        .attr("width", width + 2 * margin)
         .attr("height", height + 2 * margin)
         .attr("transform", "translate(" + margin + "," + margin + ")");
 
@@ -68,25 +81,25 @@ InteractionChart.prototype.update = function (data) {
     });
 
     var max = d3.max(matrix, function (d, i) {
-        return d3.max(d, function(k, j){
-            if(i != j) {
+        return d3.max(d, function (k, j) {
+            if (i != j) {
                 return k.z;
             }
         });
     });
 
     var orders = {
-        name: d3.range(characters.length).sort(function(a, b) {
+        name: d3.range(characters.length).sort(function (a, b) {
             return d3.ascending(charCount[a].name, charCount[b].name);
         }),
-        count: d3.range(characters.length).sort(function(a, b) {
+        count: d3.range(characters.length).sort(function (a, b) {
             return charCount[b].count - charCount[a].count;
         })
     };
 
     var xScale = d3.scaleBand().range([0, width]).domain(orders.count);
 
-    var opacityScale = d3.scaleLinear().domain([0,max]).range([.1, 1]).clamp(true);
+    var opacityScale = d3.scaleLinear().domain([0, max]).range([.1, 1]).clamp(true);
 
     g.select("rect")
         .attr("width", width)
@@ -101,37 +114,45 @@ InteractionChart.prototype.update = function (data) {
         .enter().append("g")
         .attr("class", "row")
         .attr("transform", function (d, i) {
-            return "translate(0,"+ xScale(i) + ")";
+            return "translate(0," + xScale(i) + ")";
         }).each(function (row) {
             d3.select(this).selectAll(".cell")
                 .data(row.filter(function (d) {
                     return d.z;
                 })).enter().append("rect")
                 .attr("class", "cell")
-                .attr("x", function(d){
+                .attr("x", function (d) {
                     return xScale(d.x);
                 }).attr("width", xScale.bandwidth())
                 .attr("height", xScale.bandwidth())
                 .style("fill-opacity", function (d) {
                     return opacityScale(d.z);
                 }).style("fill", function (d) {
-                    if(d.z > 0){
-                        return color;
-                    } else {
-                        return null;
-                    }
-            });
+                if (d.z > 0) {
+                    return color;
+                } else {
+                    return null;
+                }
+            }).on("mouseover", function (cell) {
+                highlightText(".row", "y", cell);
+                highlightText(".column", "x", cell);
+            })
+                .on("mouseout", function () {
+                    d3.selectAll("text").classed("active", false);
+                    d3.selectAll("text").classed("nonactive", false);
+                    d3.selectAll("#story svg text").style("fill", "black");
+                });
         });
 
     row.append("line").attr("x2", width);
 
     row.append("text")
         .attr("x", -6)
-        .attr("y", xScale.bandwidth() /2)
+        .attr("y", xScale.bandwidth() / 2)
         .attr("dy", ".32em")
         .attr("text-anchor", "end")
-        .attr("class", function(){
-            if(charCount.length < 70){
+        .attr("class", function () {
+            if (charCount.length < 70) {
                 return "storyTextBig";
             }
         })
@@ -146,23 +167,22 @@ InteractionChart.prototype.update = function (data) {
         .attr("transform", function (d, i) {
             return "translate (" + xScale(i) + ")rotate(-90)";
         });
-    
+
     column.append("line").attr("x1", -width);
-    
+
     column.append("text")
         .attr("x", 6)
-        .attr('y', xScale.bandwidth()/2)
+        .attr('y', xScale.bandwidth() / 2)
         .attr("dy", ".32em")
         .attr("text-anchor", "start")
-        .attr("class", function(){
-            if(charCount.length < 70){
+        .attr("class", function () {
+            if (charCount.length < 70) {
                 return "storyTextBig";
             }
         })
         .text(function (d, i) {
             return charCount[i].name;
         });
-    
 
 
 };
