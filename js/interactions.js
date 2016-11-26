@@ -87,7 +87,7 @@ InteractionChart.prototype.update = function (data) {
         });
     });
 
-    tip = d3.tip()
+     var storyTip = d3.tip()
         .attr('class', 'd3-tip')
         .offset([0, 0])
         .html(function (d) {
@@ -95,7 +95,7 @@ InteractionChart.prototype.update = function (data) {
                 " appear in " +matrix[d[0]][d[1]].z + " chapters together.";
         });
 
-    g.call(tip);
+    g.call(storyTip);
 
     var max = d3.max(matrix, function (d, i) {
         return d3.max(d, function (k, j) {
@@ -154,11 +154,11 @@ InteractionChart.prototype.update = function (data) {
                 y = highlightText(".row", "y", cell);
                 x = highlightText(".column", "x", cell);
                 if(x != y) {
-                    tip.show([x, y]);
+                    storyTip.show([x, y]);
                 }
             })
                 .on("mouseout", function () {
-                    tip.hide();
+                    storyTip.hide();
                     d3.selectAll("text").classed("active", false);
                     d3.selectAll("text").classed("nonactive", false);
                     d3.selectAll("#story svg text").style("fill", "black");

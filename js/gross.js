@@ -90,7 +90,7 @@ function GrossChart(data) {
             return "translate (" + xScale(d.book) + ",0)";
         });
 
-    tip = d3.tip().attr('class', 'd3-tip')
+    var grossTip = d3.tip().attr('class', 'd3-tip')
         .direction('ne')
         .offset(function () {
             return [50,0];
@@ -111,7 +111,7 @@ function GrossChart(data) {
             return text;
         });
 
-    grossChart.call(tip);
+    grossChart.call(grossTip);
 
 
 
@@ -158,8 +158,8 @@ function GrossChart(data) {
         if (d.property.includes("movie")) {
             return d.color;
         }
-    }).on("mouseover", tip.show)
-        .on("mouseout", tip.hide);
+    }).on("mouseover", grossTip.show)
+        .on("mouseout", grossTip.hide);
 
     d3.select("g path").attr("d", "M40.5,6V0.5H" + (width + 10) + "V6");
     var ticks = d3.selectAll("g.tick")._groups[0];

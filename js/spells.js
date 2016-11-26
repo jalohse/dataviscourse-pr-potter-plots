@@ -245,7 +245,7 @@ function createSmallSpellCharts(character, radius, degree){
         .attr("class", "solidArc")
         .attr("stroke", "#fff")
         .attr("d", smallOutlineArc)
-        .on('mouseover', tip.show)
+        .on('mouseover', spellTip.show)
         .on('mouseover', function (d) {
             highlightSelected(d);
         })
@@ -253,13 +253,13 @@ function createSmallSpellCharts(character, radius, degree){
 }
 
 function highlightSelected(d){
-    tip.hide();
+    spellTip.hide();
     var spells = d3.selectAll("#aster path")._groups[0];
     spells.forEach(function (path) {
         if(path.getAttribute("fill") != "gray" && path.getAttribute("class" == "solidArc")){
             path.setAttribute("fill", "gray");
         }
-        tip.show(d);
+        spellTip.show(d);
         if(path.getAttribute("spell") == d.data.spell){
             path.setAttribute("fill", color);
         }
@@ -267,7 +267,7 @@ function highlightSelected(d){
 }
 
 function unhighlight(){
-    tip.hide();
+    spellTip.hide();
     var spells = d3.selectAll("#aster path")._groups[0];
     spells.forEach(function (path) {
         if(path.getAttribute("fill") != "gray" && path.getAttribute("class") == "solidArc"){
@@ -335,7 +335,7 @@ SpellChart.prototype.update = function (data) {
         d3.select("#line").classed("hidden", true);
         d3.selectAll("#aster g").remove();
 
-        tip = d3.tip()
+        spellTip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([0, 0])
             .html(function (d) {
@@ -351,7 +351,7 @@ SpellChart.prototype.update = function (data) {
             return d.number;
         });
 
-        spellChart.call(tip);
+        spellChart.call(spellTip);
 
 
         placementRadius = radius * (7/2);
