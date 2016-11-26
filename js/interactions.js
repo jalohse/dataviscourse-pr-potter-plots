@@ -5,9 +5,13 @@ function InteractionChart() {
 }
 
 function highlightText(classType, index, cell){
-    d3.selectAll( classType + " text")
+    var selectedIndex = 0;
+    d3.selectAll(classType + " text")
         .classed("active",function (d, i) {
-            return i == cell[index];
+            if(i == cell[index]){
+                selectedIndex = i;
+                return true;
+            }
         }).classed("nonactive",function (d, i) {
         return i != cell[index];
     }).style("fill",function (d, i) {
@@ -15,6 +19,7 @@ function highlightText(classType, index, cell){
             return color;
         }
     });
+    return selectedIndex;
 }
 
 
@@ -70,15 +75,27 @@ InteractionChart.prototype.update = function (data) {
                 var otherChar = key.replace(character.name, "").replace("*", "");
                 var otherCharIndex = characters.indexOf(otherChar);
                 var count = interaction[key];
-                matrix[i][otherCharIndex].z += count;
-                matrix[otherCharIndex][i].z += count;
                 matrix[i][i].z += count;
-                matrix[otherCharIndex][i].z += count;
-                charCount[i].count += count;
-                charCount[otherCharIndex].count += count;
+                matrix[otherCharIndex][otherCharIndex].z += count;
+                if(matrix[i][otherCharIndex].z == 0) {
+                    matrix[i][otherCharIndex].z += count;
+                    matrix[otherCharIndex][i].z += count;
+                    charCount[i].count += count;
+                    charCount[otherCharIndex].count += count;
+                }
             }
         });
     });
+
+    tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([0, 0])
+        .html(function (d) {
+            return charCount[d[0]].name + " and " + charCount[d[1]].name +
+                " appear in " +matrix[d[0]][d[1]].z + " chapters together.";
+        });
+
+    g.call(tip);
 
     var max = d3.max(matrix, function (d, i) {
         return d3.max(d, function (k, j) {
@@ -134,10 +151,14 @@ InteractionChart.prototype.update = function (data) {
                     return null;
                 }
             }).on("mouseover", function (cell) {
-                highlightText(".row", "y", cell);
-                highlightText(".column", "x", cell);
+                y = highlightText(".row", "y", cell);
+                x = highlightText(".column", "x", cell);
+                if(x != y) {
+                    tip.show([x, y]);
+                }
             })
                 .on("mouseout", function () {
+                    tip.hide();
                     d3.selectAll("text").classed("active", false);
                     d3.selectAll("text").classed("nonactive", false);
                     d3.selectAll("#story svg text").style("fill", "black");
