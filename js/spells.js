@@ -144,17 +144,20 @@ function createAllSpellsAster(allSpellData){
     var large = d3.select("#aster").append("g")
         .attr("transform", "translate(0, " + placementRadius + ")");
 
-    large.selectAll(".largeSolidArc")
+    large.selectAll(".solidArc")
         .data(pie(allSpellData))
         .enter().append("path")
-        .attr("fill", function (d) {
-            return color(d.data.name);
+        .attr("spell", function (d) {
+            return d.data.name;
         })
-        .attr("class", "largeSolidArc")
+        .attr("fill", "gray")
+        .attr("class", "solidArc")
         .attr("stroke", "#fff")
         .attr("d", largeArc)
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
+        .on('mouseover', function (d) {
+            highlightSelected(d);
+        })
+        .on('mouseout', unhighlight);
 
 
     large.selectAll(".largeOutlineArc")
@@ -192,14 +195,42 @@ function createSmallSpellCharts(character, radius, degree){
     current.selectAll(".solidArc")
         .data(pie(character))
         .enter().append("path")
-        .attr("fill", function (d) {
-            return color(d.data.spell);
+        .attr("spell", function (d) {
+            return d.data.spell;
         })
+        .attr("fill", "gray")
         .attr("class", "solidArc")
         .attr("stroke", "#fff")
         .attr("d", smallOutlineArc)
         .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
+        .on('mouseover', function (d) {
+            highlightSelected(d);
+        })
+        .on('mouseout', unhighlight);
+}
+
+function highlightSelected(d){
+    tip.hide();
+    var spells = d3.selectAll("#aster path")._groups[0];
+    spells.forEach(function (path) {
+        if(path.getAttribute("fill") != "gray" && path.getAttribute("class" == "solidArc")){
+            path.setAttribute("fill", "gray");
+        }
+        tip.show(d);
+        if(path.getAttribute("spell") == d.data.spell){
+            path.setAttribute("fill", color);
+        }
+    })
+}
+
+function unhighlight(){
+    tip.hide();
+    var spells = d3.selectAll("#aster path")._groups[0];
+    spells.forEach(function (path) {
+        if(path.getAttribute("fill") != "gray" && path.getAttribute("class") == "solidArc"){
+            path.setAttribute("fill", "gray");
+        }
+    })
 }
 
 
@@ -216,7 +247,6 @@ SpellChart.prototype.update = function (data) {
     spellChart = d3.select("#spells")
         .attr("width", width)
         .attr("height", height);
-    color = d3.scaleOrdinal(d3.schemeCategory20);
 
     var spells;
     if (data.length != 1) {
@@ -232,6 +262,7 @@ SpellChart.prototype.update = function (data) {
         }
     } else {
         spells = data[0].spells;
+        color = data[0].color;
         spellData = findTotalForCaster(spells, data[0].color);
         var bookSpellDataGrouped = findTotalInAll("spell", spells);
         for (var key in bookSpellDataGrouped) {
