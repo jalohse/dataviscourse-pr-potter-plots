@@ -114,7 +114,7 @@ InteractionChart.prototype.update = function (data) {
         })
     };
 
-    var xScale = d3.scaleBand().range([0, width]).domain(orders.count);
+    var xScale = d3.scaleBand().range([0, width]).domain(orders.name);
 
     var opacityScale = d3.scaleLinear().domain([0, max]).range([.1, 1]).clamp(true);
 
@@ -205,5 +205,20 @@ InteractionChart.prototype.update = function (data) {
             return charCount[i].name;
         });
 
+    d3.select("#order").on("change", function () {
+        xScale.domain(orders[this.value]);
 
+        var t = svg.transition().duration(1500);
+
+        t.selectAll(".row")
+            .delay(function(d, i) { return xScale(i) * 4; })
+            .attr("transform", function(d, i) { return "translate(0," + xScale(i) + ")"; })
+            .selectAll(".cell")
+            .delay(function(d) { return xScale(d.x) * 4; })
+            .attr("x", function(d) { return xScale(d.x); });
+
+        t.selectAll(".column")
+            .delay(function(d, i) { return xScale(i) * 4; })
+            .attr("transform", function(d, i) { return "translate(" + xScale(i) + ")rotate(-90)"; });
+    });
 };

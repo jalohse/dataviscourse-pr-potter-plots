@@ -67,6 +67,11 @@ text {
     font-size: 20px;
 }
 
+#story svg {
+    display: block;
+    margin: auto;
+}
+
 .storyTextBig {
     font-size: 15px !important;
 }
