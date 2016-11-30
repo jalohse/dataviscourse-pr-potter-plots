@@ -58,7 +58,7 @@ svg {
 
 #word_count rect {
     stroke: black;
-    stroke-width: 0.5em;
+    stroke-width: 0.3em;
 }
 
 #lines path {
