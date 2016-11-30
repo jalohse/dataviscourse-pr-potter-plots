@@ -5,126 +5,74 @@
     "chapters": [
       {
         "word_count": 4755,
-        "name": "THE BOY WHO LIVED",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Boy Who Lived"
       },
       {
         "word_count": 3576,
-        "name": "THE VANISHING GLASS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Vanishing Glass"
       },
       {
         "word_count": 4000,
-        "name": "THE LETTERS FROM NO ONE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Letters From No One"
       },
       {
         "word_count": 3903,
-        "name": "THE KEEPER OF THE KEYS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Keeper of the Keys"
       },
       {
         "word_count": 6930,
-        "name": "DIAGON ALLEY",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Diagon Alley"
       },
       {
         "word_count": 6637,
-        "name": "THE JOURNEY FROM PLATFORM NINE AND THREE-QUARTERS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Journey from Platform Nine and Three-Quarters"
       },
       {
         "word_count": 4696,
-        "name": "THE SORTING HAT",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Sorting Hat"
       },
       {
         "word_count": 3172,
-        "name": "THE POTIONS MASTER",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Potions Master"
       },
       {
         "word_count": 5173,
-        "name": "THE MIDNIGHT DUEL",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Midnight Duel"
       },
       {
         "word_count": 4475,
-        "name": "HALLOWEEN",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Halloween"
       },
       {
         "word_count": 3533,
-        "name": "QUIDDITCH",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Quidditch"
       },
       {
         "word_count": 5752,
-        "name": "THE MIRROR OF ERISED",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Mirror of Erised"
       },
       {
         "word_count": 3327,
-        "name": "NICOLAS FLAMEL",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Nicolas Flamel"
       },
       {
         "word_count": 3649,
-        "name": "NORBERT THE NORWEGIAN RIDGEBACK",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Norbert the Norwegian Ridgeback"
       },
       {
         "word_count": 5319,
-        "name": "THE FORIBIDDEN FOREST",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Forbidden Forest"
       },
       {
         "word_count": 6820,
-        "name": "THROUGH THE TRAPDOOR",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Through the Trap Door"
       },
       {
         "word_count": 5756,
-        "name": "THE MAN WITH TWO FACES",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Man with Two Faces"
       }
     ],
     "book": "Sorcerer's Stone",
-    "locations": [],
     "book_gross": 1819,
     "spells": [
       {"spell": "Locomotor Mortis",
@@ -159,133 +107,78 @@
     "chapters": [
       {
         "word_count": 2724,
-        "name": "The Worst Birthday",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Worst Birthday"
       },
       {
         "word_count": 3083,
-        "name": "Dobby's Warning",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Dobby's Warning"
       },
       {
         "word_count": 4775,
-        "name": "The Burrow",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Burrow"
       },
       {
         "word_count": 6097,
-        "name": "At Flourish and Blotts",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "At Flourish and Blotts"
       },
       {
         "word_count": 5690,
-        "name": "The Whomping Willow",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Whomping Willow"
       },
       {
         "word_count": 4804,
-        "name": "Gilderoy Lockhart",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Gilderoy Lockhart"
       },
       {
         "word_count": 4789,
-        "name": "Mudbloods and Murmurs",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Mudbloods and Murmurs"
       },
       {
         "word_count": 4726,
-        "name": "The Deathday Party",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Deathday Party"
       },
       {
         "word_count": 5470,
-        "name": "The Writing on the Wall",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Writing on the Wall"
       },
       {
         "word_count": 5580,
-        "name": "The Rogue Bludger",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Rogue Bludger"
       },
       {
         "word_count": 6289,
-        "name": "The Dueling Club",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dueling Club"
       },
       {
         "word_count": 5720,
-        "name": "The Polyjuice Potion",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Polyjuice Potion"
       },
       {
         "word_count": 5790,
-        "name": "The Very Secret Diary",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Very Secret Diary"
       },
       {
         "word_count": 4155,
-        "name": "Cornelius Fudge",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Cornelius Fudge"
       },
       {
         "word_count": 4876,
-        "name": "Aragog",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Aragog"
       },
       {
         "word_count": 6025,
-        "name": "The Chamber of Secrets",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Chamber of Secrets"
       },
       {
         "word_count": 5750,
-        "name": "The Heir of Slytherin",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Heir of Slytherin"
       },
       {
         "word_count": 3969,
-        "name": "Dobby's Reward",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Dobby's Reward"
       }
     ],
     "book": "Chamber of Secrets",
-    "locations": [],
     "book_gross": 1020,
     "spells": [
       {"spell": "Obliviate",
@@ -349,161 +242,94 @@
     "chapters": [
       {
         "word_count": 3831,
-        "name": "OWL POST",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Owl Post"
       },
       {
         "word_count": 4023,
-        "name": "AUNT MARGE'S BIG MISTAKE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Aunt Marge's Big Mistake"
       },
       {
         "word_count": 4585,
-        "name": "THE KNIGHT BUS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Knight Bus"
       },
       {
         "word_count": 5329,
-        "name": "THE LEAKY CAULDRON",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Leaky Cauldron"
       },
       {
         "word_count": 5854,
-        "name": "THE DEMENTOR",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dementor"
       },
       {
         "word_count": 6462,
-        "name": "TALONS AND TEA LEAVES",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Talons and Tea Leaves"
       },
       {
         "word_count": 4474,
-        "name": "THE BOGGART IN THE WARDROBE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Boggart in the Wardrobe"
       },
       {
         "word_count": 5292,
-        "name": "FLIGHT OF THE FAT FADY",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Flight of the Fat Lady"
       },
       {
         "word_count": 5524,
-        "name": "GRIM DEFEAT",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Grim Defeat"
       },
       {
         "word_count": 7384,
-        "name": "THE MARAUDER'S MAP",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Marauder's Map"
       },
       {
         "word_count": 5320,
-        "name": "THE FIREBOLT",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Firebolt"
       },
       {
         "word_count": 5053,
-        "name": "THE PATRONUS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Patronus"
       },
       {
         "word_count": 4456,
-        "name": "GRYFFINDOR VERSUS RAVENCLAW",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Gryffindor Versus Ravenclaw"
       },
       {
         "word_count": 5821,
-        "name": "SNAPE'S GRUDGE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Snape's Grudge"
       },
       {
         "word_count": 5784,
-        "name": "THE QUIDDITCH FINAL",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Quidditch Final"
       },
       {
         "word_count": 4020,
-        "name": "PROFESSOR TRELAWNEY'S PREDICTION",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Professor Trelawney's Prediction"
       },
       {
         "word_count": 4446,
-        "name": "CAT, RAT, AND DOG",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Cat, Rat, and Dog"
       },
       {
         "word_count": 2385,
-        "name": "MOONY, WORMTAIL, PADDFOOT, AND PRONGS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Moony, Wormtail, Padfoot, and Prongs"
       },
       {
         "word_count": 5415,
-        "name": "THE SERVANT OF LORD VOLDEMORT",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Servant of Lord Voldemort"
       },
       {
         "word_count": 2052,
-        "name": "THE DEMENTOR'S KISS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dementor's Kiss"
       },
       {
         "word_count": 7712,
-        "name": "HERMIONE'S SECRET",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Hermione's Secret"
       },
       {
         "word_count": 4961,
-        "name": "OWL POST AGAIN",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Owl Post Again"
       }
     ],
     "book": "Prisoner of Azkaban",
-    "locations": [],
     "book_gross": 935,
     "spells": [
       {"spell": "Mobiliarbus",
@@ -607,108 +433,63 @@
     "chapters": [
       {
         "word_count": 4495,
-        "name": "THE RIDDLE HOUSE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Riddle House"
       },
       {
         "word_count": 2978,
-        "name": "THE SCAR",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Scar"
       },
       {
         "word_count": 3377,
-        "name": "THE INVITATION",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Invitation"
       },
       {
         "word_count": 3138,
-        "name": "BACK TO THE BURROW",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Back to the Burrow"
       },
       {
         "word_count": 3967,
-        "name": "WEASLEYS' WIZARD WHEEZES",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Weasleys' Wizard Wheezes"
       },
       {
         "word_count": 2496,
-        "name": "THE PORTKEY",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Portkey"
       },
       {
         "word_count": 5535,
-        "name": "BAGMAN AND CROUCH",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Bagman and Crouch"
       },
       {
         "word_count": 6118,
-        "name": "THE QUIDDITCH WORLD CUP",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Quidditch World Cup"
       },
       {
         "word_count": 7623,
-        "name": "THE DARK MARK",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dark Mark"
       },
       {
         "word_count": 3360,
-        "name": "MAYHEM AT THE MINISTRY",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Mayhem at the Ministry"
       },
       {
         "word_count": 3433,
-        "name": "ABOARD THE HOGWART EXPRESS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Aboard the Hogwarts Express"
       },
       {
         "word_count": 5858,
-        "name": "THE TRIWIZARD TOURNAMENT",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Triwizard Tournament"
       },
       {
         "word_count": 4129,
-        "name": "MAD-EYE MOODY",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Mad-Eye Moody"
       },
       {
         "word_count": 5139,
-        "name": "THE UNFORGIVABLE CURSES",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Unforgivable Curse"
       },
       {
         "word_count": 5537,
-        "name": "BEAUXBATONS AND DURMSTRANG",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Beauxbatons and Durmstrang"
       },
       {
         "word_count": 6355,
@@ -719,154 +500,90 @@
       },
       {
         "word_count": 4406,
-        "name": "THE FOUR CHAMPIONS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Four Champions"
       },
       {
         "word_count": 7120,
-        "name": "THE WEIGHING OF THE WANDS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Weighing of Wands"
       },
       {
         "word_count": 6782,
-        "name": "THE HUNGARIAN HORNTAIL",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Hungarian Horntail"
       },
       {
         "word_count": 7647,
-        "name": "THE FIRST TASK",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The First Task"
       },
       {
         "word_count": 5871,
-        "name": "THE HOUSE-ELF LIBERATION FRONT",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The House-Elf Liberation Front"
       },
       {
         "word_count": 4720,
-        "name": "THE UNEXPECTED TASK",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Unexpected Task"
       },
       {
         "word_count": 8669,
-        "name": "THE YULE BALL",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Yule Ball"
       },
       {
         "word_count": 6594,
-        "name": "RITA SKEETER'S SCOOP",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Rita Skeeter's Scoop"
       },
       {
         "word_count": 5941,
-        "name": "THE EGG AND THE EYE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Egg and the Eye"
       },
       {
         "word_count": 8491,
-        "name": "THE SECOND TASK",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Second Task"
       },
       {
         "word_count": 7459,
-        "name": "PADFOOT RETURNS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Padfoot Returns"
       },
       {
         "word_count": 7859,
-        "name": "THE MADNESS OF MR CROUCH",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Madness of Mr. Crouch"
       },
       {
         "word_count": 4690,
-        "name": "THE DREAM",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dream"
       },
       {
         "word_count": 6774,
-        "name": "THE PENSIEVE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Pensieve"
       },
       {
         "word_count": 8405,
-        "name": "THE THIRD TASK",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Third Task"
       },
       {
         "word_count": 2141,
-        "name": "FLESH, BLOOD, AND BONE",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Flesh, Blood, and Bone"
       },
       {
         "word_count": 4428,
-        "name": "THE DEATH EATERS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Death Eaters"
       },
       {
         "word_count": 3222,
-        "name": "PRIORI INCANTATEM",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Priori Incantatem"
       },
       {
         "word_count": 6574,
-        "name": "VERITASERUM",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Veritaserum"
       },
       {
         "word_count": 6654,
-        "name": "THE PARTING OF THE WAYS",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Parting of Ways"
       },
       {
         "word_count": 5246,
-        "name": "THE BEGINNING",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Beginning"
       }
     ],
     "book": "Goblet of Fire",
-    "locations": [],
     "book_gross": 935,
     "spells": [
       {"spell": "Obliviate",
@@ -1026,273 +743,158 @@
     "chapters": [
       {
         "word_count": 5836,
-        "name": "Dudley Demented",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Dudley Demented"
       },
       {
         "word_count": 6152,
-        "name": "A Peck of Owls",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "A Peck of Owls"
       },
       {
         "word_count": 5243,
-        "name": "The Advance Guard",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Advance Guard"
       },
       {
         "word_count": 5741,
-        "name": "Number Twelve, Grimmauld Place",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Number Twelve, Grimmauld Place"
       },
       {
         "word_count": 5415,
-        "name": "The Order of the Phoenix",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Order of the Phoenix"
       },
       {
         "word_count": 6832,
-        "name": "The Noble and Most Ancient House of Black",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Noble and Most Ancient House of Black"
       },
       {
         "word_count": 4596,
-        "name": "The Ministry of Magic",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Ministry of Magic"
       },
       {
         "word_count": 4270,
-        "name": "The Hearing",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Hearing"
       },
       {
         "word_count": 8122,
-        "name": "The Woes of Mrs. Weasley",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Woes of Mrs. Weasley"
       },
       {
         "word_count": 5870,
-        "name": "Luna Lovegood",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Luna Lovegood"
       },
       {
         "word_count": 6001,
-        "name": "The Sorting Hatâ\u20AC™s New Song",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Sorting Hat's New Song"
       },
       {
         "word_count": 8397,
-        "name": "Professor Umbridge",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Professor Umbridge"
       },
       {
         "word_count": 8970,
-        "name": "Detention with Dolores",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Detention with Dolores"
       },
       {
         "word_count": 8170,
-        "name": "Percy and Padfoot",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Percy and Padfoot"
       },
       {
         "word_count": 6932,
-        "name": "The Hogwarts High Inquisitor",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Hogwarts High Inquisitor"
       },
       {
         "word_count": 6006,
-        "name": "In the Hogs Head",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "In the Hogs Head"
       },
       {
         "word_count": 6633,
-        "name": "Educational Decree Number Twenty-Four",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Educational Decree Number Twenty-Four"
       },
       {
         "word_count": 6930,
-        "name": "Dumbledoreâ\u20AC™s Army",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Dumbledore's Army"
       },
       {
         "word_count": 6783,
-        "name": "The Lion and the Serpent",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Lion and the Serpent"
       },
       {
         "word_count": 6121,
-        "name": "Hagridâ\u20AC™s Tale",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Hagrid's Tale"
       },
       {
         "word_count": 7384,
-        "name": "The Eye of the Snake",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Eye of the Snake"
       },
       {
         "word_count": 8068,
-        "name": "St. Mungoâ\u20AC™s Hospital for Magical Maladies and Injuries",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "St. Mungo's Hospital for Magical Maladies and Injuries"
       },
       {
         "word_count": 7471,
-        "name": "Christmas on the Closed Ward",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Christmas on the Closed Ward"
       },
       {
         "word_count": 8147,
-        "name": "Occlumency",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Occlumency"
       },
       {
         "word_count": 8169,
-        "name": "The Beetle at Bay",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Beetle at Bay"
       },
       {
         "word_count": 8651,
-        "name": "Seen and Unforeseen",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Seen and Unforeseen"
       },
       {
         "word_count": 7569,
-        "name": "The Centaur and the Sneak",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Centaur and the Sneak"
       },
       {
         "word_count": 8058,
-        "name": "Snapeâ\u20AC™s Worst Memory",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Snape's Worst Memory"
       },
       {
         "word_count": 7493,
-        "name": "Career Advice",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Career Advice"
       },
       {
         "word_count": 8334,
-        "name": "The story of Fred and Georgeâ\u20AC™s flight to freedom was retold so often over the next few days that",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Grawp"
       },
       {
         "word_count": 8020,
-        "name": "O.W.L.s",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "O.W.L.s"
       },
       {
         "word_count": 6299,
-        "name": "Out of the Fire",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Out of the Fire"
       },
       {
         "word_count": 3883,
-        "name": "Fight and Flight",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Fight and Flight"
       },
       {
         "word_count": 5215,
-        "name": "The Department of Mysteries",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Department of Mysteries"
       },
       {
         "word_count": 7837,
-        "name": "Beyond the Veil",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Beyond the Veil"
       },
       {
         "word_count": 3879,
-        "name": "The Only One He Ever Feared",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Only One He Ever Feared"
       },
       {
         "word_count": 8186,
-        "name": "The Lost Prophecy",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Lost Prophecy"
       },
       {
         "word_count": 7645,
-        "name": "The Second War Begins",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Second War Begins"
       }
     ],
     "book": "Order of the Phoenix",
-    "locations": [],
     "book_gross": 935,
     "spells": [
       {"spell": "Serpensortia",
@@ -1508,217 +1110,126 @@
     "chapters": [
       {
         "word_count": 5037,
-        "name": "The Other Minister",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Other Minister"
       },
       {
         "word_count": 4950,
-        "name": "Spinner's End",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Spinner's End"
       },
       {
         "word_count": 4782,
-        "name": "Will And Won't",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Will And Won't"
       },
       {
         "word_count": 6043,
-        "name": "Horace Slughorn",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Horace Slughorn"
       },
       {
         "word_count": 5961,
-        "name": "An Excess Of Phlegm",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "An Excess Of Phlegm"
       },
       {
         "word_count": 5886,
-        "name": "Draco's Detour",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Draco's Detour"
       },
       {
         "word_count": 6553,
-        "name": "The Slug Club",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Slug Club"
       },
       {
         "word_count": 4314,
-        "name": "Victorious Snape",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Victorious Snape"
       },
       {
         "word_count": 5992,
-        "name": "The Half-Blood Prince",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Half-Blood Prince"
       },
       {
         "word_count": 6049,
-        "name": "The Hour of Gaunt",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Hour of Gaunt"
       },
       {
         "word_count": 5177,
-        "name": "Hermione's helping hand",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Hermione's helping hand"
       },
       {
         "word_count": 5481,
-        "name": "Silver and opals",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Silver and opals"
       },
       {
         "word_count": 5543,
-        "name": "The Secret Riddle",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Secret Riddle"
       },
       {
         "word_count": 6637,
-        "name": "Felix Felicis",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Felix Felicis"
       },
       {
         "word_count": 6056,
-        "name": "The Unbreakable Vow",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Unbreakable Vow"
       },
       {
         "word_count": 6318,
-        "name": "AVeryFrosty Christmas",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "A Very Frosty Christmas"
       },
       {
         "word_count": 6518,
-        "name": "A Sluggish Memory",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "A Sluggish Memory"
       },
       {
         "word_count": 7212,
-        "name": "Birthday Surprises",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Birthday Surprises"
       },
       {
         "word_count": 6411,
-        "name": "Elf Tails",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Elf Tails"
       },
       {
         "word_count": 6753,
-        "name": "Lord Voldemort's Request",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Lord Voldemort's Request"
       },
       {
         "word_count": 5821,
-        "name": "The Unknowable Room",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Unknowable Room"
       },
       {
         "word_count": 6062,
-        "name": "After the Burial",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "After the Burial"
       },
       {
         "word_count": 5960,
-        "name": "Horcruxes",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Horcruxes"
       },
       {
         "word_count": 6116,
-        "name": "Sectumsempra",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Sectumsempra"
       },
       {
         "word_count": 5191,
-        "name": "The Seer Overheard",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Seer Overheard"
       },
       {
         "word_count": 6486,
-        "name": "The Cave",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Cave"
       },
       {
         "word_count": 4955,
-        "name": "The Lightning-Struck Tower",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Lightning-Struck Tower"
       },
       {
         "word_count": 3712,
-        "name": "Flight of the Prince",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Flight of the Prince"
       },
       {
         "word_count": 5738,
-        "name": "The Pheonix Lament",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Phoenix Lament"
       },
       {
         "word_count": 5530,
-        "name": "The White Tomb",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The White Tomb"
       }
     ],
     "book": "Half Blood Prince",
-    "locations": [],
     "book_gross": 1105,
     "spells": [
       {"spell": "Locomotor Mortis",
@@ -1862,266 +1373,154 @@
     "chapters": [
       {
         "word_count": 3151,
-        "name": "The Dark Lord Ascending",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dark Lord Ascending"
       },
       {
         "word_count": 4086,
-        "name": "In Memorandum",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "In Memorandum"
       },
       {
         "word_count": 3318,
-        "name": "The Dursleys Departing",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Dursleys Departing"
       },
       {
         "word_count": 5406,
-        "name": "The Seven Potters",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Seven Potters"
       },
       {
         "word_count": 6009,
-        "name": "Fallen Warrior",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Fallen Warrior"
       },
       {
         "word_count": 6720,
-        "name": "The Ghoul in Pajamas",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Ghoul in Pajamas"
       },
       {
         "word_count": 6592,
-        "name": "The Will of Albus Dumbledore",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Will of Albus Dumbledore"
       },
       {
         "word_count": 6235,
-        "name": "The Wedding",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Wedding"
       },
       {
         "word_count": 4199,
-        "name": "A Place to Hide",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "A Place to Hide"
       },
       {
         "word_count": 6732,
-        "name": "Kreacherï¿½s Tale",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Kreacher's Tale"
       },
       {
         "word_count": 5614,
-        "name": "The Bribe",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Bribe"
       },
       {
         "word_count": 6166,
-        "name": "Magic is Might",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Magic is Might"
       },
       {
         "word_count": 5875,
-        "name": "The Muggle-Born Registration Commission",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Muggle-Born Registration Commission"
       },
       {
         "word_count": 4353,
-        "name": "The Thief",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Thief"
       },
       {
         "word_count": 7002,
-        "name": "The Goblinï¿½s Revenge",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Goblin's Revenge"
       },
       {
         "word_count": 5288,
-        "name": "Godricï¿½s Hollow",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Godric's Hollow"
       },
       {
         "word_count": 5502,
-        "name": "Bathildaï¿½s Secret",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Bathilda's Secret"
       },
       {
         "word_count": 3517,
-        "name": "The Life and Lies of Albus Dumbledore",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Life and Lies of Albus Dumbledore"
       },
       {
         "word_count": 6778,
-        "name": "The Silver Doe",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Silver Doe"
       },
       {
         "word_count": 4510,
-        "name": "Xenophilius Lovegood",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Xenophilius Lovegood"
       },
       {
         "word_count": 4855,
-        "name": "The Tale of the Three Brothers",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Tale of the Three Brothers"
       },
       {
         "word_count": 5822,
-        "name": "The Deathly Hallows",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Deathly Hallows"
       },
       {
         "word_count": 8003,
-        "name": "Malfoy Manor",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Malfoy Manor"
       },
       {
         "word_count": 6772,
-        "name": "The Wandmaker",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Wandmaker"
       },
       {
         "word_count": 4380,
-        "name": "Shell Cottage",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Shell Cottage"
       },
       {
         "word_count": 6877,
-        "name": "Gringotts",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Gringotts"
       },
       {
         "word_count": 2651,
-        "name": "The Final Hiding Place",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Final Hiding Place"
       },
       {
         "word_count": 4548,
-        "name": "The Missing Mirror",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Missing Mirror"
       },
       {
         "word_count": 4564,
-        "name": "The Lost Diadem",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Lost Diadem"
       },
       {
         "word_count": 4900,
-        "name": "The Sacking of Severus Snape",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Sacking of Severus Snape"
       },
       {
         "word_count": 8027,
-        "name": "The Battle of Hogwarts",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Battle of Hogwarts"
       },
       {
         "word_count": 5473,
-        "name": "The Elder Wand",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Elder Wand"
       },
       {
         "word_count": 8293,
-        "name": "The Princeï¿½s Tale",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Prince's Tale"
       },
       {
         "word_count": 3945,
-        "name": "The Forest Again",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Forest Again"
       },
       {
         "word_count": 5096,
-        "name": "Kingï¿½s Cross",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "King's Cross"
       },
       {
         "word_count": 7211,
-        "name": "The Flaw in the Plan",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "The Flaw in the Plan"
       },
       {
         "word_count": 1637,
-        "name": "Epilogue",
-        "horcruxes": [],
-        "battles": [],
-        "interactions": []
+        "name": "Epilogue"
       }
     ],
     "book": "Deathly Hallows",
-    "locations": [],
     "book_gross": 850,
     "movie1_gross": 960,
     "spells": [
