@@ -53,7 +53,7 @@ text {
 }
 
 #spells text {
-    font-size: 18px;
+    font-size: 13px;
 }
 
 #word_count rect {
@@ -70,7 +70,7 @@ text {
 }
 
 #spells #aster path {
-    stroke-width: 0.5em;
+    stroke-width: 0.1em;
 }
 
 #deaths text {

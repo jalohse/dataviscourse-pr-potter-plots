@@ -52,7 +52,7 @@ function groupBy(key, spellData) {
 function createLineChart(spellData, allCasterData){
 
     var leftOffset = 40;
-    height = 600;
+    height = 700;
 
 
     d3.select("#line").attr("height", height)
@@ -194,6 +194,8 @@ function createSmallSpellCharts(character, radius, degree){
 
     var spacing = 15;
 
+    var newR = radius * .87;
+
     current.append("text")
         .text(character[0].name)
         .attr("text-anchor", function () {
@@ -212,23 +214,23 @@ function createSmallSpellCharts(character, radius, degree){
         .attr("dy", function () {
             if(x == 0){
                 if(y == 0){
-                    return (spacing + radius) * -1;
+                    return (spacing + newR) * -1;
                 } else {
-                    return spacing + spacing + radius ;
+                    return spacing + spacing + newR ;
                 }
             }
         })
         .attr("dx", function () {
             if(total > 8 && x == y && x != 0){
-                return (spacing + radius) * -1;
+                return (spacing + newR) * -1;
             } else if(total > 8 && x == -y && x != 0){
-                return spacing + radius;
+                return spacing + newR;
             } else if(x > 0){
-                return spacing + radius;
+                return spacing + newR;
             } else if (x == 0){
                 return 0;
             }else {
-                return (spacing + radius) * -1;
+                return (spacing + newR) * -1;
             }
         });
 
