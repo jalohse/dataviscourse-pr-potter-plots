@@ -42,9 +42,18 @@ WordChart.prototype.update = function (data) {
         .domain([0, 1])
         .range([0, width]);
 
-    //Global colorScale to be used consistently by all the charts
     var colorScale = d3.scaleLinear()
         .domain([0,maxPercent]).range(["#FFFFFF", color]);
+
+    var wordTip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([0, 0])
+        .html(function (d) {
+            return d.name + ": " + d.number + " words.";
+        });
+
+    wordChart.call(wordTip);
+
 
     var rects = wordChart.select("g").selectAll("rect").data(word_counts);
     var newRects = rects.enter().append("rect");
@@ -65,7 +74,8 @@ WordChart.prototype.update = function (data) {
                 return colorScale(d.number / totalWords);
             }
             return d.color;
-        });
+        }).on('mouseover', wordTip.show)
+        .on('mouseout', wordTip.hide);
 
 
 };
