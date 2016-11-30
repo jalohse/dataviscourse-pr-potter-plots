@@ -105,6 +105,15 @@ function createLineChart(spellData, allCasterData){
         })
         .style("fill", "none");
 
+
+    var lineTip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([0, 0])
+        .html(function (d) {
+            return d.name  + " cast " + d.number + " spells in " + d.book;
+        });
+    spellChart.call(lineTip);
+
     var circles = spellChart.select("#line #circles")
         .selectAll("circle");
     circles.remove();
@@ -124,7 +133,8 @@ function createLineChart(spellData, allCasterData){
             .style("fill", "white")
             .style("stroke", function (d) {
                 return color(d.name);
-            });
+            }).on('mouseover', lineTip.show)
+            .on('mouseout', lineTip.hide);
     }
 }
 

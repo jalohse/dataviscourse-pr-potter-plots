@@ -48,8 +48,8 @@ svg {
     padding: 10px;
 }
 
-text {
-    font-size: 10px;
+#story text {
+    font-size: 8px;
 }
 
 #spells text {
@@ -91,11 +91,11 @@ text {
 }
 
 .active {
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 
 .nonactive {
-    font-size: 10px !important;
+    font-size: 5px !important;
 }
 
 .d3-tip {
