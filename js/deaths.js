@@ -13,6 +13,7 @@ DeathChart.prototype.update = function (data) {
 
     if (data.length != 7) {
         current = deaths[data[0].book];
+        var book = data[0].book;
     } else {
         for (i = 0; i < data.length; i++) {
             current = current.concat(deaths[data[i].book]);
@@ -57,14 +58,38 @@ DeathChart.prototype.update = function (data) {
     });
 
     var max = d3.max(data, function (d) {
-        var num  = 0;
-        for(i = 0; i < d.values.length; i++){
+        var num = 0;
+        for (i = 0; i < d.values.length; i++) {
             num += d.values[i].value.name.length;
         }
         return d.values.length + num;
     });
 
-    var color = d3.scaleOrdinal(d3.schemeCategory20);
+    var color = d3.scaleOrdinal();
+    switch (book) {
+        case "Sorcerer's Stone":
+            color.range(["#150222", "#6D4986", "#43052C", "#3D316E"]);
+            break;
+        case "Chamber of Secrets":
+            color.range(["#340008", "#29001E"]);
+            break;
+        case "Prisoner of Azkaban":
+            color.range(["#294550"]);
+            break;
+        case "Goblet of Fire":
+            color.range(["#2C0F07", "#260612"]);
+            break;
+        case "Order of the Phoenix":
+            color.range(["#063769"]);
+            break;
+        case "Half Blood Prince":
+            color.range(["#052816", "#061924", "#1D3306"]);
+            break;
+        default:
+            color.range(["#662100", "#663C00", "#032342", "#00442C",
+                "#A71700", "#D2D237", "#52006F"]);
+            break;
+    }
 
     var luminance = d3.scaleSqrt()
         .domain([0, max])
@@ -88,7 +113,7 @@ DeathChart.prototype.update = function (data) {
             var p = d;
             while (p.depth > 1) p = p.parent;
             var c = d3.lab(color(p.data.name));
-            if(d.children) {
+            if (d.children) {
                 c.l = luminance(d.children.length);
             } else {
                 c.l = luminance(0);
