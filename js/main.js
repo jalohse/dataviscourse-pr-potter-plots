@@ -1,6 +1,6 @@
 (function () {
     var instance = null;
-    var tabWidth = 250;
+    var tabWidth = 150;
 
     function switchColors(current, i){
         var style = current.getAttribute("style");

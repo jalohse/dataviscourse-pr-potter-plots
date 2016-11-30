@@ -1,8 +1,8 @@
 function GrossChart(data) {
 
-    var width = 1450;
-    var height = 1250;
-    var barHeight = 1000;
+    var width = 850;
+    var height = 750;
+    var barHeight = 600;
     var leftOffset = 40;
 
     var grossChart = d3.select("#gross").append("svg")
@@ -163,10 +163,13 @@ function GrossChart(data) {
 
     d3.select("g path").attr("d", "M40.5,6V0.5H" + (width + 10) + "V6");
     var ticks = d3.selectAll("g.tick")._groups[0];
+    var moved = false;
     for (i = 0; i < ticks.length; i++) {
-        if (ticks[i]["__data__"] == "Deathly Hallows") {
-            var newVal = ticks[i]["transform"]["baseVal"][0]["matrix"]["e"] + xScale.bandwidth() / 4;
-            ticks[i].setAttribute("transform", "translate(" + newVal + ", 0)");
+        if (ticks[i]["__data__"] == "Deathly Hallows" && !moved) {
+            var currentTick = ticks[i];
+            var newVal = currentTick["transform"]["baseVal"][0]["matrix"]["e"] + xScale.bandwidth() / 4;
+            currentTick.setAttribute("transform", "translate(" + newVal + ", 0)");
+            moved = true;
         }
     }
 

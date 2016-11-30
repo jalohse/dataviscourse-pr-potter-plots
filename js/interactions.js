@@ -25,7 +25,7 @@ function highlightText(classType, index, cell){
 
 InteractionChart.prototype.update = function (data) {
 
-    var width = height = 1250,
+    var width = height = 750,
         matrix = [],
         margin = 150;
 

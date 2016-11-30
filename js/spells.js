@@ -52,7 +52,7 @@ function groupBy(key, spellData) {
 function createLineChart(spellData, allCasterData){
 
     var leftOffset = 40;
-    height =1000;
+    height = 600;
 
 
     d3.select("#line").attr("height", height)
@@ -64,7 +64,7 @@ function createLineChart(spellData, allCasterData){
     var xScale = d3.scalePoint()
         .domain(spellData.map(function (d) {
             return d.book;
-        })).range([leftOffset, width]);
+        })).range([leftOffset, width - leftOffset]);
 
     var yScale = d3.scaleLinear().domain([0, maxSpellsForCaster]).range([height, 0]);
 
@@ -80,20 +80,17 @@ function createLineChart(spellData, allCasterData){
     xAxis.scale(xScale);
     spellChart.select("#line #xAxis")
         .call(xAxis)
-        .attr("transform", "translate(" + 0 + "," + height + ")")
-        .selectAll("text").style("text-anchor", "end")
+        .attr("transform", "translate(" + 0 + "," + (height - 10) + ")")
+        .selectAll("text").style("text-anchor", "middle")
         .attr("dx", "-.8em")
-        .attr("dy", "-.2em")
-        .attr("transform", function () {
-            return "rotate(-90)"
-        });
+        .attr("dy", ".5em");
     var yAxis = d3.axisLeft();
     yAxis.scale(yScale);
     if (maxSpellsForCaster < 10) {
         yAxis.ticks(maxSpellsForCaster);
     }
     spellChart.select("#line #yAxis")
-        .attr("transform", "translate(" + leftOffset + ", 0)")
+        .attr("transform", "translate(" + leftOffset + ", -10)")
         .call(yAxis);
 
     var lines = spellChart.select("#line #lines")
@@ -282,11 +279,11 @@ SpellChart.prototype.update = function (data) {
     var spellData = [];
     var allSpellData = [];
 
-    height = 400;
+    height = 200;
     minNum = 0;
     maxSpellsCast = 0;
     maxSpellsForCaster = 0;
-    width = 1400;
+    width = 750;
 
     color = d3.scaleOrdinal(d3.schemeCategory20);
 

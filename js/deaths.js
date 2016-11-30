@@ -6,8 +6,8 @@ function DeathChart() {
 
 DeathChart.prototype.update = function (data) {
 
-    var width = 960,
-        height = 800,
+    var width = 760,
+        height = 600,
         radius = (Math.min(width, height) / 2);
     var current = [];
 

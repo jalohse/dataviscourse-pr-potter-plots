@@ -5,7 +5,7 @@ function WordChart() {
 
 WordChart.prototype.update = function (data) {
 
-    var width = 1500;
+    var width = 1000;
     var height = 200;
     var color = "";
 

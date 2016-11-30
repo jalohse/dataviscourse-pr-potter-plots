@@ -26,18 +26,18 @@ svg {
 }
 
 .selected_text {
-    font-size: 25px !important;
+    font-size: 16px !important;
 }
 
 #nav text {
     stroke-width: 0.1px;
     fill: white;
-    font-size: 20px ;
+    font-size: 12px ;
     pointer-events: none;
 }
 
 #nav rect {
-    stroke-width: 1em;
+    stroke-width: 0.5em;
 }
 
 .hidden {
@@ -49,7 +49,7 @@ svg {
 }
 
 text {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #spells text {
@@ -62,7 +62,7 @@ text {
 }
 
 #lines path {
-    stroke-width: 0.5em;
+    stroke-width: 0.3em;
 }
 
 #lines #circles circle {
@@ -83,7 +83,7 @@ text {
 }
 
 .storyTextBig {
-    font-size: 15px !important;
+    font-size: 14px !important;
 }
 
 .background {
