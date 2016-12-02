@@ -202,6 +202,7 @@ foreach ($files as $file) {
 
     $charCount = array();
     foreach($inBook as $chapter){
+        $chapter = array_unique($chapter);
         foreach($chapter as $character){
             foreach($chapter as $char2){
                 if(strcmp($character, $char2) != 0 ){
@@ -219,7 +220,7 @@ foreach ($files as $file) {
     }
 //    echo '***** '.end(array_keys($charCount));
     foreach($charCount as $key => $count) {
-        echo '{"' . $key . '" :' . $count;
+        echo '{"' . $key . '" :' . $count/2;
         if ($key != end(array_keys($charCount))) {
             echo '},';
         }
