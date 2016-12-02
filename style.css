@@ -98,6 +98,15 @@ svg {
     font-size: 5px !important;
 }
 
+.summary {
+    width: 750px;
+    display: block;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .d3-tip {
     /*line-height: 5;*/
     padding-left: 10px;

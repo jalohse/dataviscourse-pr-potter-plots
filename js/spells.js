@@ -49,11 +49,10 @@ function groupBy(key, spellData) {
     return all;
 }
 
-function createLineChart(spellData, allCasterData){
+function createLineChart(spellData, allCasterData) {
 
     var leftOffset = 40;
     height = 700;
-
 
     d3.select("#line").attr("height", height)
         .attr("y", 100);
@@ -110,7 +109,7 @@ function createLineChart(spellData, allCasterData){
         .attr('class', 'd3-tip')
         .offset([0, 0])
         .html(function (d) {
-            return d.name  + " cast " + d.number + " spells in " + d.book;
+            return d.name + " cast " + d.number + " spells in " + d.book;
         });
     spellChart.call(lineTip);
 
@@ -138,7 +137,7 @@ function createLineChart(spellData, allCasterData){
     }
 }
 
-function createAllSpellsAster(allSpellData){
+function createAllSpellsAster(allSpellData) {
 
     var largeRadius = Math.min(width, height) / 1.5,
         largeInnerRadius = 0.3 * largeRadius;
@@ -181,7 +180,7 @@ function createAllSpellsAster(allSpellData){
         .attr("d", largeOutlineArc);
 }
 
-function createSmallSpellCharts(character, radius, degree){
+function createSmallSpellCharts(character, radius, degree) {
 
     var innerRadius = 0.3 * radius;
 
@@ -209,37 +208,37 @@ function createSmallSpellCharts(character, radius, degree){
     current.append("text")
         .text(character[0].name)
         .attr("text-anchor", function () {
-            if(total > 8 && x == y && x != 0){
-                    return "end";
-            } else if(total > 8 && x == -y && x != 0){
+            if (total > 8 && x == y && x != 0) {
+                return "end";
+            } else if (total > 8 && x == -y && x != 0) {
                 return "start";
-            } else if(x == 0 || y == 0){
+            } else if (x == 0 || y == 0) {
                 return "middle"
-            } else if(x > 0){
+            } else if (x > 0) {
                 return "start";
             } else {
                 return "end";
             }
         })
         .attr("dy", function () {
-            if(x == 0){
-                if(y == 0){
+            if (x == 0) {
+                if (y == 0) {
                     return (spacing + newR) * -1;
                 } else {
-                    return spacing + spacing + newR ;
+                    return spacing + spacing + newR;
                 }
             }
         })
         .attr("dx", function () {
-            if(total > 8 && x == y && x != 0){
+            if (total > 8 && x == y && x != 0) {
                 return (spacing + newR) * -1;
-            } else if(total > 8 && x == -y && x != 0){
+            } else if (total > 8 && x == -y && x != 0) {
                 return spacing + newR;
-            } else if(x > 0){
+            } else if (x > 0) {
                 return spacing + newR;
-            } else if (x == 0){
+            } else if (x == 0) {
                 return 0;
-            }else {
+            } else {
                 return (spacing + newR) * -1;
             }
         });
@@ -261,25 +260,25 @@ function createSmallSpellCharts(character, radius, degree){
         .on('mouseout', unhighlight);
 }
 
-function highlightSelected(d){
+function highlightSelected(d) {
     spellTip.hide();
     var spells = d3.selectAll("#aster path")._groups[0];
     spells.forEach(function (path) {
-        if(path.getAttribute("fill") != "gray" && path.getAttribute("class" == "solidArc")){
+        if (path.getAttribute("fill") != "gray" && path.getAttribute("class" == "solidArc")) {
             path.setAttribute("fill", "gray");
         }
         spellTip.show(d);
-        if(path.getAttribute("spell") == d.data.spell){
+        if (path.getAttribute("spell") == d.data.spell) {
             path.setAttribute("fill", color);
         }
     })
 }
 
-function unhighlight(){
+function unhighlight() {
     spellTip.hide();
     var spells = d3.selectAll("#aster path")._groups[0];
     spells.forEach(function (path) {
-        if(path.getAttribute("fill") != "gray" && path.getAttribute("class") == "solidArc"){
+        if (path.getAttribute("fill") != "gray" && path.getAttribute("class") == "solidArc") {
             path.setAttribute("fill", "gray");
         }
     })
@@ -290,6 +289,7 @@ SpellChart.prototype.update = function (data) {
 
     var spellData = [];
     var allSpellData = [];
+    var casters = [];
 
     height = 200;
     minNum = 0;
@@ -304,7 +304,6 @@ SpellChart.prototype.update = function (data) {
     if (data.length != 1) {
         for (i = 0; i < data.length; i++) {
             spells = data[i].spells;
-            var casters = [];
             maxSpellsForCaster = 0;
             casters = findTotalInAll("caster", spells);
             for (var key in casters) {
@@ -328,6 +327,10 @@ SpellChart.prototype.update = function (data) {
     }
 
 
+    var totalSpells = d3.sum(spellData, function (d) {
+        return d.number;
+    });
+
     var allCasterData = groupBy("name", spellData);
     total = allCasterData.length;
 
@@ -335,8 +338,23 @@ SpellChart.prototype.update = function (data) {
         spellChart = d3.select("#line")
             .attr("width", width)
             .attr("height", height);
+
+        d3.select("#spell_chart .summary").html("In all seven books, " + totalSpells + " total spells were cast. Below, the" +
+            " characters who verbally cast spells in more than " + minNum+ " books are shown. Hover over a circle to learn how many spells were cast" +
+            " and who cast them for each book.");
+
         createLineChart(spellData, allCasterData);
     } else {
+        if(data[0].book == "Sorcerer's Stone"){
+            minText = "0 spells"
+        } else {
+            minText = "1 spell"
+        }
+        d3.select("#spell_chart .summary").html("In <i>" + data[0].book + "</i>, " + totalSpells + " total spells were cast. " +
+            "The distribution of spells is shown in the middle, while characters that cast more than " + minText + " are shown "
+        + " around the overall spells. Hover over a piece of any of the charts to few the number and corresponding spells on " +
+            " other charts.");
+
         spellChart = d3.select("#spells")
             .attr("width", width)
             .attr("height", height);
@@ -363,7 +381,7 @@ SpellChart.prototype.update = function (data) {
         spellChart.call(spellTip);
 
 
-        placementRadius = radius * (7/2);
+        placementRadius = radius * (7 / 2);
         if (total > 8) {
             placementRadius = radius * 4;
         }

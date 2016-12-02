@@ -57,6 +57,14 @@ DeathChart.prototype.update = function (data) {
         return d.children ? 0 : 1;
     });
 
+    if(data.length != 7) {
+        d3.select("#death_chart .summary").html(current.length + " total people died in <i>" + book + "</i> across " +
+            root.children.length + " different categories. Hover over the wedge pieces to learn the cause of death and killer.");
+    } else {
+        d3.select("#death_chart .summary").html(current.length + " total people died over the course of the series across " +
+            root.children.length+ " different categories. Hover over the wedge pieces to learn the cause of death and killer.");
+    }
+
     var max = d3.max(data, function (d) {
         var num = 0;
         for (i = 0; i < d.values.length; i++) {

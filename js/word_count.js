@@ -8,6 +8,7 @@ WordChart.prototype.update = function (data) {
     var width = 1000;
     var height = 200;
     var color = "";
+    var totalWords;
 
     var word_counts = [];
     if (data.length == 7) {
@@ -18,23 +19,29 @@ WordChart.prototype.update = function (data) {
             });
             word_counts.push({name: book.book, number: total, color: book.color});
         }
+        totalWords = d3.sum(word_counts, function (d) {
+            return d.number;
+        });
+        d3.select("#word_div .summary").html("Over the course of the series, " + totalWords.toLocaleString() + " total words were written." +
+            " Hover over the rectangles below to learn more about the individual books.");
     } else {
         for (i = 0; i < data[0].chapters.length; i++) {
             var chapter = data[0].chapters[i];
             word_counts.push({name: chapter.name, number: chapter.word_count, color: data[0].color});
         }
         color = data[0].color;
+        totalWords = d3.sum(word_counts, function (d) {
+            return d.number;
+        });
+        d3.select("#word_div .summary").html("<i>Harry Potter and the " + data[0].book + "</i> has " + data[0].chapters.length +
+            " chapters totalling to " + totalWords.toLocaleString() + " words. Hover over the rectangles below to learn more about the individual chapters.");
     }
 
     var wordChart = d3.select("#word_count")
         .attr("width", width)
         .attr("height", height);
 
-    var totalWords = d3.sum(word_counts, function (d) {
-        return d.number;
-    });
-
-    var maxPercent = d3.max(word_counts, function(d){
+    var maxPercent = d3.max(word_counts, function (d) {
         return d.number / totalWords;
     });
 
@@ -43,13 +50,13 @@ WordChart.prototype.update = function (data) {
         .range([0, width]);
 
     var colorScale = d3.scaleLinear()
-        .domain([0,maxPercent]).range(["#FFFFFF", color]);
+        .domain([0, maxPercent]).range(["#FFFFFF", color]);
 
     var wordTip = d3.tip()
         .attr('class', 'd3-tip')
         .offset([0, 0])
         .html(function (d) {
-            return d.name + ": " + d.number + " words.";
+            return "<i>" + d.name + "</i>: " + d.number.toLocaleString() + " words.";
         });
 
     wordChart.call(wordTip);
@@ -70,11 +77,11 @@ WordChart.prototype.update = function (data) {
             var percent = (d.number / totalWords);
             return percent * 100 + "%";
         }).style("fill", function (d) {
-            if(data.length != 7){
-                return colorScale(d.number / totalWords);
-            }
-            return d.color;
-        }).on('mouseover', wordTip.show)
+        if (data.length != 7) {
+            return colorScale(d.number / totalWords);
+        }
+        return d.color;
+    }).on('mouseover', wordTip.show)
         .on('mouseout', wordTip.hide);
 
 

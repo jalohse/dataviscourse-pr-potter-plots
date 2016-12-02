@@ -14,17 +14,20 @@
 <svg id="nav"></svg>
 
 <h3>Word Count</h3>
-<svg id="word_count">
-    <g></g>
-</svg>
+<div id="word_div">
+    <p class="summary"></p>
+    <svg id="word_count">
+        <g></g>
+    </svg>
+</div>
 <h3 id="gross_head">Book vs Movie Gross</h3>
 <div id="gross"></div>
 <h3 id="story_head" class="hidden">Story</h3>
 <div id="story" class="hidden">
+    <p class="summary"></p>
     <p>Order: <select id="order">
         <option value="name">by Name</option>
         <option value="count">by Frequency</option>
-        <!--<option value="group">by Cluster</option>-->
     </select>
     </p>
     <svg>
@@ -34,24 +37,43 @@
     </svg>
 </div>
 <h3 id="spell_head">Spells</h3>
-<svg id="line">
-    <g id="xAxis"></g>
-    <g id="yAxis"></g>
-    <g id="lines"></g>
-    <g id="circles"></g>
-</svg>
-<svg id="spells">
-    <g id="aster"></g>
-</svg>
+<div id="spell_chart">
+    <p class="summary"></p>
+    <svg id="line">
+        <g id="xAxis"></g>
+        <g id="yAxis"></g>
+        <g id="lines"></g>
+        <g id="circles"></g>
+    </svg>
+    <svg id="spells">
+        <g id="aster"></g>
+    </svg>
+</div>
 <h3>Deaths</h3>
-<svg id="deaths">
-    <g>
-        <text id="short"></text>
-        <text id="long" y="20px"></text>
-    </g>
-</svg>
-<h3>Locations</h3>
-<div id="locations"></div>
+<div id="death_chart">
+    <p class="summary"></p>
+    <svg id="deaths">
+        <g>
+            <text id="short"></text>
+            <text id="long" y="20px"></text>
+        </g>
+    </svg>
+</div>
+<!--<h3>Locations</h3>-->
+<!--<div id="locations"></div>-->
+
+<h3>The Project</h3>
+<p class="summary"> Our project aims at exploring pieces from one of the best selling book series of all time, <i>Harry
+    Potter</i>.
+    Before this website, an interactive visualization that looked at different aspects of the books did not exist. With
+    this implementation, it is now easy to see how certain characters interact and the spells that are used in each
+    book.
+    Not only can you view all of the books at one time, you can also view individual books to see the trends that
+    appeared
+    in each. Our <a href="">process book</a> explains how we gathered this data, how our design evolved, and how these
+    visualizations were implemented.
+
+</p>
 
 
 <script type="application/javascript" src="js/interactions.js"></script>

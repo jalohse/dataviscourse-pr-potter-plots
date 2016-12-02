@@ -38,6 +38,12 @@ InteractionChart.prototype.update = function (data) {
 
     var g = svg.select("g").attr("transform", "translate(" + margin + "," + margin + ")");
 
+    d3.select("#story .summary")
+        .html("<i>" + data.book + "</i> includes " + data.chapters.length + " chapters. This co-occurence matrix shows "
+        + "how many chapters two characters are mentioned in together. Hovering over a cell can tell you how many chapters "
+        + "two characters are mentioned in together. You can reorganize the data by name or number of chapters using the "
+        + "dropdown menu.");
+
     var bookTitle = data.book.split(" ")[0];
     bookTitle = bookTitle.replace("'", "").toLowerCase();
 

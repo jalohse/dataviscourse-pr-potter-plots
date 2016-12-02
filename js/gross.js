@@ -5,10 +5,6 @@ function GrossChart(data) {
     var barHeight = 600;
     var leftOffset = 40;
 
-    var grossChart = d3.select("#gross").append("svg")
-        .attr("width", width)
-        .attr("height", height);
-
     var properties = ["book_gross", "movie_gross"];
     data.forEach(function (d) {
         if (d.book != " Deathly Hallows") {
@@ -23,11 +19,30 @@ function GrossChart(data) {
         return {name: dh.book, property: property, number: dh[property], color: dh.color};
     });
 
+    var totalBookSum = d3.sum(data, function (d) {
+        return d.gross[0].number;
+    });
+
+    totalBookSum += dh.gross[0].number;
+
+    var totalMovieSum = d3.sum(data, function (d) {
+        return d.gross[1].number;
+    });
+
+    totalMovieSum += dh.gross[1].number + dh.gross[2].number;
+
+    d3.select("#gross").append("text")
+        .classed("summary", true)
+        .html("The total grosses of all seven <i>Harry Potter</i> books and films are shown. Books are solid colored bars," +
+            " while movies are striped bars. In total, the books made $" + totalBookSum.toLocaleString() + " million and the" +
+            " movies made $" + totalMovieSum.toLocaleString() + " million. Hover over the bars to find out more information about " +
+            "each book or movie.");
+
 
     var maxGross = d3.max(data, function (d) {
-            return d3.max(d.gross, function (i) {
-                return i.number;
-            });
+        return d3.max(d.gross, function (i) {
+            return i.number;
+        });
 
     });
 
@@ -53,6 +68,10 @@ function GrossChart(data) {
     var yScale = d3.scaleLinear()
         .domain([0, maxGross])
         .range([barHeight, 0]);
+
+    var grossChart = d3.select("#gross").append("svg")
+        .attr("width", width)
+        .attr("height", height);
 
     var defs = grossChart.append("defs");
     defs.selectAll("pattern")
@@ -93,16 +112,16 @@ function GrossChart(data) {
     var grossTip = d3.tip().attr('class', 'd3-tip')
         .direction('ne')
         .offset(function () {
-            return [50,0];
+            return [50, 0];
         })
         .html(function (d) {
             var text = "<p style='font-size: 20px; text-align: center; color: "
-            + d.color + ";'><b><i>" + d.name;
-            if(d.property.includes("movie1")){
+                + d.color + ";'><b><i>" + d.name;
+            if (d.property.includes("movie1")) {
                 text += " Part 1</i>: ";
-            } else if (d.property.includes("movie2")){
+            } else if (d.property.includes("movie2")) {
                 text += " Part 2</i>: ";
-            } else if(d.property.includes("movie")) {
+            } else if (d.property.includes("movie")) {
                 text += "</i> movie: ";
             } else {
                 text += "</i> book: ";
@@ -112,7 +131,6 @@ function GrossChart(data) {
         });
 
     grossChart.call(grossTip);
-
 
 
     var bars = bookMovie.append('g')
