@@ -109,7 +109,7 @@ function createLineChart(spellData, allCasterData) {
         .attr('class', 'd3-tip')
         .offset([0, 0])
         .html(function (d) {
-            return d.name + " cast " + d.number + " spells in " + d.book;
+            return "<p style='color: " + color(d.name) + "';>" + d.name + " cast " + d.number + " spells in " + d.book + ". </p>";
         });
     spellChart.call(lineTip);
 
@@ -366,7 +366,7 @@ SpellChart.prototype.update = function (data) {
             .attr('class', 'd3-tip')
             .offset([0, 0])
             .html(function (d) {
-                return d.data.spell + ": " + d.data.number;
+                return "<p style='color:" + color + ";'>" + d.data.spell + ": " + d.data.number + "</p>";
             });
 
         d3.select("#aster")

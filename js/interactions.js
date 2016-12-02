@@ -97,8 +97,8 @@ InteractionChart.prototype.update = function (data) {
         .attr('class', 'd3-tip')
         .offset([0, 0])
         .html(function (d) {
-            return charCount[d[0]].name + " and " + charCount[d[1]].name +
-                " appear in " +matrix[d[0]][d[1]].z + " chapters together.";
+            return "<p style='color:"+ color +"';>"+ charCount[d[0]].name + " and " + charCount[d[1]].name +
+                " appear in " +matrix[d[0]][d[1]].z + " chapters together.</p>";
         });
 
     g.call(storyTip);

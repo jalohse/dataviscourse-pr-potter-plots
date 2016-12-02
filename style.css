@@ -108,14 +108,18 @@ svg {
 }
 
 .d3-tip {
-    /*line-height: 5;*/
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 400px;
+    min-width: 50px;
     border-style: groove;
-    /*padding: 12px;*/
     background: #FFFFFF;
     color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     pointer-events: none;
+}
+
+.d3-tip p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
 }

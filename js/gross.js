@@ -115,8 +115,7 @@ function GrossChart(data) {
             return [50, 0];
         })
         .html(function (d) {
-            var text = "<p style='font-size: 20px; text-align: center; color: "
-                + d.color + ";'><b><i>" + d.name;
+            var text = "<p style='color: " + d.color + ";'><b><i>" + d.name;
             if (d.property.includes("movie1")) {
                 text += " Part 1</i>: ";
             } else if (d.property.includes("movie2")) {

@@ -56,7 +56,13 @@ WordChart.prototype.update = function (data) {
         .attr('class', 'd3-tip')
         .offset([0, 0])
         .html(function (d) {
-            return "<i>" + d.name + "</i>: " + d.number.toLocaleString() + " words.";
+            textColor = 0;
+            if(color){
+                textColor = color;
+            } else {
+                textColor = d.color;
+            }
+            return "<p style='color:"+ textColor +"';><i>" + d.name + "</i>: " + d.number.toLocaleString() + " words.</p>";
         });
 
     wordChart.call(wordTip);
