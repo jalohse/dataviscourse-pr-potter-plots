@@ -21,7 +21,7 @@
         var spellChart = new SpellChart();
         var wordChart = new WordChart();
         var deathChart = new DeathChart();
-        var locationChart = new LocationChart();
+        // var locationChart = new LocationChart();
         var storyChart = new InteractionChart();
 
         d3.json('data/books.json', function (error, data) {
@@ -94,7 +94,7 @@
                         deathChart.update([d]);
                         storyChart.update(d);
                     }
-                    locationChart.update(i);
+                    // locationChart.update(i);
                 }
             });
 

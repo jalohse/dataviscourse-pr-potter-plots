@@ -40,6 +40,11 @@ svg {
     stroke-width: 0.5em;
 }
 
+iframe {
+    display: block;
+    margin: auto;
+}
+
 .hidden {
     display: none;
 }
