@@ -1,0 +1,163 @@
+Entry-Harry Potter-Left-Normal
+Entry-Cedric Diggory-Left-Normal
+Entry-Peter Pettirgrew-Right-Normal
+Entry-Lord Voldemort-Right-Partial
+Spell-Avada Kedavra-Peter Pettigrew-Cedric Diggory
+Exit-Cedric Diggory-Death
+Spell-Incarcerous-Peter Pettigrew-Harry Potter
+Entry-Lucius Malfoy-Right-Normal
+Entry-Crabbe-Right-Normal
+Entry-Goyle-Right-Normal
+Entry-Nott-Right-Normal
+Entry-Macnair-Right-Normal
+Entry-Avery-Right-Normal
+Entry-Death Eaters-Right-Normal
+Spell-Crucio-Lord Voldemort-Avery
+Spell-Unidentified-Lord Voldemort-Harry Potter
+Spell-Crucio-Lord Voldemort-Harry Potter
+Spell-Imperio-Lord Voldemort-Harry Potter
+MSpell-Crucio-Lord Voldemort-Harry Potter
+Spell-Avada Kedavra-Lord Voldemort-Harry Potter
+Spell-Expelliarmus-Harry Potter-Lord Voldemort
+Special-Priori Incantatem
+Entry-Echo Cedric Diggory-Left-Echo
+Entry-Echo Frank Bryce-Left-Echo
+Entry-Echo Bertha Jorkins-Left-Echo
+Entry-Echo Lily Potter-Left-Echo
+Entry-Echo James Potter-Left-Echo
+Special-End Priori Incantetum-Echo
+Exit-Echo Cedric Diggory-End Priori Incantetum
+Exit-Echo Frank Bryce-End Priori Incantetum
+Exit-Echo Bertha Jorkins-End Priori Incantetum
+Exit-Echo Lily Potter-End Priori Incantetum
+Exit-Echo James Potter-End Priori Incantetum
+MSpell-Death Eaters-Harry Potter
+Spell-Stupefy-Impedimenta-Harry Potter-Death Eaters
+MSpell-Unidentified-Death Eaters-Harry Potter
+Spell-Accio-Harry Potter-Triwizard Cup
+Exit-Harry Potter-Escape
+EndBattle
+
+Entry-Harry Potter-Left-Normal
+Entry-Ron Weasley-Left-Normal
+Entry-Hermoine Granger-Left-Normal
+Entry-Ginny Weasley-Left-Normal
+Entry-Neville Longbottom-Left-Normal
+Entry-Luna Lovegood-Left-Normal
+Entry-Lucius Malfoy-Right-Normal
+Entry-Bellatrix Lestrange-Right-Normal
+Entry-Augustus Rookwood-Right-Normal
+Entry-Rodolphus Lestrange-Right-Normal
+Entry-Macnair-Right-Normal
+Entry-Avery-Right-Normal
+Entry-Antonin Dolohov-Right-Normal
+Entry-Jugson-Right-Normal
+Entry-Mulciber-Right-Normal
+Entry-Crabbe-Right-Normal
+Entry-Rabastan-Right-Normal
+Entry-Death Eaters-Right-Normal
+MSpell-Accio-Bellatrix Lestrange-Harry Potter
+Spell-Protego-Harry Potter-Bellatrix Lestrange
+MSpell-Stupefy-Bellatrix Lestrange-Harry Potter
+Spell-Reducto-Ron Weasley-Shelves
+Spell-Reducto-Hermoine Granger-Shelves
+Spell-Reducto-Ginny Weasley-Shelves
+Spell-Reducto-Neville Longbottom-Shelves
+Spell-Reducto-Luna Lovegood-Shelves
+Spell-Reducto-Lucius Malfoy-Shelves
+Spell-Stupefy-Hermoine Granger-Death Eaters
+Spell-Colloportus-Hermoine Granger-Door
+Spell-Alohamora-Death Eaters-Door
+Spell-Stupefy-Harry Potter-Death Eaters
+MSpell-Avada Kedavra-Death Eaters-Hermoine Granger
+Spell-Expelliarmus-Neville Longbottom-Harry Potter
+Spell-Expelliarmus-Neville Longbottom-Death Eaters
+MSpell-Stupefy-Neville Longbottom-Death Eaters
+MSpell-Stupefy-Death Eaters-Harry Potter
+Spell-Stupefy-Hermoine Granger-Death Eaters
+MSpell-Colloportus-Hermoine Granger-Door
+Spell-Impedimenta-Antonin Dolohov-Harry Potter
+Spell-Impedimenta-Antonin Dolohov-Hermoine Granger
+Spell-Impedimenta-Antonin Dolohov-Neville Longbottom
+Spell-Silencio-Hermoine Granger-Antonin Dolohov
+Spell-Petrificus Totalus-Harry Potter-Death Eaters
+Spell-Purple Fire-Antonin Dolohov-Hermoine Granger
+Spell-Petrificus Totalus-Harry Potter-Antonin Dolohov
+MSpell-Stupefy-Death Eaters-Harry Potter
+MSpell-Stupefy-Death Eaters-Ron Weasley
+MSpell-Stupefy-Death Eaters-Ginny Weasley
+MSpell-Stupefy-Death Eaters-Luna Lovegood
+Spell-Colloportus-Harry Potter-Door
+Spell-Colloportus-Harry Potter-Door
+Spell-Colloportus-Neville Longbottom-Door
+Spell-Colloportus-Luna Lovegood-Door
+MSpell-Colloportus-Harry Potter-Door
+Spell-Accio-Ron Weasley-Brains
+Spell-Diffindo-Harry Potter-Brains
+MSpell-Colloportus-Death Eaters-Neville Longbottom
+Spell-Crucio-Bellatrix Lestrange-Neville Longbottom
+Entry-Madeye Moody-Left-Normal
+Entry-Remus Lupin-Left-Normal
+Entry-Nymphadora Tonks-Left-Normal
+Entry-Sirius Black-Left-Normal
+Entry-Kingsley Shacklebolt-Left-Normal
+Spell-Stupefy-Harry Potter-Macnair
+Spell-Tarantallegra-Antonin Dolohov-Neville Longbottom
+Spell-Purple Fire-Antonin Dolohov-Harry Potter
+Spell-Protego-Harry Potter-Antonin Dolohov
+MSpell-Accio-Antonin Dolohov-Harry Potter
+Spell-Petrificus Totalus-Harry Potter-Antonin Dolohov
+Spell-Impedimenta-Harry Potter-Lucius Malfoy
+Entry-Albus Dumbledore-Left-Normal
+Spell-Avada Kedavra-Bellatrix Lestrange-Sirius Black
+MSpell-Stupefy-Bellatrix Lestrange-Harry Potter
+Spell-Crucio-Harry Potter-Bellatrix Lestrange
+MSpell-Crucio-Bellatrix Lestrange-Harry Potter
+Spell-Stupefy-Harry Potter-Bellatrix Lestrange
+Spell-Protego-Bellatrix Lestrange-Harry Potter
+Entry-Lord Voldemort-Right-Normal
+MSpell-Avada Kedavra-Lord Voldemort-Harry Potter
+MSpell-Avada Kedavra-Lord Voldemort-Albus Dumbledore
+MSpell-Avada Kedavra-Lord Voldemort-Albus Dumbledore
+MSpell-Unidentified-Albus Dumbledore-Lord Voldemort
+Spell-Silver Shield-Lord Voldemort-Albus Dumbledore
+MSpell-Avada Kedavra-Lord Voldemort-Albus Dumbledore
+Spell-Avada Kedavra-Lord Voldemort-Albus Dumbledore
+Spell-Firerope Spell-Albus Dumbledore-Lord Voldemort
+Spell-Tranfigure-Lord Voldemort-Albus Dumbledore
+Entry-Fawkes-Left-Normal
+Spell-Avada Kedavra-Lord Voldemort-Fawkes
+Spell-Water Prison-Albus Dumbledore-Lord Voldemort
+Exit-Lord Voldemort-Disapparate
+Entry-Lord Voldermort-Left-Possession
+Special-Possession-Lord Voldemort-Harry Potter
+Special-Break Possession-Harry Potter-Lord Voldemort
+Exit-Lord Voldemort-Disapparation
+Exit-Bellatrix Lestrange-Disapparation
+EndBattle
+
+Entry-Harry Potter-Left-Normal
+Entry-Albus Dumbledore-Left-Normal
+Entry-Draco Malfoy-Right-Normal
+Spell-Petrificus Totalus-Albus Dumbledore-Harry Potter
+Spell-Expelliarmus-Draco Malfoy-Albus Dumbledore
+Entry-Amycus Carrow-Right-Normal
+Entry-Alecto Carrow-Right-Normal
+Entry-Thorfinn Rowle-Right-Normal
+Entry-Fenrir Greyback-Right-Normal
+Entry-Severus Snape-Right-Normal
+Spell-Avada Kedavra-Severus Snape-Albus Dumbledore
+Spell-Petrificus Totalus-Harry Potter-Thorfinn Rowle
+Spell-Petrificus Totalus-Harry Potter-Fenrir Greyback
+Spell-Impedimenta-Harry Potter-Amycus Carrow
+Exit-Draco Malfoy-Run
+MSpell-Stupefy-Harry Potter-Severus Snape
+MSpell-Crucio-Harry Potter-Severus Snape
+MSpell-Crucio-Harry Potter-Severus Snape
+MSpell-Incarcerous-Harry Potter-Severus Snape
+MSpell-Impedimenta-Harry Potter-Severus Snape
+MSpell-Sectumsempra-Harry Potter-Severus Snape
+MSpell-Levicorpus-Harry Potter-Severus Snape
+Spell-Unidentified-Severus Snape-Harry Potter
+Exit-Severus Snape-Run
+EndBattle

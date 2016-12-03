@@ -1,0 +1,205 @@
+Privet Drive
+Surrey Zoo
+Privet Drive
+Hut on the Rock
+Diagon Alley,Gringotts
+Platform Nine and Three-Quarters,Hogwarts Express
+Hogwarts Lake,Great Hall
+Hogwarts Castle
+Hogwarts Castle
+Hogwarts Castle
+Hogwarts Quidditch Stadium
+Hogwarts Castle
+Hogwarts Grounds
+Hagrid's Hut
+The Forbidden Forest
+Hogwarts Castle
+Hogwarts Castle,Hospital Wing,Great Hall
+END
+Privet Drive
+Privet Drive
+The Burrow
+The Burrow,Knockturn Alley,Diagon Alley
+Platform Nine and Three-Quarters,Hogwarts Grounds,Gryffindor Tower
+Great Hall,Hogwarts Castle
+Hogwarts Quidditch Stadium,Hagrid's Hut
+Hogwarts Castle
+Hogwarts Castle
+Hogwarts Castle,Hogwarts Quidditch Stadium,Hospital Wing
+Hogwarts Castle
+Headmaster's Office,Great Hall,Slytherin Common Room
+Hospital Wing,Hogwarts Castle
+Hogwarts Castle,Hagrid's Hut
+Hogwarts Castle,The Forbidden Forest
+Hogwarts Castle,The Chamber of Secrets
+The Chamber of Secrets,Hogwarts Castle,Hogwarts Express
+END
+Privet Drive
+Privet Drive
+Privet Drive,Diagon Alley
+Diagon Alley
+Platform Nine and Three-Quarters,Hogwarts Express,Great Hall
+Hogwarts Castle,Hogwarts Grounds,Hagrid's Hut
+Hogwarts Castle
+Hogwarts Castle,Gryffindor Tower
+Great Hall,Hogwarts Castle,Hogwarts Quidditch Stadium,Hospital Wing
+Hospital Wing,Hogwarts Castle,Hogsmeade
+Gryffindor Tower,Hagrid's Hut
+Hogwarts Castle
+Hogwarts Quidditch Stadium,Gryffindor Tower
+Hogwarts Castle,Hogsmeade
+Hogwarts Castle,Hogwarts Quidditch Stadium
+Hogwarts Castle,Hagrid's Hut
+Hogwarts Grounds,Hogsmeade
+The Shrieking Shack
+The Shrieking Shack,Hogwarts Grounds
+Hogwarts Grounds,Hogwarts Lake
+Hospital Wing,Hogwarts Grounds,Hogwarts Lake
+Hospital Wing,Hogwarts Express
+END
+Little Hangleton,Privet Drive
+Privet Drive
+Privet Drive
+Privet Drive,The Burrow
+The Burrow
+The Burrow,Ottery St Catchpole
+Dartmoor Woods
+Quidditch World Cup Stadium
+Dartmoor Woods
+Dartmoor Woods,The Burrow
+The Burrow,Platform Nine and Three-Quarters,Hogwarts Express
+Great Hall
+Hogwarts Castle,Great Hall
+Hogwarts Castle, Gryffindor Tower
+Hogwarts Castle,Great Hall
+Great Hall,Hagrid's Hut
+Great Hall, Gryffindor Tower
+Hogwarts Castle,Gryffindor Tower
+Hogwarts Castle,Hogsmeade,Hogwarts Grounds,Gryffindor Tower
+Hogwarts Castle,Hogwarts Grounds
+Gryffindor Tower,Hogwarts Grounds,Hogwarts Castle
+Hogwarts Castle,Gryffindor Tower
+Hogwarts Castle,Great Hall
+Hogwarts Castle,Hogwarts Grounds,Hogsmeade,Hagrid's Hut
+Hogwarts Castle
+Hogwarts Castle,Hogwarts Lake
+Hogwarts Castle,Hogsmeade
+Hogwarts Castle,Hogwarts Grounds
+Hogwarts Castle,Headmaster's Office
+Headmaster's Office,Ministry of Magic
+Hogwarts Castle,Hogwarts Quidditch Stadium,Little Hangleton
+Little Hangleton
+Little Hangleton
+Little Hangleton,Hogwarts Quidditch Stadium
+Hogwarts Grounds,Hogwarts Castle
+Headmaster's Office,Hospital Wing
+Hogwarts Castle,Hogwarts Express
+END
+Privet Drive
+Privet Drive
+Privet Drive,London,Grimmauld Place
+Grimmauld Place
+Grimmauld Place
+Grimmauld Place
+Grimmauld Place,London,Ministry of Magic
+Ministry of Magic
+Ministry of Magic,Grimmauld Place
+Platform Nine and Three-Quarters,Hogwarts Express,Hogwarts Grounds
+Great Hall,Gryffindor Tower
+Gryffindor Tower,Hogwarts Castle
+Hogwarts Castle,Hogwarts Grounds
+Hogwarts Castle,Gryffindor Tower
+Hogwarts Castle
+Hogwarts Castle,Hogsmeade
+Hogwarts Castle
+Hogwarts Castle,Room of Requirement
+Hogwarts Quidditch Stadium,Gryffindor Tower
+Hagrid's Hut,Hogwarts Grounds
+Hogwarts Grounds,Gryffindor Tower,Headmaster's Office
+Grimmauld Place,St Mungo's Hospital
+Grimmauld Place,St Mungo's Hospital
+Hogwarts Castle
+Hogsmeade,Hogwarts Castle
+Hogwarts Castle
+Hogwarts Castle,Headmaster's Office
+Hogwarts Castle
+Hogwarts Castle
+Hogwarts Quidditch Stadium,Hogwarts Grounds,The Forbidden Forest
+Hogwarts Castle
+Hogwarts Castle
+Hogwarts Castle,The Forbidden Forest,Hogwarts Grounds
+Ministry of Magic
+Ministry of Magic
+Ministry of Magic
+Headmaster's Office
+Hogwarts Castle,Hogwarts Express
+END
+London
+Spinner's End
+Privet Drive
+Budleigh Babberton
+The Burrow
+The Burrow,Diagon Alley,Knockturn Alley
+Hogwarts Express
+Great Hall,Hogwarts Castle
+Hogwarts Castle
+Headmaster's Office,Little Hangleton
+Hogwarts Castle,Hogwarts Quidditch Stadium
+Hogwarts Castle,Hogsmeade
+Headmaster's Office,Knockturn Alley,London
+Hogwarts Castle,Hogwarts Quidditch Stadium,Gryffindor Tower
+Hogwarts Castle
+The Burrow
+Hogwarts Castle,Headmaster's Office
+Gryffindor Tower,Hogwarts Castle
+Hogwarts Castle,Hogwarts Quidditch Stadium,Hospital Wing
+Headmaster's Office
+Hogwarts Castle,Room of Requirement
+Hogwarts Castle,Hagrid's Hut
+Headmaster's Office,Hogwarts Castle
+Hogwarts Castle,Gryffindor Tower
+Hogwarts Castle,Room of Requirement,Headmaster's Office
+Hogsmeade,The Cave
+Hogsmeade,Hogwarts Castle
+Hogwarts Castle,Hogwarts Grounds
+Hospital Wing,Hogwarts Castle
+Hogwarts Grounds
+END
+Malfoy Manor
+Privet Drive
+Privet Drive
+Privet Drive
+The Burrow
+The Burrow
+The Burrow
+The Burrow
+London,Grimmauld Place
+Grimmauld Place
+Grimmauld Place
+Grimmauld Place,Ministry of Magic
+Ministry of Magic
+Ministry of Magic,Grimmauld Place,Dartmoor Woods
+Dartmoor Woods,Unnamed Locations
+Godric's Hollow
+Godric's Hollow
+Forest of Dean
+Forest of Dean
+Ottery St Catchpole
+Ottery St Catchpole
+Unnamed Locations
+Malfoy Manor,Shell Cottage
+Shell Cottage
+Shell Cottage
+Diagon Alley,Gringotts
+Unnamed Locations,Hogsmeade
+Hogsmeade
+Hogsmeade,Room of Requirement,Ravenclaw Tower
+Ravenclaw Tower,Nurmengard,Hogwarts Castle
+Hogwarts Castle,Room of Requirement
+The Shrieking Shack,Great Hall,Headmaster's Office
+Headmaster's Office
+Hogwarts Grounds,The Forbidden Forest
+Harry's Head
+The Forbidden Forest,Hogwarts Grounds,Hogwarts Castle
+Platform Nine and Three-Quarters
+END
