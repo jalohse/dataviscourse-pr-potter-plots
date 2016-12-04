@@ -1,16 +1,16 @@
-function LocationChart() {
+function BattleChart() {
 
 }
 
 
-LocationChart.prototype.update = function (i) {
-    d3.json('data/locations.json', function (error, data) {
+BattleChart.prototype.update = function (i) {
+    d3.json('data/BattleDataNew.json', function (error, data) {
 
         var height = 600;
 
         var leftOffset = 250;
         console.log(data);
-        var bookLocationData = data[i]["chapters"];
+        var battleData = data[i]["battles"];
         console.log(bookLocationData);
         var axisData = data[i]["axis"];
         console.log(axisData);
@@ -42,11 +42,11 @@ LocationChart.prototype.update = function (i) {
             .selectAll("text").style("text-anchor", "end")
             .attr("dx", ".4em")
             .attr("dy", "1em")
-      ;
+        ;
         var yAxis = d3.axisLeft();
         yAxis.scale(yScale);
-/*        var locations = ["one","two","three"];
-        yAxis.tickValues(locations);*/
+        /*        var locations = ["one","two","three"];
+         yAxis.tickValues(locations);*/
         locationChart.select("#yAxis")
             .attr("transform", "translate(" + leftOffset + ", "+0+")")
             .call(yAxis)
@@ -98,7 +98,7 @@ LocationChart.prototype.update = function (i) {
                     .style("opacity",0.2)
                     .style("fill","lime")
                     .transition().duration(1000).delay(function(d,j) {
-                        return (i*1000)+(j*250)})
+                    return (i*1000)+(j*250)})
                     .on("start", function repeat(d,j) {
 
                         d3.active(this)
@@ -152,7 +152,7 @@ LocationChart.prototype.update = function (i) {
                 .style("opacity",0.2)
                 .style("fill","lime")
                 .transition().duration(1000).delay(function(d,j) {
-                    return (i*1000)+(j*250)})
+                return (i*1000)+(j*250)})
                 .on("start", function repeat(d,j) {
 
                     d3.active(this)

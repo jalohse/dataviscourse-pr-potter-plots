@@ -79,6 +79,7 @@
                         d3.select("#gross").classed("hidden", false);
                         d3.select("#story_head").classed("hidden", true);
                         d3.select("#story").classed("hidden", true);
+                        d3.select("#locationsdiv").classed("hidden", true);
                         console.log("change to all");
                         spellChart.update(bookData);
                         wordChart.update(bookData);
@@ -88,6 +89,7 @@
                         d3.select("#gross").attr("class", "hidden");
                         d3.select("#story_head").classed("hidden", false);
                         d3.select("#story").classed("hidden", false);
+                        d3.select("#locationsdiv").classed("hidden", false);
                         console.log("change to: " + d.book);
                         spellChart.update([d]);
                         wordChart.update([d]);
