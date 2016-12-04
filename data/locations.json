@@ -15,7 +15,7 @@
   {"locations":["The Forbidden Forest"]},
   {"locations":["Hogwarts Castle"]},
   {"locations":["Hogwarts Castle","Hospital Wing","Great Hall"]}
-],
+],"totalPlaces":22,
   "axis": ["Surrey Zoo","Hogwarts Express","Hogwarts Grounds","Hogwarts Quidditch Stadium","Hogwarts Castle","Hagrid's Hut","The Forbidden Forest","Great Hall","Diagon Alley","Privet Drive","Platform Nine and Three-Quarters","Gringotts","Hogwarts Lake","Hut on the Rock","Hospital Wing"]},
   {"chapters":[{"locations":["Privet Drive"]},
     {"locations":["Privet Drive"]},
@@ -34,7 +34,7 @@
     {"locations":["Hogwarts Castle","The Forbidden Forest"]},
     {"locations":["Hogwarts Castle","The Chamber of Secrets"]},
     {"locations":["The Chamber of Secrets","Hogwarts Castle","Hogwarts Express"]}
-  ],
+  ],"totalPlaces":32,
     "axis": ["The Burrow","Hogwarts Express","Hogwarts Grounds","Headmaster's Office","Hogwarts Quidditch Stadium","Hogwarts Castle","The Chamber of Secrets","Hagrid's Hut","The Forbidden Forest","Great Hall","Slytherin Common Room","Diagon Alley","Gryffindor Tower","Privet Drive","Platform Nine and Three-Quarters","Knockturn Alley","Hospital Wing"]},
   {"chapters":[{"locations":["Privet Drive"]},
     {"locations":["Privet Drive"]},
@@ -58,7 +58,7 @@
     {"locations":["Hogwarts Grounds","Hogwarts Lake"]},
     {"locations":["Hospital Wing","Hogwarts Grounds","Hogwarts Lake"]},
     {"locations":["Hospital Wing","Hogwarts Express"]}
-  ],
+  ],"totalPlaces":43,
     "axis": ["Hogwarts Express","Hogwarts Grounds","Hogsmeade","Hogwarts Quidditch Stadium","Hogwarts Castle","The Shrieking Shack","Hagrid's Hut","Great Hall","Diagon Alley","Gryffindor Tower","Privet Drive","Platform Nine and Three-Quarters","Hogwarts Lake","Hospital Wing"]},
   {"chapters":[{"locations":["Little Hangleton","Privet Drive"]},
     {"locations":["Privet Drive"]},
@@ -97,7 +97,7 @@
     {"locations":["Hogwarts Grounds","Hogwarts Castle"]},
     {"locations":["Headmaster's Office","Hospital Wing"]},
     {"locations":["Hogwarts Castle","Hogwarts Express"]}
-  ],
+  ],"totalPlaces":67,
     "axis": ["The Burrow","Ministry of Magic","Hogwarts Express","Ottery St Catchpole","Hogwarts Grounds","Headmaster's Office","Hogsmeade","Hogwarts Quidditch Stadium","Hogwarts Castle","Hagrid's Hut","Great Hall","Dartmoor Woods","Gryffindor Tower","Little Hangleton","Privet Drive","Platform Nine and Three-Quarters"," Gryffindor Tower","Quidditch World Cup Stadium","Hogwarts Lake","Hospital Wing"]},
   {"chapters":[{"locations":["Privet Drive"]},
     {"locations":["Privet Drive"]},
@@ -137,7 +137,7 @@
     {"locations":["Ministry of Magic"]},
     {"locations":["Headmaster's Office"]},
     {"locations":["Hogwarts Castle","Hogwarts Express"]}
-  ],
+  ],"totalPlaces":63,
     "axis": ["Ministry of Magic","Hogwarts Express","Hogwarts Grounds","Headmaster's Office","Hogsmeade","Hogwarts Quidditch Stadium","Hogwarts Castle","Grimmauld Place","Hagrid's Hut","The Forbidden Forest","Great Hall","Gryffindor Tower","Room of Requirement","St Mungo's Hospital","Privet Drive","Platform Nine and Three-Quarters","London"]},
   {"chapters":[{"locations":["London"]},
     {"locations":["Spinner's End"]},
@@ -169,7 +169,7 @@
     {"locations":["Hogwarts Castle","Hogwarts Grounds"]},
     {"locations":["Hospital Wing","Hogwarts Castle"]},
     {"locations":["Hogwarts Grounds"]}
-  ],
+  ],"totalPlaces":53,
     "axis": ["The Burrow","Spinner's End","Hogwarts Express","Headmaster's Office","Hogwarts Grounds","Hogsmeade","Hogwarts Quidditch Stadium","Hogwarts Castle","Hagrid's Hut","Great Hall","Diagon Alley","Gryffindor Tower","Room of Requirement","Privet Drive","Budleigh Babberton","Little Hangleton","Knockturn Alley","London","The Cave","Hospital Wing"]},
   {"chapters":[{"locations":["Malfoy Manor"]},
     {"locations":["Privet Drive"]},
@@ -208,7 +208,7 @@
     {"locations":["Harry's Head"]},
     {"locations":["The Forbidden Forest","Hogwarts Grounds","Hogwarts Castle"]},
     {"locations":["Platform Nine and Three-Quarters"]}
-  ],
+  ],"totalPlaces":55,
     "axis": ["The Burrow","Malfoy Manor","Ravenclaw Tower","Ottery St Catchpole","Shell Cottage","Hogwarts Grounds","Hogwarts Castle","The Shrieking Shack","Grimmauld Place","Gringotts","Godric's Hollow","Nurmengard","Harry's Head","Ministry of Magic","Unnamed Locations","Forest of Dean","Headmaster's Office","Hogsmeade","The Forbidden Forest","Great Hall","Dartmoor Woods","Diagon Alley","Room of Requirement","Privet Drive","Platform Nine and Three-Quarters","London"]}
 ]
 
